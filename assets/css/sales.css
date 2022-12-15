@@ -9,19 +9,19 @@ h1 {
 }
 .whole-div {
   margin-top: 100px;
-  margin-left: 30px;
+  /* margin-left: 10px; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
 }
 .sale-box {
   border: 1px solid aqua;
   height: 500px;
   width: 370px;
   border-radius: 10px;
-
-  /* transition: transform 0.5s; */
+  margin-bottom: 30px;
 }
-/* .sale-box :hover {
-  transform: scale(1.1);
-} */
+
 .sale-box img {
   width: 330px;
   height: 350px;
@@ -36,23 +36,49 @@ h1 {
   width: 190px;
   font-size: 20px;
   margin-top: -10px;
-  /* display: inline; */
-  /* justify-content: space-between; */
-  /* background-color: white; */
+
   margin-left: 50px;
 }
 .name {
   font-family: monospace;
   font-size: 30px;
   width: fit-content;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 5px;
 }
 .btn-1 {
-  color: black;
+  color: aqua;
+  background-color: black;
+  border: 2px solid aqua;
+  height: 30px;
+  border-radius: 10px 40px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 130px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* margin-top: px; */
+  margin-left: 50px;
+  transition: 0.2s;
+}
+.btn-1:hover {
   background-color: aqua;
+  color: black;
+  transform: scale(1.1);
 }
 .btn-2 {
   color: black;
-  background-color: aqua;
+  background-color: white;
+  margin-left: 40px;
+  cursor: pointer;
+  height: 30px;
+  font-size: 15px;
+  width: 120px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.btn-2:hover {
+  transform: scale(1.1);
 }
