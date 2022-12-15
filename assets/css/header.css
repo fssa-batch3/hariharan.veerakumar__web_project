@@ -1,0 +1,111 @@
+body {
+  background-color: #050202;
+  color: aqua;
+  /* width: 1430px; */
+}
+.head {
+  /* border-bottom: 1px solid teal; */
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+  margin-left: 50px;
+  height: 100px;
+  top: 10px;
+}
+.head-img {
+  padding-left: 35px;
+  padding-top: 10px;
+}
+.head-profile {
+  padding-top: 40px;
+  margin-right: 100px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  font-weight: bold;
+  font-size: 18px;
+}
+.head-about {
+  margin-right: 100px;
+  cursor: pointer;
+  height: 25px;
+  color: aqua;
+  background-color: #050202;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: transform 0.2s;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.head-sign:hover {
+  transform: scale(1.2);
+  color: white;
+}
+.head-profile a {
+  text-decoration: none;
+  color: aqua;
+  /* transform: translate(10px, 10px); */
+}
+
+.head-about:hover {
+  transform: scale(1.2);
+  color: white;
+}
+.head-pro {
+  cursor: pointer;
+  color: aqua;
+  background-color: #050202;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: transform 0.2s;
+  font-weight: bold;
+  font-size: 18px;
+}
+.head-pro:hover {
+  color: white;
+  transform: scale(1.2);
+}
+.head-profile img {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.head-dp {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: transform 0.2s;
+}
+.head-dp:hover {
+  transform: scale(1.5);
+}
+.side-div {
+  position: fixed;
+  top: 112px;
+  left: 56px;
+  width: 270px;
+  height: 87%;
+  display: flex;
+  flex-direction: column;
+  /* border-right: 1px solid teal; */
+}
+.btn {
+  background-color: #050202;
+  color: aqua;
+
+  border: 2px solid aqua;
+  width: 230px;
+  font-weight: bold;
+  height: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 65px;
+  cursor: pointer;
+  transition: transformn 0.2s;
+  border-radius: 12px;
+}
+.btn:hover {
+  background-color: aqua;
+  color: #050202;
+  border: none;
+  transform: scale(1.2);
+}

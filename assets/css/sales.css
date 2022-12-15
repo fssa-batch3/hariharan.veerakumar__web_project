@@ -1,0 +1,58 @@
+.sec-1 {
+  margin-left: 320px;
+}
+h1 {
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding-left: 280px;
+}
+.whole-div {
+  margin-top: 100px;
+  margin-left: 30px;
+}
+.sale-box {
+  border: 1px solid aqua;
+  height: 500px;
+  width: 370px;
+  border-radius: 10px;
+
+  /* transition: transform 0.5s; */
+}
+/* .sale-box :hover {
+  transform: scale(1.1);
+} */
+.sale-box img {
+  width: 330px;
+  height: 350px;
+  border-radius: 5px 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+
+  border: 1px solid white;
+}
+.price {
+  font-family: sans-serif;
+  width: 190px;
+  font-size: 20px;
+  margin-top: -10px;
+  /* display: inline; */
+  /* justify-content: space-between; */
+  /* background-color: white; */
+  margin-left: 50px;
+}
+.name {
+  font-family: monospace;
+  font-size: 30px;
+  width: fit-content;
+  margin-left: 100px;
+  margin-top: 5px;
+}
+.btn-1 {
+  color: black;
+  background-color: aqua;
+}
+.btn-2 {
+  color: black;
+  background-color: aqua;
+}

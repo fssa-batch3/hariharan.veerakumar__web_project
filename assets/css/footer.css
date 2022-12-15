@@ -1,0 +1,38 @@
+.foot {
+  background-color: aqua;
+  height: 250px;
+  width: 100%;
+  margin-top: 30px;
+}
+.foot p {
+  color: #050202;
+  font-family: sans-serif;
+  margin-left: 365px;
+  font-size: 20px;
+  padding-top: 30px;
+  width: fit-content;
+  height: fit-content;
+  font-weight: bold;
+}
+.foot-div {
+  margin-left: 500px;
+  display: flex;
+  margin-top: 35px;
+  gap: 70px;
+}
+.btns {
+  border-radius: 20%;
+  border: 4px solid black;
+  background-color: aqua;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+.btns:hover {
+  transform: scale(1.2);
+}
+#foot-p {
+  margin-left: 600px;
+  font-size: 15px;
+
+  margin-top: 50px;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crazy Fitness</title>
+    <style>
+      body {
+        background-image: url(../assets/images/sign_up_backimage.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+      
+        
+      }
+      .div-1 {
+        /* background-color: white; */
+        border-radius: 20px;
+        height: 650px;
+        width: 650px;
+        margin-left: 180px;
+        margin-top: 200px;
+      }
+      .div-1 h2 {
+        font-family: monospace;
+        padding-left: 222px;
+
+        font-size: 40px;
+        color: rgb(224, 172, 105) ;
+      }
+      #email {
+        margin-left: 60px;
+        margin-top: 30px;
+        height: 35px;
+        width: 250px;
+        border-radius: 5px;
+        background-color: white ; 
+        border: 3px solid rgb(224, 172, 105);
+      }
+      #email:hover{
+        background-color: rgb(224, 172, 105) ;
+        /* border: none; */
+      }
+      #psd {
+        margin-top: 30px;
+        margin-left: 32px;
+        height: 35px;
+        width: 250px;
+        background-color: white;
+        border-radius: 5px;
+        border: 3px solid rgb(224, 172, 105);
+      }
+      #psd:hover{
+        background-color: rgb(224, 172, 105) ;
+      }
+      .mid{
+        display: flex;
+        width: 65%;
+        padding-top: 60px;
+        margin-left: 95px;
+        /* background-color: rebeccapurple; */
+        justify-content: space-between;
+      }
+      #RM {
+
+        display: inline-block;
+
+      }
+      .btn-psd{
+
+        display: inline-flex;
+        background-color: black;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+
+        font-family: sans-serif;
+        color: rgb(224, 172, 105) ;
+        
+      }
+      .btn-psd:hover{
+        color: blue;
+      }
+      .btn {
+        margin-left: 230px;
+        margin-top: 90px;
+        width: 180px;
+        height: 45px;
+        font-family: sans-serif;
+       
+        font-size: 20px;
+        color: rgb(224, 172, 105);
+        cursor: pointer;
+        background-color: black;
+        border: 2px solid rgb(224, 172, 105);
+        border-radius: 5px;
+        transition: transform 0.1s;
+      }
+      a{
+        text-decoration: none;
+        color:  rgb(224, 172, 105) ;
+      }
+      .btn:hover {
+        transform: scale(1.1);
+        background-color: white;
+        border: none;
+        /* color: white; */
+      }
+    </style>
+  </head>
+  <body>
+    <form class="div-1">
+      <h2>Sign In</h2>
+      <br>
+      <br>
+      <!-- E-mail -->
+      <label
+        for="email"
+        style="
+          margin-left: 100px;
+          font-family: monospace;
+          font-size: 25px;
+          /* font-weight: bold; */
+          color: rgb(224, 172, 105);
+          
+        "
+        >E-mail:</label
+      >
+      <input
+        type="email"
+        id="email"
+        
+        placeholder="Type your E-mail"
+        required
+      />
+      <br /><br />
+      <!-- Password -->
+      <label
+        for="psd"
+        style="
+          margin-left: 100px;
+          font-family: monospace;
+          font-size: 25px;
+          /* font-weight: bold; */
+          color: rgb(224, 172, 105);
+        "
+        >Password:</label
+      >
+      <input
+        type="password"
+        
+        id="psd"
+        minlength="8"
+        placeholder="Password"
+        required
+      />
+      <br /><br />
+      <div class="mid">
+        <!-- Forgot password -->
+      <button class="btn-psd">Forgot Password?</button>
+      <label for="RM" style="font-family: sans-serif; color: rgb(224, 172, 105)"
+        ><input type="checkbox" name="RM" id="RM" />Remember Me</label
+      >
+    </div>
+
+ <button class="btn"><a href="./../pages/Home_workout.html"> Continue</a></button>
+    </div>
+  </body>
+</html>
