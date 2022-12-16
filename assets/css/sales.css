@@ -1,11 +1,21 @@
 .sec-1 {
   margin-left: 320px;
+  margin-top: 50px;
 }
 h1 {
   font-size: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  padding-left: 280px;
+  padding-left: 380px;
+}
+.vedio {
+  height: 700px;
+  margin-top: 100px;
+}
+.vedio img {
+  width: 1150px;
+  height: 700px;
+  border-radius: 20px;
 }
 .whole-div {
   margin-top: 100px;
