@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crazy Fitness</title>
+    <link rel="stylesheet" href="./../assets/css/header.css" />
+    <link rel="stylesheet" href="./../assets/css/footer.css" />
+    <style>
+      #back {
+        background-color: #050202;
+        color: aqua;
+
+        border: 2px solid aqua;
+        width: 120px;
+        font-weight: bold;
+        margin-left: 60px;
+        height: 40px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        margin-top: 155px;
+        cursor: pointer;
+        transition: transformn 0.2s;
+        border-radius: 12px;
+      }
+      #back:hover {
+        background-color: aqua;
+        color: #050202;
+        border: none;
+        transform: scale(1.2);
+      }
+      .sec-1 {
+        margin-left: 480px;
+        margin-top: 100px;
+        background-color: lightyellow;
+        height: 650px;
+        width: 650px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+      }
+      h1 {
+        margin-left: 180px;
+        padding-top: 60px;
+        font-family: sans-serif;
+        height: 50px;
+        color: rgb(224, 172, 105);
+        font-size: 40px;
+      }
+
+      #first-name {
+        width: 300px;
+        margin-left: 40px;
+        height: 30px;
+      }
+      #last-name {
+        width: 300px;
+        margin-left: 51px;
+        height: 30px;
+      }
+      #mob-num {
+        width: 300px;
+        margin-left: 51px;
+        height: 30px;
+      }
+      #address {
+        margin-left: 70px;
+      }
+      #order-btn {
+        margin-left: 240px;
+        color: rgb(224, 172, 105);
+        background-color: lightyellow;
+        border: 3px solid rgb(224, 172, 105);
+        font-family: sans-serif;
+        align-items: center;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s;
+        font-weight: bold;
+      }
+      #order-btn:hover {
+        color: lightyellow;
+        background-color: rgb(224, 172, 105);
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="head">
+      <div class="head-img">
+        <!-- logo of website -->
+        <img
+          src="../assets/images/logo_100_days_website.png"
+          alt="logo"
+          width="500"
+        />
+      </div>
+      <!-- Home page Linked -->
+      <div class="head-profile">
+        <a href="./../index.html"><button class="head-about">HOME</button></a>
+        <a href="./Sign_up.html">
+          <!-- profile -->
+          <button class="head-pro">PROFILE</button>
+        </a>
+        <img
+          class="head-dp"
+          src="../assets/images/profile.png"
+          alt="Profile"
+          height="15"
+        />
+      </div>
+    </header>
+    <section class="side-bar">
+      <div class="side-div">
+        <a href="./music.html"> <button class="btn">Workout Musics</button></a>
+        <a href="./Sales.html"> <button class="btn">Equipment Sale</button></a>
+        <a href="./outfit.html">
+          <button class="btn">Workout Outfit and Shoes</button>
+        </a>
+        <a href="./buy_now.html"><button id="back">Go back</button></a>
+      </div>
+    </section>
+    <!-- data collecting -->
+    <section class="sec-1">
+      <h1>Pay on Delivery</h1>
+      <br />
+      <form action="./../pages/purchased.html">
+        <!-- first name -->
+        <label
+          for="first-name"
+          style="
+            color: rgb(224, 172, 105);
+            margin-left: 60px;
+            font-family: monospace;
+            font-size: 20px;
+          "
+          >FIRST NAME:</label
+        >
+        <input type="text" name="name" id="first-name" required />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!-- second name -->
+        <label
+          for="last-name"
+          style="
+            color: rgb(224, 172, 105);
+            margin-left: 60px;
+            font-family: monospace;
+            font-size: 20px;
+          "
+          >LAST NAME:</label
+        >
+        <input type="text" name="name" id="last-name" required />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!-- mobile number -->
+        <label
+          for="mob-num"
+          style="
+            color: rgb(224, 172, 105);
+            margin-left: 60px;
+            font-family: monospace;
+            font-size: 20px;
+          "
+          >PH-NUMBER:</label
+        >
+        <input type="tel" name="number" id="mob-num" maxlength="10" required />
+        <br />
+        <br />
+        <br />
+
+        <!-- address -->
+        <label
+          for="address"
+          style="
+            color: rgb(224, 172, 105);
+            margin-left: 60px;
+            font-family: monospace;
+            vertical-align: top;
+            font-size: 20px;
+          "
+          >ADDRESS:</label
+        >
+        <textarea
+          name="address"
+          id="address"
+          cols="40"
+          rows="7"
+          required
+        ></textarea>
+        <br />
+        <br />
+        <br />
+
+        <br />
+
+        <a href="./../pages/purchased.html">
+          <input type="submit" value="Place Order" id="order-btn"
+        /></a>
+      </form>
+    </section>
+    <!-- footer-->
+
+    <footer class="foot">
+      <p>CONNECT WITH ME</p>
+      <div class="foot-div">
+        <button class="btns">
+          <img
+            src="../assets/images/Facebook_logo.png"
+            alt="facebook logo"
+            height="25"
+            width="25"
+          />
+        </button>
+        <button class="btns">
+          <img
+            src="../assets/images/Twitter_logo.png"
+            alt="twitter logo"
+            height="25"
+            width="25"
+          />
+        </button>
+        <button class="btns">
+          <img
+            src="../assets/images/Linked_in_logo.png"
+            alt="linked in logo"
+            height="25"
+            width="25"
+          />
+        </button>
+        <button class="btns">
+          <img
+            src="../assets/images/Whatsapp_logo.png"
+            alt="whatsapp logo"
+            height="25"
+            width="25"
+          />
+        </button>
+        <button class="btns">
+          <img
+            src="../assets/images/Instagram_logo.png"
+            alt="Instagram logo"
+            height="25"
+            width="25"
+          />
+        </button>
+      </div>
+      <p id="foot-p">&#169; Copyrights Claimed by Hariharan</p>
+    </footer>
+  </body>
+</html>
