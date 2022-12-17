@@ -5,50 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crazy Fitness</title>
-    <link rel="stylesheet" href="./../assets/css/header.css" />
-    <link rel="stylesheet" href="./../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
     <style>
-      .sec-1 {
-        margin-left: 480px;
-        margin-top: 100px;
-        background-color: lightyellow;
-        height: 650px;
-        width: 650px;
-        border-radius: 10px;
-      }
-      .pay-btn {
-        height: 60px;
-        width: 370px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 140px;
-        cursor: pointer;
-        margin-top: 70px;
-        padding: 14px;
-        color: rgb(224, 172, 105);
-        background-color: lightyellow;
-        border: 3px solid rgb(224, 172, 105);
-        font-family: sans-serif;
-        align-items: center;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 5px;
-        transition: 0.3s;
-      }
-      .pay-btn:hover {
-        color: lightyellow;
-        background-color: rgb(224, 172, 105);
-        transform: scale(1.1);
-      }
-      h1 {
-        margin-left: 250px;
-        padding-top: 70px;
-        font-family: sans-serif;
-        height: 50px;
-        color: rgb(224, 172, 105);
-        font-size: 40px;
-        font-weight: bold;
-      }
       #back {
         background-color: #050202;
         color: aqua;
@@ -71,15 +30,42 @@
         border: none;
         transform: scale(1.2);
       }
-      p {
-        color: rgb(224, 172, 105);
-        font-size: 30px;
-        padding-top: 30px;
-        margin-left: 150px;
-        height: 50px;
+      .sec-1 {
+        margin-left: 480px;
+        margin-top: 100px;
+        background-color: lightyellow;
+        height: 650px;
+        width: 650px;
+        border-radius: 10px;
       }
-      a {
-        text-decoration: none;
+      h1 {
+        margin-left: 210px;
+        padding-top: 70px;
+        font-family: sans-serif;
+        height: 50px;
+        color: rgb(224, 172, 105);
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .qr-line {
+        border: 2px solid black;
+        height: 350px;
+        width: 420px;
+        margin-left: 110px;
+        margin-top: 40px;
+        border-radius: 5px;
+      }
+      .qr-line p {
+        color: #050202;
+        text-align: center;
+        margin-top: 160px;
+      }
+      .number {
+        color: rgb(224, 172, 105);
+        font-weight: bold;
+        margin-left: 110px;
+        margin-top: 50px;
+        font-size: 30px;
       }
     </style>
   </head>
@@ -102,7 +88,7 @@
         </a>
         <img
           class="head-dp"
-          src="../assets/images/profile.png"
+          src="./../assets/images/profile.png"
           alt="Profile"
           height="15"
         />
@@ -111,28 +97,21 @@
     <section class="side-bar">
       <div class="side-div">
         <a href="./music.html"> <button class="btn">Workout Musics</button></a>
-        <a href="./Sales.html"> <button class="btn">Equipment Sale</button></a>
+        <a href="./Sales.html"><button class="btn">Equipment Sale</button></a>
         <a href="./outfit.html">
-          <button class="btn">Workout Outfit and Shoes</button>
-        </a>
-        <a href="./Sales.html"><button id="back">Go back</button></a>
+          <button class="btn">Workout Outfit and Shoes</button></a
+        >
+        <a href="./buy_now.html"><button id="back">Go back</button></a>
       </div>
     </section>
-    <!-- buttons -->
+    <!-- section start -->
     <section class="sec-1">
-      <h1>Payment</h1>
-      <a href="./../pages/pay_on_delivery.html">
-        <button class="pay-btn">Pay on Delivery</button></a
-      >
-      <a href="./../pages/net_banking.html"
-        ><button class="pay-btn">Net Banking</button></a
-      >
-      <a href="../pages/upi_payment.html">
-        <button class="pay-btn">UPI Payment</button></a
-      >
-      <p>&#8377; .</p>
+      <h1>UPI Payment</h1>
+      <div class="qr-line">
+        <p>PLACE FOR QR CODE</p>
+      </div>
+      <p class="number">Mobile Number: 0000000000</p>
     </section>
-
     <!-- footer-->
 
     <footer class="foot">
