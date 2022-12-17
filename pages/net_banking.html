@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crazy Fitness</title>
+    <link rel="stylesheet" href="./../assets/css/header.css" />
+    <style>
+      #back {
+        background-color: #050202;
+        color: aqua;
+
+        border: 2px solid aqua;
+        width: 120px;
+        font-weight: bold;
+        margin-left: 60px;
+        height: 40px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        margin-top: 155px;
+        cursor: pointer;
+        transition: transformn 0.2s;
+        border-radius: 12px;
+      }
+      #back:hover {
+        background-color: aqua;
+        color: #050202;
+        border: none;
+        transform: scale(1.2);
+      }
+      .sec-1 {
+        margin-left: 480px;
+        margin-top: 100px;
+        background-color: lightyellow;
+        height: 650px;
+        width: 650px;
+        border-radius: 10px;
+      }
+      h1 {
+        margin-left: 210px;
+        padding-top: 70px;
+        font-family: sans-serif;
+        height: 50px;
+        color: rgb(224, 172, 105);
+        font-size: 40px;
+        font-weight: bold;
+      }
+      #cardnumber {
+        width: 280px;
+        margin-left: 60px;
+        height: 30px;
+      }
+      #postalcode {
+        width: 280px;
+        margin-left: 60px;
+        height: 30px;
+      }
+      #expiration-date {
+        width: 280px;
+        margin-left: 16px;
+        height: 30px;
+      }
+      #cvv {
+        width: 280px;
+        margin-left: 135px;
+        height: 30px;
+      }
+      #order-btn {
+        margin-left: 240px;
+        margin-top: 40px;
+        color: rgb(224, 172, 105);
+        background-color: lightyellow;
+        border: 3px solid rgb(224, 172, 105);
+        font-family: sans-serif;
+        align-items: center;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s;
+        font-weight: bold;
+      }
+      #order-btn:hover {
+        color: lightyellow;
+        background-color: rgb(224, 172, 105);
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="head">
+      <div class="head-img">
+        <!-- logo of website -->
+        <img
+          src="../assets/images/logo_100_days_website.png"
+          alt="logo"
+          width="500"
+        />
+      </div>
+      <!-- Home page Linked -->
+      <div class="head-profile">
+        <a href="./../index.html"><button class="head-about">HOME</button></a>
+        <a href="./Sign_up.html">
+          <!-- profile -->
+          <button class="head-pro">PROFILE</button>
+        </a>
+        <img
+          class="head-dp"
+          src="../assets/images/profile.png"
+          alt="Profile"
+          height="15"
+        />
+      </div>
+    </header>
+    <section class="side-bar">
+      <div class="side-div">
+        <a href="./music.html"> <button class="btn">Workout Musics</button></a>
+        <a href="./Sales.html"> <button class="btn">Equipment Sale</button></a>
+        <a href="./outfit.html">
+          <button class="btn">Workout Outfit and Shoes</button>
+        </a>
+        <a href="./buy_now.html"><button id="back">Go back</button></a>
+      </div>
+    </section>
+    <section class="sec-1">
+      <h1>Net Banking</h1>
+      <form action="./../pages/purchased.html">
+        <br />
+        <!-- card number -->
+        <label
+          for="cardnumber"
+          style="
+            color: rgb(224, 172, 105);
+            margin-left: 60px;
+            font-family: monospace;
+            font-size: 20px;
+          "
+          >CARD NUMBER:</label
+        >
+        <input
+          type="tel"
+          name="cardnumber"
+          id="cardnumber"
+          maxlength="16"
+          required
+        />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!-- postal code -->
+        <label
+          for="postalcode"
+          style="
+            color: rgb(224, 172, 105);
+            margin-left: 60px;
+            font-family: monospace;
+            font-size: 20px;
+          "
+          >POSTAL CODE:</label
+        >
+        <input type="tel" name="postalcode" id="postalcode" max="6" required />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!-- expiration date -->
+        <label
+          for="expiration-date"
+          style="
+            color: rgb(224, 172, 105);
+            margin-left: 60px;
+            font-family: monospace;
+            font-size: 20px;
+          "
+          >EXPIRATION DATE:</label
+        >
+        <input
+          type="month"
+          name="expiration-date"
+          id="expiration-date"
+          required
+        />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!-- cvv -->
+        <label
+          for="cvv"
+          style="
+            color: rgb(224, 172, 105);
+            margin-left: 60px;
+            font-family: monospace;
+            font-size: 20px;
+          "
+          >CVV :</label
+        >
+        <input type="tel" name="cvv" id="cvv" max="4" required />
+        <br />
+        <br />
+        <br />
+        <a href="./../pages/purchased.html">
+          <input type="submit" value="Place Order" id="order-btn"
+        /></a>
+      </form>
+    </section>
+  </body>
+</html>
