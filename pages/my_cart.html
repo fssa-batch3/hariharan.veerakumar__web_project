@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crazy Fitness</title>
-    <link rel="stylesheet" href="./../assets/css/header.css" />
-    <link rel="stylesheet" href="./../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
     <style>
       #back {
         background-color: #050202;
@@ -33,58 +33,86 @@
       .sec-1 {
         margin-left: 480px;
         margin-top: 100px;
-        background-color: lightyellow;
+        background-color: white;
         height: 650px;
         width: 650px;
         border-radius: 10px;
         margin-bottom: 50px;
       }
       h1 {
-        margin-left: 180px;
-        padding-top: 60px;
+        margin-left: 240px;
+        padding-top: 40px;
         font-family: sans-serif;
         height: 50px;
-        color: rgb(224, 172, 105);
-        font-size: 40px;
+        color: #050202;
+        font-size: 50px;
       }
-
-      #first-name {
-        width: 300px;
-        margin-left: 40px;
-        height: 30px;
+      .left {
+        border-right: 1px solid #050202;
+        width: 240px;
+        /* background-color: red; */
+        margin-left: 20px;
+        display: inline-block;
+        height: 300px;
       }
-      #last-name {
-        width: 300px;
-        margin-left: 51px;
-        height: 30px;
-      }
-      #mob-num {
-        width: 300px;
-        margin-left: 51px;
-        height: 30px;
-      }
-      #address {
-        margin-left: 70px;
-      }
-      #order-btn {
-        margin-left: 240px;
-        color: rgb(224, 172, 105);
-        background-color: lightyellow;
-        border: 3px solid rgb(224, 172, 105);
-        font-family: monospace;
-        font-size: 15px;
-        align-items: center;
-        width: 200px;
-        height: 40px;
-        cursor: pointer;
+      .left img {
+        width: 220px;
+        height: 300px;
         border-radius: 5px;
-        transition: 0.3s;
+      }
+      .right {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 40px;
+        color: #050202;
+        font-family: sans-serif;
+        height: 300px;
+      }
+      .para {
+        width: fit-content;
+        font-size: 24px;
+        margin-top: 10px;
+
         font-weight: bold;
       }
-      #order-btn:hover {
-        color: lightyellow;
-        background-color: rgb(224, 172, 105);
-        transform: scale(1.1);
+      .fir-para {
+        padding-top: 10px;
+      }
+      .sec-para {
+        padding-top: 10px;
+        opacity: 0.4;
+      }
+      .thi-para {
+        padding-top: 10px;
+        opacity: 0.4;
+      }
+      .four-para {
+        padding-top: 10px;
+        font-family: inherit;
+      }
+      .price {
+        padding-top: 10px;
+        padding-left: 4px;
+        font-size: 18px;
+        font-weight: bold;
+        /* width: 20px; */
+        height: 20px;
+      }
+      .buy-btn {
+        margin-top: 110px;
+        margin-left: 230px;
+        height: 40px;
+        width: 180px;
+        font-size: 15px;
+        font-family: monospace;
+        border-radius: 22px;
+        color: black;
+        background-color: white;
+        cursor: pointer;
+      }
+      .buy-btn:hover {
+        color: white;
+        background-color: black;
       }
     </style>
   </head>
@@ -107,7 +135,7 @@
         </a>
         <img
           class="head-dp"
-          src="../assets/images/profile.png"
+          src="./../assets/images/profile.png"
           alt="Profile"
           height="15"
         />
@@ -116,95 +144,43 @@
     <section class="side-bar">
       <div class="side-div">
         <a href="./music.html"> <button class="btn">Workout Musics</button></a>
-        <a href="./Sales.html"> <button class="btn">Equipment Sale</button></a>
+        <a href="./Sales.html"><button class="btn">Equipment Sale</button></a>
         <a href="./outfit.html">
-          <button class="btn">Workout Outfit and Shoes</button>
-        </a>
-        <a href="./buy_now.html"><button id="back">Go back</button></a>
+          <button class="btn">Workout Outfit and Shoes</button></a
+        >
+        <a href="./Sales.html"><button id="back">Go back</button></a>
       </div>
     </section>
-    <!-- data collecting -->
+    <!-- section 1 starts -->
     <section class="sec-1">
-      <h1>Pay on Delivery</h1>
+      <h1>My Cart</h1>
+      <!-- left -->
+      <div class="left">
+        <img src="../assets/images/dumbbells.jpg" alt="dumbbells" />
+      </div>
+      <!-- right -->
+      <div class="right">
+        <p class="para">Dumb Bells</p>
+        <p class="fir-para">
+          Long Lasting and Flexible made
+          <br />
+          up of rubber
+        </p>
+        <!-- second para -->
+        <p class="sec-para">ITEM NO: 1778547</p>
+        <!-- third para -->
+        <p class="thi-para">Quantity - 1</p>
+        <!-- fourth para -->
+        <pre class="four-para">Total Products :    &#8377; _ _</pre>
+        <!-- price -->
+
+        <p class="price">RS. 999</p>
+        <!-- button -->
+      </div>
       <br />
-      <form action="./../pages/purchased.html">
-        <!-- first name -->
-        <label
-          for="first-name"
-          style="
-            color: rgb(224, 172, 105);
-            margin-left: 60px;
-            font-family: monospace;
-            font-size: 20px;
-          "
-          >FIRST NAME:</label
-        >
-        <input type="text" name="name" id="first-name" required />
-        <br />
-        <br />
-        <br />
-        <br />
-        <!-- second name -->
-        <label
-          for="last-name"
-          style="
-            color: rgb(224, 172, 105);
-            margin-left: 60px;
-            font-family: monospace;
-            font-size: 20px;
-          "
-          >LAST NAME:</label
-        >
-        <input type="text" name="name" id="last-name" required />
-        <br />
-        <br />
-        <br />
-        <br />
-        <!-- mobile number -->
-        <label
-          for="mob-num"
-          style="
-            color: rgb(224, 172, 105);
-            margin-left: 60px;
-            font-family: monospace;
-            font-size: 20px;
-          "
-          >PH-NUMBER:</label
-        >
-        <input type="tel" name="number" id="mob-num" maxlength="10" required />
-        <br />
-        <br />
-        <br />
-
-        <!-- address -->
-        <label
-          for="address"
-          style="
-            color: rgb(224, 172, 105);
-            margin-left: 60px;
-            font-family: monospace;
-            vertical-align: top;
-            font-size: 20px;
-          "
-          >ADDRESS:</label
-        >
-        <textarea
-          name="address"
-          id="address"
-          cols="40"
-          rows="7"
-          required
-        ></textarea>
-        <br />
-        <br />
-        <br />
-
-        <br />
-
-        <a href="./../pages/purchased.html">
-          <input type="submit" value="Place Order" id="order-btn"
-        /></a>
-      </form>
+      <a href="../pages/buy_now.html">
+        <button class="buy-btn">Buy Now</button></a
+      >
     </section>
     <!-- footer-->
 
