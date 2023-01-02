@@ -1,24 +1,22 @@
 .foot {
   background-color: aqua;
-  height: 250px;
+  /* height: 15%; */
   width: 100%;
-  margin-top: 30px;
+  margin-top: 2%;
 }
 .foot p {
   color: #050202;
   font-family: sans-serif;
-  margin-left: 365px;
-  font-size: 20px;
+  padding-left: 20%;
+  font-size: 25px;
   padding-top: 30px;
-  width: fit-content;
-  height: fit-content;
   font-weight: bold;
 }
 .foot-div {
-  margin-left: 500px;
+  margin-left: 28%;
   display: flex;
   margin-top: 35px;
-  gap: 70px;
+  gap: 7%;
 }
 .btns {
   border-radius: 20%;
@@ -31,8 +29,7 @@
   transform: scale(1.2);
 }
 #foot-p {
-  margin-left: 600px;
+  padding-left: 38%;
   font-size: 15px;
-
   margin-top: 50px;
 }

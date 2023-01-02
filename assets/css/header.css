@@ -1,35 +1,93 @@
 body {
-  background-color: #050202;
   color: aqua;
-  /* width: 1430px; */
+  background-color: #050202;
 }
+/* Responsive */
+/* // X-Small devices (portrait phones, less than 576px) */
+/* @media (max-width: 600px) {
+  .head-img img {
+    width: 300px;
+    padding-top: 30px;
+    padding-left: 0px; */
+/* }
+.btn {
+    background-color: #050202;
+    color: aqua;
+
+    border: 2px solid aqua;
+    width: 100px;
+    font-weight: bold;
+    height: 40px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-top: 65px;
+    cursor: pointer;
+    transition: transformn 0.2s;
+    border-radius: 12px;
+  }
+.head {
+    display: flex;
+    justify-content: space-between; 
+width: 1400px;
+ margin-left: 50px; 
+height: 100px;
+top: 10px;
+}
+}
+
+/* // Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
 .head {
   /* border-bottom: 1px solid teal; */
   display: flex;
   justify-content: space-between;
-  width: 1400px;
-  margin-left: 50px;
-  height: 100px;
-  top: 10px;
+  /* background-color: yellow; */
+  width: 100%;
+  /* margin-left: 50px; */
+  height: 10%;
+  /* top: 10px; */
 }
 .head-img {
-  padding-left: 35px;
-  padding-top: 10px;
+  margin: auto 0 auto 0;
+}
+.head-img img {
+  width: 45%;
 }
 .head-profile {
-  padding-top: 40px;
-  margin-right: 100px;
+  /* background-color: red; */
+  margin: auto 0 auto 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-
+  width: 50%;
   font-weight: bold;
   font-size: 18px;
+}
+.head-profile a {
+  text-decoration: none;
+  /* color: aqua; */
+}
+.head-profile img {
+  margin-left: 5px;
+  cursor: pointer;
 }
 .head-about {
   margin-right: 100px;
   cursor: pointer;
   height: 25px;
   color: aqua;
+  border: none;
   background-color: #050202;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -38,22 +96,13 @@ body {
   font-size: 18px;
 }
 
-.head-sign:hover {
-  transform: scale(1.2);
-  color: white;
-}
-.head-profile a {
-  text-decoration: none;
-  color: aqua;
-  /* transform: translate(10px, 10px); */
-}
-
 .head-about:hover {
   transform: scale(1.2);
   color: white;
 }
 .head-pro {
   cursor: pointer;
+  border: none;
   color: aqua;
   background-color: #050202;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -66,13 +115,8 @@ body {
   color: white;
   transform: scale(1.2);
 }
-.head-profile img {
-  margin-left: 5px;
-  cursor: pointer;
-}
+
 .head-dp {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   transition: transform 0.2s;
 }
 .head-dp:hover {
@@ -80,32 +124,29 @@ body {
 }
 .side-div {
   position: fixed;
-  top: 112px;
-  left: 56px;
-  width: 270px;
-  height: 87%;
+  left: 1%;
+  width: 13%;
+  height: 7%;
   display: flex;
   flex-direction: column;
-  /* border-right: 1px solid teal; */
+  /* justify-content: space-between; */
 }
 .btn {
   background-color: #050202;
   color: aqua;
-
   border: 2px solid aqua;
-  width: 230px;
+  width: 100%;
   font-weight: bold;
-  height: 40px;
+  height: 40%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-top: 65px;
   cursor: pointer;
   transition: transformn 0.2s;
-  border-radius: 12px;
+  border-radius: 15px;
 }
 .btn:hover {
   background-color: aqua;
   color: #050202;
-  border: none;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
