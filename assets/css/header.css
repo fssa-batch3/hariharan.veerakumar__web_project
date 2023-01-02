@@ -2,88 +2,51 @@ body {
   color: aqua;
   background-color: #050202;
 }
-/* Responsive */
-/* // X-Small devices (portrait phones, less than 576px) */
-/* @media (max-width: 600px) {
-  .head-img img {
-    width: 300px;
-    padding-top: 30px;
-    padding-left: 0px; */
-/* }
-.btn {
-    background-color: #050202;
-    color: aqua;
 
-    border: 2px solid aqua;
-    width: 100px;
-    font-weight: bold;
-    height: 40px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    margin-top: 65px;
-    cursor: pointer;
-    transition: transformn 0.2s;
-    border-radius: 12px;
-  }
 .head {
-    display: flex;
-    justify-content: space-between; 
-width: 1400px;
- margin-left: 50px; 
-height: 100px;
-top: 10px;
-}
-}
-
-/* // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { ... }
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { ... }
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { ... }
-
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) { ... }
-
-// XX-Large devices (larger desktops)
-// No media query since the xxl breakpoint has no upper bound on its width */
-.head {
-  /* border-bottom: 1px solid teal; */
   display: flex;
   justify-content: space-between;
-  /* background-color: yellow; */
   width: 100%;
-  /* margin-left: 50px; */
+
   height: 10%;
-  /* top: 10px; */
 }
 .head-img {
+  width: 60%;
   margin: auto 0 auto 0;
 }
 .head-img img {
-  width: 45%;
+  width: 100%;
 }
+
 .head-profile {
-  /* background-color: red; */
-  margin: auto 0 auto 0;
+  cursor: pointer;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  width: 50%;
+  width: 100%;
   font-weight: bold;
-  font-size: 18px;
+}
+.head-profile ul {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 .head-profile a {
+  display: flex;
+  justify-content: center;
   text-decoration: none;
-  /* color: aqua; */
+  color: aqua;
+  transition: 0.2s;
 }
-.head-profile img {
-  margin-left: 5px;
-  cursor: pointer;
+.head-profile a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+.navbar-toggler {
+  background-color: aqua;
+  color: #050202;
 }
 .head-about {
-  margin-right: 100px;
   cursor: pointer;
   height: 25px;
   color: aqua;
@@ -99,54 +62,4 @@ top: 10px;
 .head-about:hover {
   transform: scale(1.2);
   color: white;
-}
-.head-pro {
-  cursor: pointer;
-  border: none;
-  color: aqua;
-  background-color: #050202;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  transition: transform 0.2s;
-  font-weight: bold;
-  font-size: 18px;
-}
-.head-pro:hover {
-  color: white;
-  transform: scale(1.2);
-}
-
-.head-dp {
-  transition: transform 0.2s;
-}
-.head-dp:hover {
-  transform: scale(1.5);
-}
-.side-div {
-  position: fixed;
-  left: 1%;
-  width: 13%;
-  height: 7%;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-}
-.btn {
-  background-color: #050202;
-  color: aqua;
-  border: 2px solid aqua;
-  width: 100%;
-  font-weight: bold;
-  height: 40%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-top: 65px;
-  cursor: pointer;
-  transition: transformn 0.2s;
-  border-radius: 15px;
-}
-.btn:hover {
-  background-color: aqua;
-  color: #050202;
-  transform: scale(1.1);
 }

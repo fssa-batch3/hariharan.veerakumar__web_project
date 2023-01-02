@@ -14,53 +14,60 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <header class="head container">
-      <div class="head-img">
-        <!-- logo of website -->
-        <img src="./assets/images/logo_100_days_website.png" alt="logo" />
-      </div>
-      <!-- Home page Linked -->
-      <div class="head-profile">
-        <!-- <a href="index.html"><button class="head-about">HOME</button></a> -->
-        <a href="./pages/Sign_up.html">
-          <!-- profile -->
-          <button class="head-pro">PROFILE</button>
-        </a>
-        <img
-          class="head-dp"
-          src="./assets/images/profile.png"
-          alt="Profile"
-          height="15"
-        />
-      </div>
-    </header>
-    <div class="container">
-      <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam delectus
-      necessitatibus in nemo eos, praesentium obcaecati esse voluptates vel
-      aperiam ducimus cum, fugit, ab repellendus commodi neque laborum dolor
-      accusamus? -->
-      <div class="row" style="color: white; height: 100%; width: 50%"></div>
-      <!-- <div class="row" style="color: yellow; height: 100%; width: 50%"></div> -->
-    </div>
-
-    <!-- aside starts -->
-    <aside>
-      <div class="side-div">
-        <a href="./pages/music.html">
-          <button class="btn">Workout Musics</button></a
+    <nav
+      class="navbar navbar-expand-lg"
+      style="display: flex; justify-content: space-between"
+    >
+      <div class="container">
+        <div class="head-img">
+          <!-- logo of website -->
+          <img src="./assets/images/logo_100_days_website.png" alt="logo" />
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-        <a href="./pages/Sales.html">
-          <button class="btn">Equipment Sale</button></a
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse head-profile"
+          id="navbarTogglerDemo01"
         >
-        <a href="./pages/outfit.html"
-          ><button class="btn">Outfit and Shoes</button></a
-        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/music.html">PLAYLIST</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/Sales.html">EQ SALE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/outfit.html">OUTFIT & SHOES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/Sign_up.html">PROFILE</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </aside>
-
-    <section class="sec-1">
+    </nav>
+    <!-- nav ends -->
+    <section class="sec-1 container">
       <div class="sec-1-img">
         <!-- hero image -->
         <img src="./assets/images/hero_image.jpg" alt="bodybuilder image" />
