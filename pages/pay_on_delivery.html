@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crazy Fitness</title>
+      <!-- Bootstrap  -->
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <!-- Hamberger -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./../assets/css/header.css" />
     <link rel="stylesheet" href="./../assets/css/footer.css" />
     <style>
@@ -89,48 +99,63 @@
     </style>
   </head>
   <body>
-    <header class="head">
+    <!-- Nav starts -->
+    <nav
+    class="navbar navbar-expand-lg"
+    style="display: flex; justify-content: space-between"
+  >
+    <div class="container">
       <div class="head-img">
         <!-- logo of website -->
-        <img
-          src="../assets/images/logo_100_days_website.png"
-          alt="logo"
-          width="500"
-        />
+        <img src="../assets/images/logo_100_days_website.png" alt="logo" />
       </div>
-      <!-- Home page Linked -->
-      <div class="head-profile">
-        <a href="./../index.html"><button class="head-about">HOME</button></a>
-        <a href="./Sign_up.html">
-          <!-- profile -->
-          <button class="head-pro">PROFILE</button>
-        </a>
-        <img
-          class="head-dp"
-          src="../assets/images/profile.png"
-          alt="Profile"
-          height="15"
-        />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse head-profile"
+        id="navbarTogglerDemo01"
+      >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html"
+              >HOME</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/music.html">PLAYLIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Sales.html">EQ SALE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/outfit.html">OUTFIT & SHOES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Sign_up.html">PROFILE</a>
+          </li>
+        </ul>
       </div>
-    </header>
-    <section class="side-bar">
-      <div class="side-div">
-        <a href="./music.html"> <button class="btn">Workout Musics</button></a>
-        <a href="./Sales.html"> <button class="btn">Equipment Sale</button></a>
-        <a href="./outfit.html">
-          <button class="btn">Workout Outfit and Shoes</button>
-        </a>
-        <a href="./buy_now.html"><button id="back">Go back</button></a>
-      </div>
-    </section>
+    </div>
+  </nav>
+  <!-- nav ends -->
     <!-- data collecting -->
-    <section class="sec-1">
+    <section class="sec-1 container">
       <h1>Pay on Delivery</h1>
       <br />
       <form action="./../pages/purchased.html">
         <!-- first name -->
         <label
-          for="first-name"
+        
+          for="fname"
           style="
             color: rgb(224, 172, 105);
             margin-left: 60px;
@@ -139,14 +164,14 @@
           "
           >FIRST NAME:</label
         >
-        <input type="text" name="name" id="first-name" required />
+        <input type="text" name="fname" placeholder="Enter your first name" id="first-name" value="Hari" required />
         <br />
         <br />
         <br />
         <br />
         <!-- second name -->
         <label
-          for="last-name"
+          for="lname"
           style="
             color: rgb(224, 172, 105);
             margin-left: 60px;
@@ -155,14 +180,14 @@
           "
           >LAST NAME:</label
         >
-        <input type="text" name="name" id="last-name" required />
+        <input type="text" name="lname" id="last-name" placeholder="Last name" value="Haran" required />
         <br />
         <br />
         <br />
         <br />
         <!-- mobile number -->
         <label
-          for="mob-num"
+          for="number"
           style="
             color: rgb(224, 172, 105);
             margin-left: 60px;
@@ -171,7 +196,7 @@
           "
           >PH-NUMBER:</label
         >
-        <input type="tel" name="number" id="mob-num" maxlength="10" required />
+        <input type="tel" name="number" id="mob-num" maxlength="10" value="0123456789" required />
         <br />
         <br />
         <br />
@@ -190,6 +215,8 @@
         >
         <textarea
           name="address"
+          placeholder="Enter your address"
+          value="Address"
           id="address"
           cols="40"
           rows="7"
@@ -200,10 +227,11 @@
         <br />
 
         <br />
-
-        <a href="./../pages/purchased.html">
-          <input type="submit" value="Place Order" id="order-btn"
-        /></a>
+      
+     
+        <div><button  id="order-btn" class="btn" type="button" onclick="submitform()">Place order</button>
+        </div>
+       
       </form>
     </section>
     <!-- footer-->
@@ -254,5 +282,34 @@
       </div>
       <p id="foot-p">&#169; Copyrights Claimed by Hariharan</p>
     </footer>
+    <!-- Java script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JAVA SCRIPT -->
+    <script>
+      function submitform(){
+        const firstname = document.getElementById("first-name").value
+        const lastname = document.getElementById("last-name").value 
+        const number = document.getElementById("mob-num").value 
+        const address = document.getElementById("address").value 
+        
+
+
+        console.log(firstname)
+      console.log(lastname)
+      console.log(number)
+      console.log(address)
+      event.preventDefault()
+
+
+      localStorage.setItem("user_fname",first-name)
+      localStorage.setItem("user_lname",last-name)
+      localStorage.setItem("mobile_number",mob-num)
+      localStorage.setItem("address",address)
+
+      window.location.href="./../pages/purchased.html"
+      }
+
+     
+    </script>
   </body>
 </html>
