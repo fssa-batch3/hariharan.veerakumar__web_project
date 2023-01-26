@@ -18,40 +18,19 @@
     <link rel="stylesheet" href="./../assets/css/header.css" />
     <link rel="stylesheet" href="./../assets/css/footer.css" />
     <style>
-      #back {
-        background-color: #050202;
-        color: aqua;
-
-        border: 2px solid aqua;
-        width: 120px;
-        font-weight: bold;
-        margin-left: 60px;
-        height: 40px;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        margin-top: 155px;
-        cursor: pointer;
-        transition: transformn 0.2s;
-        border-radius: 12px;
-      }
-      #back:hover {
-        background-color: aqua;
-        color: #050202;
-        border: none;
-        transform: scale(1.2);
-      }
+     
       .sec-1 {
-        margin-left: 480px;
+        /* margin-left: 480px; */
         margin-top: 100px;
         background-color: lightyellow;
-        height: 650px;
+        height: 700px;
         width: 650px;
         border-radius: 10px;
         margin-bottom: 50px;
       }
       h1 {
-        margin-left: 180px;
-        padding-top: 60px;
+        margin-left: 20%;
+        padding-top: 2%;
         font-family: sans-serif;
         height: 50px;
         color: rgb(224, 172, 105);
@@ -60,31 +39,31 @@
 
       #first-name {
         width: 300px;
-        margin-left: 40px;
-        height: 30px;
+        margin-left: 3%;
+        /* height: 30px; */
       }
       #last-name {
         width: 300px;
-        margin-left: 51px;
-        height: 30px;
+        margin-left: 5%;
+        /* height: 30px; */
       }
       #mob-num {
         width: 300px;
-        margin-left: 51px;
-        height: 30px;
+        margin-left: 5%;
+        /* height: 30px; */
       }
       #address {
-        margin-left: 70px;
+        margin-left: 8%;
       }
       #order-btn {
-        margin-left: 240px;
+        margin-left: 30%;
         color: rgb(224, 172, 105);
         background-color: lightyellow;
         border: 3px solid rgb(224, 172, 105);
         font-family: monospace;
         font-size: 15px;
         align-items: center;
-        width: 200px;
+        width: 35%;
         height: 40px;
         cursor: pointer;
         border-radius: 5px;
@@ -148,7 +127,7 @@
   </nav>
   <!-- nav ends -->
     <!-- data collecting -->
-    <section class="sec-1 container">
+    <section class="sec-1 container form-control">
       <h1>Pay on Delivery</h1>
       <br />
       <form action="./../pages/purchased.html">
@@ -156,9 +135,10 @@
         <label
         
           for="fname"
+          class="form-label"
           style="
             color: rgb(224, 172, 105);
-            margin-left: 60px;
+            margin-left: 5%;
             font-family: monospace;
             font-size: 20px;
           "
@@ -172,9 +152,11 @@
         <!-- second name -->
         <label
           for="lname"
+          class="form-label"
           style="
             color: rgb(224, 172, 105);
-            margin-left: 60px;
+          
+            margin-left: 5%;
             font-family: monospace;
             font-size: 20px;
           "
@@ -188,9 +170,10 @@
         <!-- mobile number -->
         <label
           for="number"
+          class="form-label"
           style="
             color: rgb(224, 172, 105);
-            margin-left: 60px;
+            margin-left: 5%;
             font-family: monospace;
             font-size: 20px;
           "
@@ -204,9 +187,10 @@
         <!-- address -->
         <label
           for="address"
+          class="form-label"
           style="
             color: rgb(224, 172, 105);
-            margin-left: 60px;
+            margin-left: 5%;
             font-family: monospace;
             vertical-align: top;
             font-size: 20px;

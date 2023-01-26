@@ -36,8 +36,7 @@ h1 {
   border-radius: 20px;
 }
 .whole-div {
-  margin-top: 100px;
-  /* margin-left: 10px; */
+  margin-top: 10%;
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px;
@@ -75,18 +74,19 @@ h1 {
   margin-top: 5px;
 }
 .btn-1 {
+  text-decoration: none;
   color: aqua;
   background-color: black;
+  padding: 1.5%;
   border: 2px solid aqua;
   height: 30px;
-  border-radius: 10px 40px;
+  border-radius: 5px 20px;
   cursor: pointer;
-  font-size: 15px;
-  width: 130px;
+  font-size: 20px;
+  width: 120px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  /* margin-top: px; */
-  margin-left: 50px;
+  margin-left: 10%;
   transition: 0.2s;
 }
 .btn-1:hover {
@@ -95,12 +95,14 @@ h1 {
   transform: scale(1.1);
 }
 .btn-2 {
+  text-decoration: none;
   color: black;
   background-color: white;
-  margin-left: 40px;
+  padding: 1%;
+  margin-left: 10%;
   cursor: pointer;
   height: 30px;
-  font-size: 15px;
+  font-size: 20px;
   width: 120px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -109,4 +111,5 @@ h1 {
 }
 .btn-2:hover {
   transform: scale(1.1);
+  color: black;
 }

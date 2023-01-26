@@ -70,7 +70,7 @@
  <!-- nav ends -->
     
 
-    <section class="sec-1 container-fluid">
+    <section class="sec-1 container">
       <a href="../pages/my_cart.html">
         <button class="cart-btn">My Cart</button></a
       >
@@ -179,17 +179,17 @@
           >
         </div> -->
         <!-- equipment 9 -->
-        <!-- <div class="sale-box">
+        <div class="sale-box">
           <img src="./../assets/images/dumbbells.jpg" alt="dumbbells image" />
           <p class="name">Dumb Bells</p>
           <pre class="price"><del>&#8377;1000</del>  .  &#8377;999 Only</pre>
-          <a href="./../pages/buy_now.html"
-            ><button class="btn-1">Buy Now</button></a
+          <a href="./../pages/buy_now.html" class="btn-1"
+            >Buy Now</a
           >
-          <a href="../pages/my_cart.html">
-            <button class="btn-2">Add to cart</button></a
+          <a href="../pages/my_cart.html" class="btn-2">
+            Add to cart</a
           >
-        </div> -->
+        </div>
       </div>
     </section>
     <!-- footer-->
@@ -243,51 +243,80 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
  
       // card
-      let card;
-      let image;
-      let eq_name;
-      let rupees;
-      let buy_a;
-      let buy_btn;
-      let cart_a;
-      let cart_btn;
-
-      card = document.createElement("div")
-      card.setAttribute("class","sale-box")
-      console.log(card)
-
-      image = document.createElement("img")
-      image.setAttribute("src","./../assets/images/dumbbells.jpg")
-      image.setAttribute("alt","dumbbells image")
-      card.append(image)
-
-      eq_name = document.createElement("p")
-      eq_name.setAttribute("class","name")
-      card.append(eq_name)
-
-      rupees = document.createElement("pre")
-      rupees.setAttribute("class","price")
-      card.append(rupees)
-
-      buy_a = document.createElement("a")
-      buy_a.setAttribute("href","./../pages/buy_now.html")
-      card.append(buy_a)
- 
-      buy_btn = document.createElement("button")
-      buy_btn.setAttribute("class","btn-1")
-      buy_a.append(buy_btn)
-
-      cart_a = document.createElement("a")
-      cart_a.setAttribute("href","../pages/my_cart.html")
-      card.append(cart_a)
-
-      cart_btn = document.createElement("button")
-      cart_btn.setAttribute("class","btn-2")
-      cart_a.append(cart_btn)
-
-
-      document.querySelector("whole-div").append(card)
-    
+      let card = [
+        {
+          image : "./../assets/images/dumbbells.jpg",
+          name : "Dumb Bells",
+          dis_price: 1000,
+          price: 999,
+          buy_link: "./../pages/buy_now.html",
+          cart_link: "../pages/my_cart.html",
+      },
+        {
+        image : "./../assets/images/dumbbells.jpg",
+          name : "Dumb Bells",
+          dis_price: 1000,
+          price: 999,
+          buy_link: "./../pages/buy_now.html",
+          cart_link: "../pages/my_cart.html",
+      },
+        {
+        image : "./../assets/images/dumbbells.jpg",
+          name : "Dumb Bells",
+          dis_price: 1000,
+          price: 999,
+          buy_link: "./../pages/buy_now.html",
+          cart_link: "../pages/my_cart.html",
+      },
+      {
+        image : "./../assets/images/dumbbells.jpg",
+          name : "Dumb Bells",
+          dis_price: 1000,
+          price: 999,
+          buy_link: "./../pages/buy_now.html",
+          cart_link: "../pages/my_cart.html",
+      },
+      {
+        image : "./../assets/images/dumbbells.jpg",
+          name : "Dumb Bells",
+          dis_price: 1000,
+          price: 999,
+          buy_link: "./../pages/buy_now.html",
+          cart_link: "../pages/my_cart.html",
+      },
+      {
+        image : "./../assets/images/dumbbells.jpg",
+          name : "Dumb Bells",
+          dis_price: 1000,
+          price: 999,
+          buy_link: "./../pages/buy_now.html",
+          cart_link: "../pages/my_cart.html",
+      },
+      {
+        image : "./../assets/images/dumbbells.jpg",
+          name : "Dumb Bells",
+          dis_price: 1000,
+          price: 999,
+          buy_link: "./../pages/buy_now.html",
+          cart_link: "../pages/my_cart.html",
+      },
+      {
+        image : "./../assets/images/dumbbells.jpg",
+          name : "Dumb Bells",
+          dis_price: 1000,
+          price: 999,
+          buy_link: "./../pages/buy_now.html",
+          cart_link: "../pages/my_cart.html",
+      },
+      {
+        image : "./../assets/images/dumbbells.jpg",
+          name : "Dumb Bells",
+          dis_price: 1000,
+          price: 999,
+          buy_link: "./../pages/buy_now.html",
+          cart_link: "../pages/my_cart.html",
+      },
+    ]
 
     </script>
       
