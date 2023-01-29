@@ -60,7 +60,19 @@ hr {
   margin-top: 8%;
   width: 100%;
 }
-.whole-div {
+.whole-div-1 {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+.whole-div-2 {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+.whole-div-3 {
   margin-top: 80px;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -85,11 +97,10 @@ hr {
 }
 .price {
   font-family: sans-serif;
-  width: 190px;
+  width: 80%;
   font-size: 20px;
   margin-top: -10px;
-
-  margin-left: 50px;
+  margin-left: 25px;
 }
 .name {
   font-family: monospace;
@@ -99,18 +110,19 @@ hr {
   margin-top: 5px;
 }
 .btn-1 {
+  text-decoration: none;
   color: aqua;
   background-color: black;
+  padding: 1.5%;
   border: 2px solid aqua;
   height: 30px;
-  border-radius: 10px 40px;
+  border-radius: 5px 20px;
   cursor: pointer;
-  font-size: 15px;
-  width: 130px;
+  font-size: 20px;
+  width: 120px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  /* margin-top: px; */
-  margin-left: 50px;
+  margin-left: 10%;
   transition: 0.2s;
 }
 .btn-1:hover {
@@ -119,12 +131,14 @@ hr {
   transform: scale(1.1);
 }
 .btn-2 {
+  text-decoration: none;
   color: black;
   background-color: white;
-  margin-left: 40px;
+  padding: 1%;
+  margin-left: 15%;
   cursor: pointer;
   height: 30px;
-  font-size: 15px;
+  font-size: 20px;
   width: 120px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
