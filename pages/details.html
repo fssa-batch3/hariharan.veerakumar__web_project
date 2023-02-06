@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <!-- Hamberger -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="./../assets/css/header.css">
+    <link rel="stylesheet" href="./../assets/css/footer.css">
+
+
+</head>
+
+<body>
+
+
+    <!-- section starts -->
+    <section class="container py-5">
+        <!-- <div class="row "> -->
+        <!-- div 1 -->
+        <!-- <div class=" container col-sm-4 "><img class="img-thumbnail" src="./../assets/images/barbells_image.jpg"
+                alt="barbells_image">
+        </div> -->
+        <!-- div 2 -->
+        <!-- <div class="container col-sm-7">
+            <h1> Bar bells</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum
+                consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem
+                aut
+                quibusdam blanditiis eaque culpa?</p>
+            <p>&#8377. 1299 only</p>
+            <a href="./../pages/buy_now.html" class="btn btn-success">Buy now</a>
+            <a href="./../pages/my_cart.html" class="btn btn-danger">My Cart</a>
+        </div>
+        </div> -->
+    </section>
+
+
+    <!-- JAVA SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        let cardList = [
+            // index = 0
+            {
+                image: "./../assets/images/dumbbells.jpg",
+                name: "Dumb Bells",
+                alt: "dumbbells image",
+                price: "          Rs.999",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
+
+            },
+            // index = 1
+            {
+                image: "./../assets/images/barbells_image.jpg",
+                name: "Bar Bells",
+                alt: "Bar Bells image",
+                price: "          Rs.1299",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
+
+            },
+            // index = 2
+            {
+                image: "./../assets/images/INCLINE_BENCH_PRESS.jpg",
+                name: "Incline Bench Press",
+                alt: "incline bench press image",
+                price: "          Rs.12999",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
+
+            },
+            // index = 3
+            {
+                image: ".././assets/images/CABLES-AND-PULLEYS.png",
+                name: "Cables and Pulleys",
+                alt: "cables and pulleys image",
+                price: "          Rs.12999",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
+
+            },
+            // index = 4
+            {
+                image: ".././assets/images/PULLUP-BAR.png",
+                name: "Pull Up Bar",
+                alt: "pull up bar image",
+                price: "          Rs.3999",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
+
+            },
+            // index = 5
+            {
+                image: ".././assets/images/LEG-EXTENSION-MACHINE.png",
+                name: "Leg  Machine",
+                alt: "leg machine image",
+                price: "          Rs.8999",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
+
+            },
+        ]
+
+
+        const url = window.location.search;
+
+        const urlParams = new URLSearchParams(url);
+
+        const username = urlParams.get("name")
+
+        console.log(username);
+
+
+
+        const user = cardList.find(
+            function (userobj) {
+
+                const name = userobj["name"];
+
+                if (username === name) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        )
+
+
+
+        console.log(cardList)
+        console.log(cardList["desc"])
+        console.log(cardList["image"])
+        console.log(cardList["alt"])
+        console.log(cardList["name"])
+        console.log(cardList["dis_price"])
+        console.log(cardList["price"])
+
+
+
+
+
+
+
+
+        const user_avatar = document.getElementById("avatar");
+
+
+
+        const username_h1 = document.getElementById("username");
+
+
+        const user_price = document.getElementById("price");
+
+
+        const user_description = document.getElementById("description");
+
+
+
+        let cardList_down = JSON.parse(localStorage.getItem("cardList"))
+
+        console.log(cardList_down);
+
+
+
+
+        // Json
+
+        let details_div;
+        let left_div;
+        let image;
+        let right_div;
+        let prod_name;
+        let desc;
+        let rupees;
+        let buy_link;
+        let cart_link;
+
+
+
+        details_div = document.createElement("div");
+        details_div.setAttribute("class", "row ");
+        console.log(details_div)
+
+
+        left_div = document.createElement("div");
+        left_div.setAttribute("class", "container col-sm-4");
+        details_div.append(left_div);
+
+        image = document.createElement("img");
+        image.setAttribute("id", "avatar");
+        image.setAttribute("src", cardList["image"]);
+        image.setAttribute("alt", cardList["alt"]);
+        left_div.append(image)
+
+        right_div = document.createElement("div");
+        right_div.setAttribute("class", "container col-sm-7");
+        details_div.append(right_div);
+
+        prod_name = document.createElement("h1");
+        prod_name.setAttribute("id", "username")
+        prod_name.innerText = cardList["name"];
+        right_div.append(prod_name);
+
+        desc = document.createElement("p");
+        desc.setAttribute("id", "description")
+        desc.innerText = cardList["price"];
+        right_div.append(desc);
+
+        rupees = document.createElement("p");
+        rupees.setAttribute("id", "price")
+        rupees.innerText = cardList["desc"];
+        right_div.append(rupees);
+
+        buy_link = document.createElement("a");
+        buy_link.setAttribute("class", "btn btn-success");
+        buy_link.setAttribute("href", "./../pages/buy_now.html")
+        buy_link.innerText = "Buy now";
+        right_div.append(buy_link);
+
+        cart_link = document.createElement("a");
+        cart_link.setAttribute("class", "btn btn-danger");
+        cart_link.setAttribute("href", "./../pages/my_cart.html");
+        cart_link.innerText = " add to cart";
+        right_div.append(cart_link);
+
+
+
+        document.querySelector(".py-5").append(details_div)
+
+        console.log(details_div)
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

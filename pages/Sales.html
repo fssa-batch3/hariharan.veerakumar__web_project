@@ -201,6 +201,17 @@
 
   <script>
 
+
+    // card
+    let card_div;
+    let image;
+    let eq_name;
+    let rupees;
+    let dis_money;
+    let buy_a;
+    let cart_a;
+
+
     let card = [
       // index = 0
       {
@@ -209,7 +220,7 @@
         alt: "dumbbells image",
         dis_price: "Rs.1000",
         price: "          Rs.999",
-        buy_link: "./../pages/buy_now.html",
+        buy_link: "./../pages/details.html",
         cart_link: "../pages/my_cart.html",
       },
       // index = 1
@@ -219,7 +230,7 @@
         alt: "Bar Bells image",
         dis_price: "Rs.1500",
         price: "          Rs.1299",
-        buy_link: "./../pages/buy_now.html",
+        buy_link: "./../pages/details.html",
         cart_link: "../pages/my_cart.html",
       },
       // index = 2
@@ -229,7 +240,7 @@
         alt: "incline bench press image",
         dis_price: "Rs.16000",
         price: "          Rs.12999",
-        buy_link: "./../pages/buy_now.html",
+        buy_link: "./../pages/details.html",
         cart_link: "../pages/my_cart.html",
       },
       // index = 3
@@ -239,7 +250,7 @@
         alt: "cables and pulleys image",
         dis_price: "Rs.16000",
         price: "          Rs.12999",
-        buy_link: "./../pages/buy_now.html",
+        buy_link: "./../pages/details.html",
         cart_link: "../pages/my_cart.html",
       },
       // index = 4
@@ -249,7 +260,7 @@
         alt: "pull up bar image",
         dis_price: "Rs.5000",
         price: "          Rs.3999",
-        buy_link: "./../pages/buy_now.html",
+        buy_link: "./../pages/details.html",
         cart_link: "../pages/my_cart.html",
       },
       // index = 5
@@ -259,12 +270,9 @@
         alt: "leg machine image",
         dis_price: "Rs.10000",
         price: "          Rs.8999",
-        buy_link: "./../pages/buy_now.html",
+        buy_link: "./../pages/details.html",
         cart_link: "../pages/my_cart.html",
       },
-
-
-
 
     ]
 
@@ -310,17 +318,21 @@
 
     //   document.querySelector(".whole-div.container-fluid").append(card_div);
 
-    // card
-    let card_div;
-    let image;
-    let eq_name;
-    let rupees;
-    let dis_money;
-    let buy_a;
-    let cart_a;
 
+    const card_length = card.length
 
     for (let i = 0; i < card.length; i++) {
+
+      const user = card[i]
+
+      console.log(user)
+      console.log(user["desc"])
+      console.log(user["image"])
+      console.log(user["alt"])
+      console.log(user["name"])
+      console.log(user["dis_price"])
+      console.log(user["price"])
+
       card_div = document.createElement("div")
       card_div.setAttribute("class", "sale-box")
 
@@ -345,7 +357,7 @@
       rupees.prepend(dis_money)
 
       buy_a = document.createElement("a")
-      buy_a.setAttribute("href", card[i]["buy_link"])
+      buy_a.setAttribute("href", "./../pages/details.html?name=" + user["name"]);
       buy_a.setAttribute("class", "btn-1")
       buy_a.innerText = "Buy now"
       card_div.append(buy_a)
