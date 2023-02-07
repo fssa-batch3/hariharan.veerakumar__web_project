@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <title>Sign In </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+            body {
+                background-color: black;
+                color: aqua;
+            }
+
+            #name {
+                width: 50%;
+            }
+
+            #email {
+                width: 50%;
+            }
+
+            #pwd {
+                width: 50%;
+            }
+
+            #conpwd {
+                width: 50%;
+            }
+
+            .btn {
+                margin-left: 20%;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h2>Sign Up</h2>
+            <form onsubmit="userInput()" id="Form">
+                <!-- name -->
+                <div class="form-label">
+                    <label for="name">Name :</label>
+                    <input type="text" class="form-control" id="name" required placeholder="Enter Name" name="name">
+                </div>
+                <!-- email -->
+                <div class="form-label">
+                    <label for="email">Email :</label>
+                    <input type="email" class="form-control" id="email" required placeholder="Enter email" name="email">
+                </div>
+
+                <!-- password -->
+                <div class="form-label">
+                    <label for="pwd">Password :</label>
+                    <input type="password" class="form-control" id="pwd" required placeholder="Enter password"
+                        name="pswd">
+                </div>
+                <!--re password -->
+                <div class="form-label">
+                    <label for="pwd">Confirm Password :</label>
+                    <input type="password" class="form-control" id="conpwd" required
+                        placeholder="Enter confirm password" name="con-pswd">
+                </div>
+                <!-- log in  -->
+                <a href="./../pages/Log_in.html">Already log in?</a>
+                <!-- submit -->
+                <div class="d-grid d-md-block">
+                    <button id="button" type="submit" class="btn btn-warning ">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <script>
+
+            // const signUp = document.getElementById("Form");
+            // signUp.addEventListener("submit", function (event) {
+
+            let array = [];
+
+            function userInput() {
+                event.preventDefault();
+                if (localStorage.getItem("usersdetails") != null) {
+                    array = JSON.parse(localStorage.getItem("usersdetails"));
+                }
+                let name = document.getElementById("name").value;
+                let email = document.getElementById("email").value;
+                let password = document.getElementById("pwd").value;
+                let conpassword = document.getElementById("conpwd").value;
+
+                let sign_user_data = {
+                    "user_name": name,
+                    "user_email": email.toLowerCase(),
+                    "user_pass": password,
+                    "user_conpwd": conpassword,
+                }
+
+                if (password === conpassword) {
+                    array.push(sign_user_data);
+                    let arrayupdate = JSON.stringify(array);
+                    localStorage.setItem("usersdetails", arrayupdate);
+                    window.location.href = "../pages/Home_workout.html";
+
+                } else {
+                    alert("Invalid credentials");
+                }
+
+
+            }
+
+
+
+
+
+
+
+        </script>
+
+    </body>
+
+    </html>
+
+</body>
+
+</html>
