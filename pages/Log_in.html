@@ -145,6 +145,14 @@
       let ifMatch = false;
 
       for (let i = 0; i < array.length; i++) {
+
+        let specific_user = JSON.parse(localStorage.getItem("usersdetails"))
+        console.log(specific_user[i]);
+
+        window.localStorage.setItem(
+          "details",
+          JSON.stringify(specific_user[i])
+        );
         if (email == array[i].user_email && password == array[i].user_pass) {
           window.location.href = "../pages/Home_workout.html"
           ifMatch = true

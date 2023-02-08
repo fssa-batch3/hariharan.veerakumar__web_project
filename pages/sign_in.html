@@ -38,7 +38,7 @@
                 width: 50%;
             }
 
-            #pwd {
+            #password {
                 width: 50%;
             }
 
@@ -71,7 +71,7 @@
                 <!-- password -->
                 <div class="form-label">
                     <label for="pwd">Password :</label>
-                    <input type="password" class="form-control" id="pwd" required placeholder="Enter password"
+                    <input type="password" class="form-control" id="password" required placeholder="Enter password"
                         name="pswd">
                 </div>
                 <!--re password -->
@@ -103,7 +103,7 @@
                 }
                 let name = document.getElementById("name").value;
                 let email = document.getElementById("email").value;
-                let password = document.getElementById("pwd").value;
+                let password = document.getElementById("password").value;
                 let conpassword = document.getElementById("conpwd").value;
 
                 let sign_user_data = {
@@ -117,7 +117,7 @@
                     array.push(sign_user_data);
                     let arrayupdate = JSON.stringify(array);
                     localStorage.setItem("usersdetails", arrayupdate);
-                    window.location.href = "../pages/Home_workout.html";
+                    window.location.href = "../pages/Log_in.html";
 
                 } else {
                     alert("Invalid credentials");

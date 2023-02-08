@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Fitness</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+
+    <style>
+        body {
+            background-color: black;
+            color: aqua;
+        }
+
+        .container {
+            margin-top: 5%;
+
+        }
+
+        h1 {
+            margin-left: 43%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container ">
+        <br>
+        <h1>Profile</h1>
+        <br>
+        <form>
+            <div class="row">
+                <!-- first name -->
+                <div class="col">
+                    <label for="fname" class="form_label">First Name :</label>
+                    <input type="text" class="form-control" id="fname" name="fname">
+                </div>
+                <!-- last name -->
+                <div class="col">
+                    <label for="lname" class="form_label">Last Name :</label>
+
+                    <input type="text" id="lname" class="form-control" name="lname">
+                </div>
+            </div><br>
+            <!-- email -->
+            <div class="row">
+                <div class="col">
+                    <label for="email" class="form_label">Email :</label>
+                    <input type="email" id="email" class="form-control" name="email">
+                </div>
+                <!-- password -->
+                <div class="col">
+                    <label for="password" class="form_label">Password :</label>
+                    <input type="password" id="password" class="form-control" name="password">
+                </div>
+            </div>
+            <br>
+            <!-- phone number -->
+            <div class="row">
+                <div class="col">
+                    <label for="ph_number" class="form_label">Phone number :</label>
+                    <input type="tel" id="ph_number" class="form-control" name="ph_number">
+                </div>
+                <!-- pin code -->
+                <div class="col">
+                    <label for="Pincode" class="form_label">Pincode :</label>
+                    <input type="tel" id="Pincode" class="form-control" name="Pincode">
+                </div>
+            </div>
+            <!-- address -->
+            <br>
+            <div class="row">
+                <div class="col">
+                    <label for="comment">Address :</label>
+                    <textarea class="form-control" rows="8" id="comment" name="text"></textarea>
+                </div>
+                <!-- personal info -->
+                <div class="col">
+                    <label for="per_info">Personal info :</label>
+                    <textarea class="form-control" rows="8" id="per_info" name="text"></textarea>
+                </div>
+            </div>
+
+
+
+        </form>
+    </div>
+
+
+    <script>
+        const user_about = JSON.parse(window.localStorage.getItem("details"))
+        console.log(user_about);
+
+        const firname = document.getElementById("fname");
+        const mail = document.getElementById("email");
+        const pass = document.getElementById("password");
+
+        firname.value = user_about["user_name"];
+        mail.value = user_about["user_email"];
+        pass.value = user_about["user_pass"];
+
+
+
+    </script>
+
+</body>
+
+</html>
