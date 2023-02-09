@@ -103,12 +103,14 @@
       <!-- Email -->
       <div>
         <label for="email" class="form-label">Email address:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your E-mail" required />
+        <input type="email" class="form-control" id="email" placeholder="Enter your E-mail" required
+          title="Enter your email properly" />
       </div>
       <!-- password -->
       <div>
         <label for="password" class="form-label">Password:</label>
-        <input type="password" class="form-control" id="password" placeholder="Enter your Password" required />
+        <input type="password" class="form-control" id="password" placeholder="Enter your Password" required
+          pattern="[a-zA-Z0-9]{8,}$" title="password must be in 8 characters" />
       </div>
       <!-- middle -->
       <div class=" mid">
@@ -134,8 +136,6 @@
 
     let login = document.getElementById("form")
     login.addEventListener("submit", (event) => {
-
-
       event.preventDefault();
       let array = JSON.parse(localStorage.getItem("usersdetails"));
       // getdatas
@@ -157,21 +157,50 @@
           window.location.href = "../pages/Home_workout.html"
           ifMatch = true
           break;
-
         }
         else {
           ifMatch = false
         }
       }
-
+      // for ifMatch
       if (ifMatch == true) {
         alert("Success")
-
       }
       else {
         alert("Failed")
       }
     })
+
+    // for wrong email
+    function isEmailExist(user_email) {
+      let isExist = false;
+      for (let i = 0; i < array.length; i++) {
+        if (user_email == array[i].email) {
+          isExist = true;
+          break;
+
+        }
+      }
+      return isExist
+    }
+
+
+    // for wrong password
+    function isEmailExist(user_pass) {
+      let isExist = false;
+      for (let i = 0; i < array.length; i++) {
+        if (user_pass == array[i].password) {
+          isExist = true;
+          break;
+
+        }
+      }
+      return isExist
+    }
+
+
+
+
     // for password visible
     function visiblevalue() {
       const vari = document.getElementById("check");

@@ -60,25 +60,27 @@
                 <!-- name -->
                 <div class="form-label">
                     <label for="name">Name :</label>
-                    <input type="text" class="form-control" id="name" required placeholder="Enter Name" name="name">
+                    <input type="text" class="form-control" id="name" required placeholder="Enter Name" name="name"
+                        pattern="[a-zA-Z0-9]{0,25}$" title="enter your name correctly">
                 </div>
                 <!-- email -->
                 <div class="form-label">
                     <label for="email">Email :</label>
-                    <input type="email" class="form-control" id="email" required placeholder="Enter email" name="email">
+                    <input type="email" class="form-control" id="email" required placeholder="Enter email" name="email"
+                        title="enter proper email">
                 </div>
-
                 <!-- password -->
-                <div class="form-label">
+                <div class=" form-label">
                     <label for="pwd">Password :</label>
                     <input type="password" class="form-control" id="password" required placeholder="Enter password"
+                        pattern="[a-zA-Z0-9]{8,}$" title=" password must be in 8 characters and choose strong password"
                         name="pswd">
                 </div>
                 <!--re password -->
                 <div class="form-label">
                     <label for="pwd">Confirm Password :</label>
                     <input type="password" class="form-control" id="conpwd" required
-                        placeholder="Enter confirm password" name="con-pswd">
+                        title=" password must be in 8 characters" placeholder="Enter confirm password" name="con-pswd">
                 </div>
                 <!-- log in  -->
                 <a href="./../pages/Log_in.html">Already log in?</a>
@@ -101,29 +103,43 @@
                 if (localStorage.getItem("usersdetails") != null) {
                     array = JSON.parse(localStorage.getItem("usersdetails"));
                 }
-                let name = document.getElementById("name").value;
-                let email = document.getElementById("email").value;
-                let password = document.getElementById("password").value;
-                let conpassword = document.getElementById("conpwd").value;
+                let name = document.getElementById("name").value.trim();
+                let email = document.getElementById("email").value.trim();
+                let password = document.getElementById("password").value.trim();
+                let conpassword = document.getElementById("conpwd").value.trim();
+                let emailId = isEmailExist("email");
+                if (password != conpassword) {
+                    alert("Invalid credentials  ")
 
-                let sign_user_data = {
-                    "user_name": name,
-                    "user_email": email.toLowerCase(),
-                    "user_pass": password,
-                    "user_conpwd": conpassword,
+                } else if (emailId != email) {
+                    alert("Email already exists")
+
                 }
+                else {
+                    let sign_user_data = {
+                        "user_name": name,
+                        "user_email": email.toLowerCase(),
+                        "user_pass": password,
+                        "user_conpwd": conpassword,
+                    }
 
-                if (password === conpassword) {
                     array.push(sign_user_data);
                     let arrayupdate = JSON.stringify(array);
                     localStorage.setItem("usersdetails", arrayupdate);
                     window.location.href = "../pages/Log_in.html";
-
-                } else {
-                    alert("Invalid credentials");
                 }
 
+            }
+            function isEmailExist(user_email) {
+                let isExist = false;
+                for (let i = 0; i < array.length; i++) {
+                    if (user_email == array[i].email) {
+                        isExist = true;
+                        break;
 
+                    }
+                }
+                return isExist
             }
 
 
