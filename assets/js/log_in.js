@@ -57,3 +57,59 @@ function visiblevalue(){
         document.getElementById("password").type = "password";
     }
 }
+
+
+// kamalesh code
+
+​
+//             signUpform = document.getElementById("form");
+// ​
+// ​
+//             signUpform.addEventListener("submit", function (event) {
+// ​
+//                 event.preventDefault();
+//                 let userData = []
+//                 if (localStorage.getItem("register") != null) {
+//                     userData = JSON.parse(localStorage.getItem("register"))
+//                 }
+                // let userData = lo calStorage.getItem('register');
+                // localStorage.setItem(userData)
+​
+                // if (userData === undefined) {
+                // const userData = [];
+                // }
+// ​
+//                 let match = false;
+//                 const FullName = document.getElementById('FullName').value;
+//                 const Email = document.getElementById('email').value.toLowerCase();
+//                 const UserName = document.getElementById('UserName').value;
+//                 const Password = document.getElementById('password').value;
+//                 const RPassword = document.getElementById('Rpassword').value;
+//                 if (Password != RPassword) {
+//                     alert("Password and Repeat password not match")
+//                 }
+// ​
+//                 else {
+//                     for (let i = 0; i < userData.length; i++) {
+//                         if (Email == userData[i]["Email"]) {
+//                             match = true;
+//                         }
+//                     }
+//                 }
+// ​
+//                 if (match == true) {
+//                     alert("Email is already Exist");
+//                 }
+// ​
+//                 else {
+//                     let userObj = {
+//                         FullName, Email, UserName, Password, RPassword
+//                     }
+//                     console.log(userObj)
+// ​
+//                     userData.push(userObj);
+//                     const str = JSON.stringify(userData);
+//                     localStorage.setItem("register", str)
+//                     console.log(str)
+                    // window.location.href = "Bio.html";
+                

@@ -149,9 +149,7 @@
         let specific_user = JSON.parse(localStorage.getItem("usersdetails"))
         console.log(specific_user[i]);
 
-        window.localStorage.setItem(
-          "details",
-          JSON.stringify(specific_user[i])
+        localStorage.setItem("details", JSON.stringify(specific_user[i])
         );
         if (email == array[i].user_email && password == array[i].user_pass) {
           window.location.href = "../pages/Home_workout.html"
@@ -167,7 +165,7 @@
         alert("Success")
       }
       else {
-        alert("Failed")
+        alert("Invalid Credentials")
       }
     })
 

@@ -30,6 +30,15 @@
                 color: aqua;
             }
 
+            input:valid {
+                border-color: green;
+
+            }
+
+            input:focus:invalid {
+                border-color: red;
+            }
+
             #name {
                 width: 50%;
             }
@@ -56,12 +65,12 @@
 
         <div class="container">
             <h2>Sign Up</h2>
-            <form onsubmit="userInput()" id="Form">
+            <form id="Form">
                 <!-- name -->
                 <div class="form-label">
                     <label for="name">Name :</label>
                     <input type="text" class="form-control" id="name" required placeholder="Enter Name" name="name"
-                        pattern="[a-zA-Z0-9]{0,25}$" title="enter your name correctly">
+                        pattern="[a-zA-Z0-9]{1,15}$" title="enter your name correctly">
                 </div>
                 <!-- email -->
                 <div class="form-label">
@@ -73,8 +82,8 @@
                 <div class=" form-label">
                     <label for="pwd">Password :</label>
                     <input type="password" class="form-control" id="password" required placeholder="Enter password"
-                        pattern="[a-zA-Z0-9]{8,}$" title=" password must be in 8 characters and choose strong password"
-                        name="pswd">
+                        pattern="[a-zA-Z0-9]{1,15}$"
+                        title=" password must be in 8 characters and choose strong password" name="pswd">
                 </div>
                 <!--re password -->
                 <div class="form-label">
@@ -93,27 +102,35 @@
 
         <script>
 
-            // const signUp = document.getElementById("Form");
-            // signUp.addEventListener("submit", function (event) {
-
-            let array = [];
-
-            function userInput() {
+            const signUp = document.getElementById("Form");
+            signUp.addEventListener("submit", function (event) {
                 event.preventDefault();
+                let array = [];
+
+
+
                 if (localStorage.getItem("usersdetails") != null) {
                     array = JSON.parse(localStorage.getItem("usersdetails"));
                 }
+                let match = false;
                 let name = document.getElementById("name").value.trim();
                 let email = document.getElementById("email").value.trim();
                 let password = document.getElementById("password").value.trim();
                 let conpassword = document.getElementById("conpwd").value.trim();
-                let emailId = isEmailExist("email");
+
                 if (password != conpassword) {
-                    alert("Invalid credentials  ")
+                    alert("Invalid credentials")
 
-                } else if (emailId != email) {
-                    alert("Email already exists")
+                } else {
+                    for (let i = 0; i < array.length; i++) {
+                        if (array[i]["user_email"] === email) {
+                            match = true;
 
+                        }
+                    }
+                }
+                if (match === true) {
+                    alert("The Email is already exists")
                 }
                 else {
                     let sign_user_data = {
@@ -127,25 +144,26 @@
                     let arrayupdate = JSON.stringify(array);
                     localStorage.setItem("usersdetails", arrayupdate);
                     window.location.href = "../pages/Log_in.html";
+
                 }
 
-            }
-            function isEmailExist(user_email) {
-                let isExist = false;
-                for (let i = 0; i < array.length; i++) {
-                    if (user_email == array[i].email) {
-                        isExist = true;
-                        break;
 
-                    }
-                }
-                return isExist
-            }
+            })
 
 
 
 
 
+
+            // function isEmailExist(email) {
+            //     for (let i = 0; i < array.length; i++) {
+            //         if (email === array[i]["email"]) {
+            //             isExist = true;
+            //             break;
+            //         }
+            //     }
+            //     return isEmailExist;
+            // }
 
 
         </script>
