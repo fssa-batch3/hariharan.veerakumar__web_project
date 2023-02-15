@@ -23,6 +23,20 @@
         h1 {
             margin-left: 43%;
         }
+
+        #button {
+            margin-top: 5%;
+            margin-left: 40%;
+            width: 20%;
+            font-size: 100%;
+        }
+
+        #delete {
+            margin-top: 5%;
+            width: 20%;
+            margin-left: 40%;
+            font-size: 100%;
+        }
     </style>
 </head>
 
@@ -31,17 +45,16 @@
         <br>
         <h1>Profile</h1>
         <br>
-        <form>
+        <form id="form">
             <div class="row">
                 <!-- first name -->
                 <div class="col">
                     <label for="fname" class="form_label">First Name :</label>
-                    <input type="text" class="form-control" id="fname" name="fname">
+                    <input type="text" id="fname" class="form-control" name="fname">
                 </div>
                 <!-- last name -->
                 <div class="col">
                     <label for="lname" class="form_label">Last Name :</label>
-
                     <input type="text" id="lname" class="form-control" name="lname">
                 </div>
             </div><br>
@@ -49,12 +62,17 @@
             <div class="row">
                 <div class="col">
                     <label for="email" class="form_label">Email :</label>
-                    <input type="email" id="email" class="form-control" name="email">
+                    <input type="email" id="email" class="form-control" name="email" disabled>
                 </div>
                 <!-- password -->
                 <div class="col">
-                    <label for="password" class="form_label">Password :</label>
-                    <input type="password" id="password" class="form-control" name="password">
+                    <label for="Gender" class="form_label">Gender :</label>
+                    <select id="gender" class="form-control">
+                        <option value=""></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="transgender">Transgender</option>
+                    </select>
                 </div>
             </div>
             <br>
@@ -64,10 +82,10 @@
                     <label for="ph_number" class="form_label">Phone number :</label>
                     <input type="tel" id="ph_number" class="form-control" name="ph_number">
                 </div>
-                <!-- pin code -->
+                <!-- age -->
                 <div class="col">
-                    <label for="Pincode" class="form_label">Pincode :</label>
-                    <input type="tel" id="Pincode" class="form-control" name="Pincode">
+                    <label for="age" class="form_label">Age :</label>
+                    <input type="number" id="age" class="form-control" name="age">
                 </div>
             </div>
             <!-- address -->
@@ -83,21 +101,139 @@
                     <textarea class="form-control" rows="8" id="per_info" name="text"></textarea>
                 </div>
             </div>
+            <!-- submit -->
+            <div class=" row  ">
+                <div class="col"> <button id="button" type="submit" class="btn btn-success ">Change</button></div>
+                <div class="col"><button id="delete" type="delete" class="btn btn-danger ">Delete</button></div>
+
+            </div>
         </form>
+
+
     </div>
 
 
     <script>
-        const user_about = JSON.parse(window.localStorage.getItem("details"))
-        console.log(user_about);
+        // for email
+        let current_email = JSON.parse(localStorage.getItem("details"))
+        //  for array
+        let user_about = JSON.parse(localStorage.getItem("usersdetails"))
 
-        const firname = document.getElementById("fname");
-        const mail = document.getElementById("email");
-        const pass = document.getElementById("password");
+        let user_obj = user_about.find(function (user) {
+            let check_email = user["user_email"]
+            if (current_email === check_email) {
+                return true;
+            }
+        })
+        // console.log(user_obj);
 
-        firname.value = user_about["user_name"];
-        mail.value = user_about["user_email"];
-        pass.value = user_about["user_pass"];
+
+        let firname = document.getElementById("fname");
+        let
+            = document.getElementById("lname");
+        let age = document.getElementById("age");
+        let mail = document.getElementById("email");
+        let ph_num = document.getElementById("ph_number");
+
+
+        firname.value = user_obj["user_name"];
+        lastname.value = user_obj["user_lastname"];
+        age.value = user_obj["user_age"];
+        mail.value = current_email;
+        ph_num.value = user_obj["user_ph_num"];
+
+
+
+
+        let pro_info = document.getElementById("form");
+        pro_info.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let user_name = document.getElementById("fname").value;
+            let user_lastname = document.getElementById("lname").value;
+            let user_age = document.getElementById("age").value;
+            let user_email = document.getElementById("email").value;
+            let user_gender = document.getElementById("gender").value;
+            let user_ph_num = document.getElementById("ph_number").value;
+            let user_address = document.getElementById("comment").value;
+            let per_info = document.getElementById("per_info").value;
+
+            let user_object = {
+                user_name,
+                user_lastname,
+                user_age,
+                user_email,
+                user_gender,
+                user_ph_num,
+                user_address,
+                per_info,
+            };
+            let checked_obj = Object.assign(user_obj, user_object)
+            // console.log(checked_obj);
+
+            let index = user_about.indexOf(user_obj);
+            // console.log(index);
+
+            user_about[index] = checked_obj;
+
+            localStorage.setItem("usersdetails", JSON.stringify(user_about));
+            // console.log(user_about);
+
+            alert("Successfully changed");
+
+            location.reload()
+        })
+        let check = true;
+        let present_details = user_about.find(function (user) {
+            let check_email = user["user_email"]
+            if (current_email === check_email) {
+
+                let firname2 = document.getElementById("fname");
+                let lastname2 = document.getElementById("lname");
+                let age2 = document.getElementById("age");
+                let gender2 = document.getElementById("gender");
+                let mail2 = document.getElementById("email");
+                let ph_num2 = document.getElementById("ph_number");
+                let address2 = document.getElementById("comment");
+                let per_info2 = document.getElementById("per_info");
+
+                firname2.value = user["user_name"];
+                lastname2.value = user["user_lastname"];
+                age2.value = user["user_age"];
+                gender2.value = user["user_gender"];
+                mail2.value = current_email;
+                ph_num2.value = user["user_ph_num"];
+                address2.value = user["user_address"];
+                per_info2.value = user["per_info"];
+            }
+        })
+
+
+
+        let user_delete = document.getElementById("delete");
+        user_delete.addEventListener("click", function (event) {
+            event.preventDefault()
+
+            let Index = user_about.indexOf(user_obj)
+
+            let msg = confirm("Are you sure want to delete your account")
+
+            if (msg !== true) {
+                return
+            }
+            else {
+                user_about.splice(Index, 1)
+                console.log(user_about);
+                localStorage.setItem("usersdetails", JSON.stringify(user_about))
+                // location.reload()
+                window.location.href = "../pages/sign_in.html";
+            }
+        })
+
+
+
+
+
 
 
 

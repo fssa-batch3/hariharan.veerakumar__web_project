@@ -31,12 +31,23 @@
             }
 
             input:valid {
-                border-color: green;
+                border: 2px solid green;
 
             }
 
-            input:focus:invalid {
-                border-color: red;
+            select:valid {
+                border: 2px solid green;
+
+            }
+
+            input:invalid {
+                border: 2px solid red;
+
+            }
+
+            select:invalid {
+                border: 2px solid red;
+
             }
 
             #name {
@@ -55,8 +66,42 @@
                 width: 50%;
             }
 
+            #ph-num {
+                width: 50%;
+            }
+
+            #lname {
+                width: 50%;
+            }
+
+            #age {
+                width: 50%;
+            }
+
+            .container {
+                margin-left: 23%;
+                margin-top: 5%;
+            }
+
             .btn {
                 margin-left: 20%;
+                margin-top: 2%;
+
+            }
+
+            #back_btn {
+                background-color: aqua;
+                color: black;
+                width: 10%;
+                height: 40px;
+                border-radius: 10px;
+                /* margin-top: 1%; */
+                margin-left: 13%;
+            }
+
+            #back_btn:hover {
+                background-color: black;
+                color: aqua;
             }
         </style>
     </head>
@@ -66,11 +111,23 @@
         <div class="container">
             <h2>Sign Up</h2>
             <form id="Form">
-                <!-- name -->
+                <!-- first name -->
                 <div class="form-label">
-                    <label for="name">Name :</label>
-                    <input type="text" class="form-control" id="name" required placeholder="Enter Name" name="name"
-                        pattern="[a-zA-Z0-9]{1,15}$" title="enter your name correctly">
+                    <label for="name">First Name :</label>
+                    <input type="text" class="form-control" id="name" required placeholder="Enter First Name"
+                        name="name" pattern="[a-zA-Z0-9]{1,15}$" title="enter your name correctly">
+                </div>
+                <!-- last name -->
+                <div class="form-label">
+                    <label for="name">Last Name :</label>
+                    <input type="text" class="form-control" id="lname" required placeholder="Enter Last Name"
+                        name="lname" pattern="[a-zA-Z0-9]{1,15}$" title="enter your name correctly">
+                </div>
+                <!-- age -->
+                <div class="form-label">
+                    <label for="age">Age :</label>
+                    <input type="number" class="form-control" id="age" required placeholder="Enter your age" name="age"
+                        pattern="[18-150]{1}$" title="enter your age correctly">
                 </div>
                 <!-- email -->
                 <div class="form-label">
@@ -91,11 +148,19 @@
                     <input type="password" class="form-control" id="conpwd" required
                         title=" password must be in 8 characters" placeholder="Enter confirm password" name="con-pswd">
                 </div>
+                <!-- Phone number -->
+                <div class="form-label">
+                    <label for="ph_number">Phone number :</label>
+                    <input type="tel" class="form-control" id="ph-num" required
+                        title="Phone number should be withn in 10 numbers" placeholder="Enter phone number"
+                        name="ph_number">
+                </div>
                 <!-- log in  -->
                 <a href="./../pages/Log_in.html">Already log in?</a>
                 <!-- submit -->
-                <div class="d-grid d-md-block">
+                <div class=" d-sm-block ">
                     <button id="button" type="submit" class="btn btn-warning ">Submit</button>
+                    <button id="back_btn" type="button" class="btn">Back</button>
                 </div>
             </form>
         </div>
@@ -114,9 +179,12 @@
                 }
                 let match = false;
                 let name = document.getElementById("name").value.trim();
+                let lname = document.getElementById("lname").value.trim();
+                let age = document.getElementById("age").value.trim();
                 let email = document.getElementById("email").value.trim();
                 let password = document.getElementById("password").value.trim();
                 let conpassword = document.getElementById("conpwd").value.trim();
+                let ph_num = document.getElementById("ph-num").value.trim();
 
                 if (password != conpassword) {
                     alert("Invalid credentials")
@@ -135,9 +203,12 @@
                 else {
                     let sign_user_data = {
                         "user_name": name,
+                        "user_lastname": lname,
+                        "user_age": age,
                         "user_email": email.toLowerCase(),
                         "user_pass": password,
                         "user_conpwd": conpassword,
+                        "user_ph_num": ph_num,
                     }
 
                     array.push(sign_user_data);

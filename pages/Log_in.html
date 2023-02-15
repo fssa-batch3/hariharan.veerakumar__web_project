@@ -16,12 +16,32 @@
       color: rgb(224, 172, 105);
     }
 
+    input:valid {
+      border: 1px solid green;
+
+    }
+
+    select:valid {
+      border: 1px solid green;
+
+    }
+
+    input:invalid {
+      border: 1px solid red;
+
+    }
+
+    select:invalid {
+      border: 1px solid red;
+
+    }
+
     .div-1 {
       /* background-color: white; */
       border-radius: 20px;
       width: 35%;
       margin-left: 12%;
-      margin-top: 10%;
+      margin-top: 5%;
     }
 
     .div-1 h2 {
@@ -67,7 +87,7 @@
       width: 50%;
       height: 40px;
       margin-left: 25%;
-      margin-top: 20%;
+      margin-top: 15%;
       font-size: 90%;
       color: rgb(224, 172, 105);
       cursor: pointer;
@@ -110,7 +130,7 @@
       <div>
         <label for="password" class="form-label">Password:</label>
         <input type="password" class="form-control" id="password" placeholder="Enter your Password" required
-          pattern="[a-zA-Z0-9]{8,}$" title="password must be in 8 characters" />
+          pattern="[a-zA-Z0-9]{4,}$" title="password must be in 8 characters" />
       </div>
       <!-- middle -->
       <div class=" mid">
@@ -124,9 +144,8 @@
       <!-- button -->
       <div class="d-grid d-md-block">
         <button class="btn" type="submit">Submit</button>
-
-
       </div>
+      <div class="btn">Back</div>
     </div>
     <a href="../pages/Home_workout.html"></a>
   </form>
@@ -146,23 +165,21 @@
 
       for (let i = 0; i < array.length; i++) {
 
-        let specific_user = JSON.parse(localStorage.getItem("usersdetails"))
-        console.log(specific_user[i]);
+        // let specific_user = JSON.parse(localStorage.getItem("usersdetails"))
+        // console.log(specific_user[i]);
 
-        localStorage.setItem("details", JSON.stringify(specific_user[i])
+        localStorage.setItem("details", JSON.stringify(array[i].user_email)
         );
         if (email == array[i].user_email && password == array[i].user_pass) {
-          window.location.href = "../pages/Home_workout.html"
           ifMatch = true
           break;
         }
-        else {
-          ifMatch = false
-        }
+
       }
       // for ifMatch
       if (ifMatch == true) {
         alert("Success")
+        window.location.href = "../pages/Home_workout.html"
       }
       else {
         alert("Invalid Credentials")
