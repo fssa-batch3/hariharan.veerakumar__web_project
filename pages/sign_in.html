@@ -160,23 +160,20 @@
                 <!-- submit -->
                 <div class=" d-sm-block ">
                     <button id="button" type="submit" class="btn btn-warning ">Submit</button>
-                    <button id="back_btn" type="button" class="btn">Back</button>
+                    <a href="../index.html" id="back_btn" type="button" class="btn">Back</a>
                 </div>
             </form>
         </div>
 
+        <script src="../assets/js/CRUD.js"></script>
         <script>
 
             const signUp = document.getElementById("Form");
             signUp.addEventListener("submit", function (event) {
                 event.preventDefault();
-                let array = [];
 
 
 
-                if (localStorage.getItem("usersdetails") != null) {
-                    array = JSON.parse(localStorage.getItem("usersdetails"));
-                }
                 let match = false;
                 let name = document.getElementById("name").value.trim();
                 let lname = document.getElementById("lname").value.trim();
@@ -185,41 +182,32 @@
                 let password = document.getElementById("password").value.trim();
                 let conpassword = document.getElementById("conpwd").value.trim();
                 let ph_num = document.getElementById("ph-num").value.trim();
+                console.log("1")
 
+                let sign_user_data = {
+                    "user_name": name,
+                    "user_lastname": lname,
+                    "user_age": age,
+                    "user_email": email.toLowerCase(),
+                    "user_pass": password,
+                    "user_conpwd": conpassword,
+                    "user_ph_num": ph_num,
+                }
+                console.log("2");
                 if (password != conpassword) {
                     alert("Invalid credentials")
-
-                } else {
-                    for (let i = 0; i < array.length; i++) {
-                        if (array[i]["user_email"] === email) {
-                            match = true;
-
-                        }
-                    }
-                }
-                if (match === true) {
-                    alert("The Email is already exists")
                 }
                 else {
-                    let sign_user_data = {
-                        "user_name": name,
-                        "user_lastname": lname,
-                        "user_age": age,
-                        "user_email": email.toLowerCase(),
-                        "user_pass": password,
-                        "user_conpwd": conpassword,
-                        "user_ph_num": ph_num,
-                    }
+                    console.log("3");
+                    createUser(email, sign_user_data);
 
-                    array.push(sign_user_data);
-                    let arrayupdate = JSON.stringify(array);
-                    localStorage.setItem("usersdetails", arrayupdate);
-                    window.location.href = "../pages/Log_in.html";
 
                 }
 
 
-            })
+
+            }
+            )
 
 
 

@@ -129,8 +129,7 @@
 
 
         let firname = document.getElementById("fname");
-        let
-            = document.getElementById("lname");
+        let lastname = document.getElementById("lname");
         let age = document.getElementById("age");
         let mail = document.getElementById("email");
         let ph_num = document.getElementById("ph_number");
@@ -208,8 +207,7 @@
             }
         })
 
-
-
+        // For delete
         let user_delete = document.getElementById("delete");
         user_delete.addEventListener("click", function (event) {
             event.preventDefault()
@@ -217,15 +215,14 @@
             let Index = user_about.indexOf(user_obj)
 
             let msg = confirm("Are you sure want to delete your account")
-
             if (msg !== true) {
                 return
             }
             else {
                 user_about.splice(Index, 1)
-                console.log(user_about);
+                // console.log(user_about);
                 localStorage.setItem("usersdetails", JSON.stringify(user_about))
-                // location.reload()
+                location.reload()
                 window.location.href = "../pages/sign_in.html";
             }
         })
