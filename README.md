@@ -26,3 +26,16 @@ WIRE FRAME: https://drive.google.com/drive/folders/1JecmVnOTbWhEyjDatarYsVmdygHw
 
 
 SONAR CLOUD: https://sonarcloud.io/summary/overall?id=fssa-batch3_hariharan.veerakumar__web_project
+
+
+                      PRODUCTS CRUD
+                  
+     * Add product
+     * Product List
+     * Product Details
+     * Update Details
+     * Close or deactivate
+                      
+                      
+
+
