@@ -30,11 +30,11 @@ SONAR CLOUD: https://sonarcloud.io/summary/overall?id=fssa-batch3_hariharan.veer
 
                       PRODUCTS CRUD
                   
-     * Add product
-     * Product List
-     * Product Details
-     * Update Details
-     * Close or deactivate
+     * Add product (Working)
+     * Product List (Working)
+     * Product Details (Working)
+     * Update Details (Working)
+     * Close or deactivate (Working)
                       
                       
 
