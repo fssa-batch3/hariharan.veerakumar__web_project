@@ -26,3 +26,23 @@ WIRE FRAME: https://drive.google.com/drive/folders/1JecmVnOTbWhEyjDatarYsVmdygHw
 
 
 SONAR CLOUD: https://sonarcloud.io/summary/overall?id=fssa-batch3_hariharan.veerakumar__web_project
+
+
+
+
+CRUD For User signing page:
+=> Create user account [completed]
+=> Read User Data For Profile Page [completed]
+=> Update user details For Edit Page [completed]
+=> Delete user details For deactivate [completed]
+
+
+CRUD For User Features page:
+=> Create products card/list [working]
+=> Read Product Data For card [working]
+=> Update user details For card [working]
+=> Deactivate Product details For Card [working]
+                      
+                      
+
+
