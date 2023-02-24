@@ -31,9 +31,20 @@ SONAR CLOUD: https://sonarcloud.io/summary/overall?id=fssa-batch3_hariharan.veer
 
 
 CRUD For User signing page:
+
+
+
 => Create user account [completed]
+
+
+
 => Read User Data For Profile Page [completed]
+
+
 => Update user details For Edit Page [completed]
+
+
+
 => Delete user details For deactivate [completed]
 
 
