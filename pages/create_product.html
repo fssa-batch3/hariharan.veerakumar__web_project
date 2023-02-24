@@ -12,7 +12,7 @@
 
 <body>
     <br>
-    <form>
+    <form id="form">
         <div class="mb-3 form-control container">
 
             <!-- div 1 -->
@@ -45,9 +45,9 @@
                 <input id="price" type="text" class="form-control" required />
             </div>
             <br>
-
+            <!-- Button -->
             <div class="d-grid container">
-                <button class="btn  btn-success" type="button" onclick="submitForm()">Submit</button>
+                <button class="btn  btn-success" type="submit">Submit</button>
 
 
             </div>
@@ -57,12 +57,34 @@
     </form>
 
 
+    <!-- JAVA SCRIPT -->
 
+    <!-- <script src="../assets/js/Product_CRUD.js"></script> -->
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        const form = document.getElementById("form")
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let image = document.getElementById("photo").value;
+            let alt = document.getElementById("alter").value;
+            let p_name = document.getElementById("name").value;
+            let p_offer = document.getElementById("offer").value;
+            let p_price = document.getElementById("price").value;
+
+            let product_object = {
+                "image": image,
+                "alt": alt,
+                "name": p_name,
+                "dis_price": p_offer,
+                "price": p_price,
+            }
+
+            createProduct(product_object);
+
+
+        })
+
 
     </script>
 </body>

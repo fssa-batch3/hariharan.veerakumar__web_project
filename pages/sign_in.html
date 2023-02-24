@@ -27,8 +27,11 @@
 
         <style>
             body {
-                background-color: black;
+                background-image: url(../assets/images/Sign_up_background.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
                 color: aqua;
+
             }
 
             input:valid {
@@ -80,7 +83,7 @@
             }
 
             .container {
-                margin-left: 23%;
+                margin-left: 5%;
                 margin-top: 5%;
             }
 
@@ -140,7 +143,7 @@
                 <div class=" form-label">
                     <label for="pwd">Password :</label>
                     <input type="password" class="form-control" id="password" required placeholder="Enter password"
-                        pattern="[a-zA-Z0-9]{1,15}$"
+                        pattern="[a-zA-Z0-9]{8,15}$"
                         title=" password must be in 8 characters and choose strong password" name="pswd">
                 </div>
                 <!--re password -->
@@ -170,13 +173,15 @@
         <script src="../assets/js/CRUD.js"></script>
         <script>
 
+
+
             const signUp = document.getElementById("Form");
             signUp.addEventListener("submit", function (event) {
                 event.preventDefault();
 
 
-
                 let match = false;
+                let id = Date.now();
                 let name = document.getElementById("name").value.trim();
                 let lname = document.getElementById("lname").value.trim();
                 let age = document.getElementById("age").value.trim();
@@ -187,6 +192,7 @@
 
 
                 let sign_user_data = {
+                    "id": id,
                     "user_name": name,
                     "user_lastname": lname,
                     "user_age": age,
@@ -194,6 +200,7 @@
                     "user_pass": password,
                     "user_conpwd": conpassword,
                     "user_ph_num": ph_num,
+
                 }
 
                 if (password != conpassword) {
