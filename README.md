@@ -49,9 +49,22 @@ CRUD For User signing page:
 
 
 CRUD For User Features page:
+
+
+
 => Create products card/list [completed]
+
+
+
 => Read Product Data For card [completed]
+
+
+
+
 => Update user details For card [working]
+
+
+
 => Deactivate Product details For Card [working]
                       
                       
