@@ -3,7 +3,7 @@
   margin-top: 50px;
 }
 .cart-btn {
-  margin-left: 980px;
+  margin-left: 80%;
   height: 35px;
   width: 130px;
   font-family: monospace;
@@ -21,10 +21,10 @@
   transform: scale(1.1);
 }
 h1 {
-  font-size: 50px;
+  /* font-size: 50px; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  padding-left: 360px;
+  padding-left: 35%;
 }
 .vedio {
   height: 700px;
@@ -38,19 +38,19 @@ h1 {
 .whole-div {
   margin-top: 10%;
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 20px;
+  grid-template-columns: 33% 33% 33%;
+  gap: 10px;
 }
 .sale-box {
   border: 1px solid aqua;
-  height: 500px;
-  width: 370px;
+  height: 100%;
+  width: 97%;
   border-radius: 10px;
   margin-bottom: 30px;
 }
 
 .sale-box img {
-  width: 330px;
+  width: 88%;
   height: 350px;
   border-radius: 5px 30px;
   margin-left: 20px;
@@ -58,15 +58,17 @@ h1 {
   border: 1px solid white;
 }
 .price {
+  display: flex;
+  justify-content: space-between;
   font-family: sans-serif;
-  width: 80%;
+  width: 65%;
   font-size: 20px;
-  margin-top: -10px;
+  margin-top: -5px;
   margin-left: 25px;
 }
 .name {
   font-family: monospace;
-  font-size: 30px;
+  font-size: 160%;
   width: fit-content;
   margin-left: 50px;
   margin-top: 5px;
@@ -75,12 +77,12 @@ h1 {
   text-decoration: none;
   color: aqua;
   background-color: black;
-  padding: 1.5%;
+  padding: 2.5%;
   border: 2px solid aqua;
   height: 30px;
   border-radius: 5px 20px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 100%;
   width: 120px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -96,12 +98,12 @@ h1 {
   text-decoration: none;
   color: black;
   background-color: white;
-  padding: 1%;
-  margin-left: 15%;
+  padding: 2.5%;
+  margin-left: 20%;
   cursor: pointer;
   height: 30px;
-  font-size: 20px;
-  width: 120px;
+  font-size: 100%;
+  width: 100%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border-radius: 5px;
@@ -110,4 +112,12 @@ h1 {
 .btn-2:hover {
   transform: scale(1.1);
   color: black;
+}
+.cr_btn{
+ padding: 0.8%;
+ font-size: 100%;
+ margin-left: 80%;
+}
+a{
+  text-decoration: none;
 }
