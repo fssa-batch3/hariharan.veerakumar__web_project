@@ -61,7 +61,7 @@ CRUD For User Features page:
 
 
 
-=> Update user details For card [working]
+=> Update user details For card [completed]
 
 
 
