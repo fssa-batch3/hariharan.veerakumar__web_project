@@ -16,7 +16,6 @@ try {
         if (array[i]["user_email"] === email) {
             match = true;
             break;
-            
         }
     }
     // if the email already exists throw an alert

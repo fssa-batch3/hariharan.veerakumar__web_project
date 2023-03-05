@@ -13,7 +13,9 @@
 
     <style>
         body {
-            background-color: black;
+            background-image: url(../assets/images/Profile_background.png);
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
             color: aqua;
         }
 
@@ -27,6 +29,7 @@
         }
 
         #button {
+            font-size: 100%;
             margin-top: 5%;
             margin-left: 40%;
             width: 20%;
@@ -34,10 +37,17 @@
         }
 
         #delete {
+            font-size: 100%;
             margin-top: 5%;
             width: 20%;
             margin-left: 40%;
             font-size: 100%;
+        }
+
+        .form-control {
+            background-color: transparent;
+            color: #ffffff;
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -64,7 +74,7 @@
             <div class="row">
                 <div class="col">
                     <label for="email" class="form_label">Email :</label>
-                    <input type="email" id="email" class="form-control" name="email" disabled>
+                    <input type="email" id="email" class="form-control" name="email" readonly>
                 </div>
                 <!-- password -->
                 <div class="col">
@@ -145,7 +155,7 @@
 
 
 
-
+        // For edit
         let pro_info = document.getElementById("form");
         pro_info.addEventListener("submit", function (event) {
             event.preventDefault();
@@ -169,8 +179,9 @@
                 user_address,
                 per_info,
             };
+
             let checked_obj = Object.assign(user_obj, user_object)
-            // console.log(checked_obj);
+            console.log(checked_obj);
 
             let index = user_about.indexOf(user_obj);
             // console.log(index);
@@ -182,7 +193,7 @@
 
             Notify.success("Successfully Changed")
 
-            // location.reload()
+
         })
         let check = true;
         let present_details = user_about.find(function (user) {
@@ -224,7 +235,6 @@
                 user_about.splice(Index, 1)
                 // console.log(user_about);
                 localStorage.setItem("usersdetails", JSON.stringify(user_about))
-                // location.reload()
                 window.location.href = "../pages/sign_in.html";
             }
         })

@@ -48,84 +48,84 @@
 
         let cardList = [
             // index = 0
-            {
-                image: "./../assets/images/dumbbells.jpg",
-                name: "Dumb Bells",
-                alt: "dumbbells image",
-                price: "          Rs.999",
-                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
+            // {
+            //     image: "./../assets/images/dumbbells.jpg",
+            //     name: "Dumb Bells",
+            //     alt: "dumbbells image",
+            //     price: "          Rs.999",
+            //     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
 
-            },
+            // },
             // index = 1
-            {
-                image: "./../assets/images/barbells_image.jpg",
-                name: "Bar Bells",
-                alt: "Bar Bells image",
-                price: "          Rs.1299",
-                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
+            // {
+            //     image: "./../assets/images/barbells_image.jpg",
+            //     name: "Bar Bells",
+            //     alt: "Bar Bells image",
+            //     price: "          Rs.1299",
+            //     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
 
-            },
+            // },
             // index = 2
-            {
-                image: "./../assets/images/INCLINE_BENCH_PRESS.jpg",
-                name: "Incline Bench Press",
-                alt: "incline bench press image",
-                price: "          Rs.12999",
-                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
+            // {
+            //     image: "./../assets/images/INCLINE_BENCH_PRESS.jpg",
+            //     name: "Incline Bench Press",
+            //     alt: "incline bench press image",
+            //     price: "          Rs.12999",
+            //     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
 
-            },
+            // },
             // index = 3
-            {
-                image: ".././assets/images/CABLES-AND-PULLEYS.png",
-                name: "Cables and Pulleys",
-                alt: "cables and pulleys image",
-                price: "          Rs.12999",
-                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
+            // {
+            //     image: ".././assets/images/CABLES-AND-PULLEYS.png",
+            //     name: "Cables and Pulleys",
+            //     alt: "cables and pulleys image",
+            //     price: "          Rs.12999",
+            //     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
 
-            },
+            // },
             // index = 4
-            {
-                image: ".././assets/images/PULLUP-BAR.png",
-                name: "Pull Up Bar",
-                alt: "pull up bar image",
-                price: "          Rs.3999",
-                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
+            // {
+            //     image: ".././assets/images/PULLUP-BAR.png",
+            //     name: "Pull Up Bar",
+            //     alt: "pull up bar image",
+            //     price: "          Rs.3999",
+            //     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
 
-            },
+            // },
             // index = 5
-            {
-                image: ".././assets/images/LEG-EXTENSION-MACHINE.png",
-                name: "Leg  Machine",
-                alt: "leg machine image",
-                price: "          Rs.8999",
-                desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
+            // {
+            //     image: ".././assets/images/LEG-EXTENSION-MACHINE.png",
+            //     name: "Leg  Machine",
+            //     alt: "leg machine image",
+            //     price: "          Rs.8999",
+            //     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias earum quos nesciunt voluptatum consequuntur, labore nisi voluptatem minus enim? Adipisci deleniti saepe excepturi quidem voluptatem aut quibusdam blanditiis eaque culpa?",
 
-            },
+            // },
         ]
 
 
-        const url = window.location.search;
+        let url = window.location.search;
 
-        const urlParams = new URLSearchParams(url);
+        let urlParams = new URLSearchParams(url);
 
-        const username = urlParams.get("name")
+        let username = urlParams.get("name")
 
         console.log(username);
 
 
 
-        const user = cardList.find(
-            function (userobj) {
-
-                const name = userobj["name"];
-
-                if (username === name) {
-                    return true;
-                } else {
-                    return false;
-                }
+        const user = cardList.find(function (userObj) {
+            const name = userObj["name"]
+            if (username === name) {
+                return true;
+                console.log("2");
+            } else {
+                return false;
+                console.log("3");
             }
+        }
         )
+        console.log(user)
 
 
 
@@ -143,25 +143,19 @@
 
 
 
+        // const user_avatar = document.getElementById("avatar");
 
-        const user_avatar = document.getElementById("avatar");
-
-        const username_h1 = document.getElementById("username");
-
-
-        const user_price = document.getElementById("price");
+        // const username_h1 = document.getElementById("username");
 
 
-        const user_description = document.getElementById("description");
+        // const user_price = document.getElementById("price");
 
 
+        // const user_description = document.getElementById("description");
 
-        let cardList_down = JSON.parse(localStorage.getItem("cardList"))
+        // let cardList_down = JSON.parse(localStorage.getItem("cardList"))
 
-        console.log(cardList_down);
-
-
-
+        // console.log(cardList_down);
 
         // Json
 
@@ -179,11 +173,12 @@
 
         details_div = document.createElement("div");
         details_div.setAttribute("class", "row ");
-        console.log(details_div)
+        // console.log(details_div)
 
 
         left_div = document.createElement("div");
-        left_div.setAttribute("class", "container col-sm-4");
+        left_div.setAttribute("class", "container");
+        left_div.setAttribute("class", "col-sm-4")
         details_div.append(left_div);
 
         image = document.createElement("img");
@@ -226,7 +221,7 @@
 
         document.querySelector("section").append(details_div)
 
-        console.log(details_div)
+        // console.log(details_div)
 
 
 
