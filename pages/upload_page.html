@@ -12,12 +12,24 @@
         #edit_form {
             padding-top: 5%;
         }
+
+        h1 {
+            margin-left: 40%;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 30%;
+            margin-left: 30%;
+        }
     </style>
 </head>
 
 <body>
     <form id="edit_form">
-        <div class="mb-3 form-control container">
+        <div class="form-control container">
+            <h1>Edit product</h1>
 
             <!-- div 1 -->
             <div>
@@ -50,16 +62,27 @@
                 <input id="price" type="text" class="form-control" required />
             </div>
             <br>
+            <!-- div 6 -->
+            <div>
+                <label for="text" class="form-label"> About</label>
+                <textarea class="form-control" rows="8" id="about" type="text" required></textarea>
+
+            </div>
+            <br>
+
             <!-- Button -->
-            <div class="d-grid container">
+            <div class="buttons">
                 <button id="edit" class=" btn btn-primary" type="submit">Change</button>
+                <button id="delete" class="btn btn-danger" type="click">Delete</button>
             </div>
         </div>
+
     </form>
 
 
 
     <script src="../assets/js/update_product.js"></script>
+
 
 </body>
 

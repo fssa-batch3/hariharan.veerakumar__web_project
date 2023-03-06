@@ -9,6 +9,7 @@
      let p_name = document.getElementById("name").value;
      let p_offer = document.getElementById("offer").value;
      let p_price = document.getElementById("price").value;
+     let p_about = document.getElementById("about").value;
      
 
      let product_object = {
@@ -18,6 +19,7 @@
          "name": p_name,
          "dis_price": p_offer,
          "price": p_price,
+         "about" : p_about,
      }
 
    

@@ -131,9 +131,11 @@ a{
 #update{
   color: #ffffff;
   background-color:#1E90FF;
+  font-size: 100%;
   padding: 7%;
+  padding-left: 16%;
   border-radius: 8px;
-  width: 30%;
+  width: 50%;
 }
 #update:hover{
   color: #ffffff;

@@ -14,17 +14,20 @@
   let cart_a;
   let crud_div;
   let update_a;
-  let delete_a;
+  // let delete_a;
 
   let create_card = JSON.parse(localStorage.getItem("card"));
   // console.log(create_card);
 
 
+  // new array
 for(let i = 0; i < create_card.length; i++){
   array.push(create_card[i]);
   // console.log(array);
 }
 
+
+// Old array
   for (let i = 0; i < array.length; i++) {
 
     let user = array[i]
@@ -54,7 +57,7 @@ for(let i = 0; i < create_card.length; i++){
     rupees.prepend(dis_money)
 
     buy_a = document.createElement("a")
-    buy_a.setAttribute("href", "./../pages/details.html?name=" + user["name"]);
+    buy_a.setAttribute("href", "./../pages/details.html?id=" + array[i]["id"]);
     buy_a.setAttribute("class", "btn-1")
     buy_a.innerText = "Buy now"
     card_div.append(buy_a)
@@ -75,22 +78,15 @@ for(let i = 0; i < create_card.length; i++){
     update_a.innerText = "Edit"
     crud_div.append(update_a)
 
-    delete_btn = document.createElement("button")
-    delete_btn.setAttribute("id" , "delete")
-    delete_btn.innerText = "Delete"
-    crud_div.append(delete_btn)
+    // delete_btn = document.createElement("button")
+    // delete_btn.setAttribute("id" , "delete")
+    // delete_btn.innerText = "Delete"
+    // crud_div.append(delete_btn)
 
     document.querySelector(".whole-div.container-fluid").append(card_div);
   }
 
 
-  // For delete
-  let delete_product = document.getElementById("delete");
-  delete_product.addEventListener("click" , function (event) {
-    event.preventDefault();
 
-  
-    
-  })
  
  
