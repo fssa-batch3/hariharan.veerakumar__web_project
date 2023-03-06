@@ -65,7 +65,7 @@ CRUD For User Features page:
 
 
 
-=> Deactivate Product details For Card [working]
+=> Deactivate Product details For Card [completed]
                       
                       
 
