@@ -48,3 +48,13 @@
   margin-top: 18px;
   margin-left: 20px;
 }
+#delete_music{
+  display: flex;
+  text-decoration: none;
+  margin-top: 1%;
+  justify-content: end;
+}
+.row{
+  display: flex;
+  width: 88%;
+}

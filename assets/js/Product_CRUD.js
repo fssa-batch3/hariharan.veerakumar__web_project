@@ -2,7 +2,7 @@
 // creating an array
   let array = [];
 
-  // localStorage.setItem("card", JSON.stringify(array)); 
+
 
   // card
   let card_div;
@@ -86,7 +86,7 @@ for(let i = 0; i < create_card.length; i++){
     document.querySelector(".whole-div.container-fluid").append(card_div);
   }
 
-
+  localStorage.setItem("card", JSON.stringify(array)); 
 
  
  

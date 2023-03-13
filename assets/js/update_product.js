@@ -78,7 +78,6 @@ let present_obj = array.find(function (product) {
     let check_id = product["id"]
     if (get_id == check_id) {
 
-
         let imageurl1 = document.getElementById("photo");
         let alt1 = document.getElementById("alter");
         let name1 = document.getElementById("name");
@@ -92,10 +91,7 @@ let present_obj = array.find(function (product) {
         offer1.value = prod_obj["dis_price"];
         price1.value = prod_obj["price"];
         about1.value = prod_obj["about"];
-
-
     }
-
 })
 
 
@@ -116,6 +112,5 @@ else {
     // console.log(array);
     localStorage.setItem("card", JSON.stringify(array))
     window.location.href = "../pages/Sales.html";
-
 }
 })

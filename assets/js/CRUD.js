@@ -23,7 +23,7 @@ try {
         // alert("The Email is already exists")
         Notify.error("The Email is already exists")
         throw new Error("The Email is already exists")
-       
+    
     }
     // If it a new user store the data in DB 
     else {
