@@ -29,8 +29,9 @@
        //  checking array is null or not
         if (localStorage.getItem("card") != null){
          array = JSON.parse(localStorage.getItem("card"))
+         array.push(product_object);
        }
-       array.push(product_object);
+   
        localStorage.setItem("card", JSON.stringify(array));
 
        alert ("Successfully added")

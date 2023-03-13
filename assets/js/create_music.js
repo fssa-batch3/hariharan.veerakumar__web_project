@@ -15,9 +15,6 @@ Form.addEventListener("submit", function(event){
         "name" : s_name,
         "url" : s_url,
     }
-
-    let musiccard = [];
-
     let m_array = JSON.parse(localStorage.getItem("musicCard"));
     // console.log(m_array);
 
@@ -25,14 +22,12 @@ Form.addEventListener("submit", function(event){
     // checking the array is empty or not
     if(localStorage.getItem("musicCard") != null){
         m_array =  JSON.parse(localStorage.getItem("musicCard"))
-        // console.log(m_array);
-
-
+        m_array.push(song_object);
     }
-    // m_array.push(song_object);
+    
     localStorage.setItem("musicCard", JSON.stringify(m_array))
 
 
     alert("Successfully added")
-    // window.location.href= "../pages/music.html";
+    window.location.href= "../pages/music.html";
 })
