@@ -21,6 +21,7 @@ for(let i = 0; i < create_music.length; i++){
   let right_div;
   let audio_tag;
   let audio_source;
+  let edit_btn;
 
 
   
@@ -61,6 +62,12 @@ for(let i = 0; i < create_music.length; i++){
     audio_source.setAttribute("src", "../assets/audio/Ethir-Neechal.mp3")
     audio_source.setAttribute("type", "audio/mpeg")
     audio_tag.append(audio_source)
+
+    edit_btn = document.createElement("a");
+    edit_btn.setAttribute("href", "../pages/update_music.html?id=" + musiccard[i]["id"])
+    edit_btn.setAttribute("class","btn-1")
+    edit_btn.innerText = "Edit"
+    right_div.append(edit_btn)
 
     document.querySelector(".sec-1.container").append(music_card);
   }

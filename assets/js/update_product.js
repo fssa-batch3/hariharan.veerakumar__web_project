@@ -102,7 +102,6 @@ let prod_delete = document.getElementById("delete")
 prod_delete.addEventListener("click" , function(event){
 event.preventDefault();
 
-
 let Index = array.indexOf(prod_obj)
 
 let msg = confirm("Are you sure want to delete this product")

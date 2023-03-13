@@ -47,6 +47,7 @@
   vertical-align: top;
   margin-top: 18px;
   margin-left: 20px;
+  width: 75%;
 }
 #delete_music{
   display: flex;
@@ -57,4 +58,20 @@
 .row{
   display: flex;
   width: 88%;
+}
+.btn-1{
+  background-color: #0dcaf0;
+  color: #ffff;
+  border-radius: 5px;
+  padding: 1.5%;
+  font-size: 100%;
+  margin-left: 20%;
+  width: 10px;
+}
+.btn-1:hover{
+  opacity: 0.9;
+  color: #ffff;
+}
+a{
+  text-decoration: none;
 }
