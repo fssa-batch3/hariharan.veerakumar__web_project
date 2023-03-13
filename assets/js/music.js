@@ -1,4 +1,14 @@
-let musiccard = []
+// Creating an empty array
+
+//   getting data from LS
+let create_music = JSON.parse(localStorage.getItem("musicCard"))
+//   console.log(create_music);
+
+//   new array
+for(let i = 0; i < create_music.length; i++){
+    musiccard.push(create_music[i]);
+    // console.log(musiccard);
+  }
 
 
   // card
@@ -10,15 +20,7 @@ let musiccard = []
   let audio_tag;
   let audio_source;
 
-//   getting data from LS
-  let create_music = JSON.parse(localStorage.getItem("musicCard"))
-//   console.log(create_music);
 
-//   new array
-for(let i = 0; i < create_music.length; i++){
-    musiccard.push(create_music[i]);
-    // console.log(musiccard);
-  }
   
 
   // Including for loop

@@ -7,7 +7,7 @@ Form.addEventListener("submit", function(event){
     let s_alt = document.getElementById("alter").value;
     let s_name = document.getElementById("name").value;
     let s_url = document.getElementById("song").value;
-    
+
     let song_object = {
         "id" : s_id,
         "image" : s_image,
@@ -16,19 +16,22 @@ Form.addEventListener("submit", function(event){
         "url" : s_url,
     }
 
+    let musiccard = [];
+
     let m_array = JSON.parse(localStorage.getItem("musicCard"));
-    console.log(m_array);
+    // console.log(m_array);
 
 
     // checking the array is empty or not
     if(localStorage.getItem("musicCard") != null){
         m_array =  JSON.parse(localStorage.getItem("musicCard"))
-        m_array.push(song_object);
+        // console.log(m_array);
+
 
     }
-    m_array.push(song_object);
-
+    // m_array.push(song_object);
     localStorage.setItem("musicCard", JSON.stringify(m_array))
+
 
     alert("Successfully added")
     // window.location.href= "../pages/music.html";

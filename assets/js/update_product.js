@@ -7,6 +7,7 @@ const url_params = new URLSearchParams(url);
 const get_id = url_params.get("id");
 // console.log(get_id);
 
+// Getting the corresponding object through id
 let prod_obj = array.find(function (product) {
     let check_id = product["id"]
     if (get_id == check_id) {
@@ -15,6 +16,7 @@ let prod_obj = array.find(function (product) {
 
 })
 // console.log(prod_obj);
+
 let imageurl = document.getElementById("photo");
 let alt = document.getElementById("alter");
 let name = document.getElementById("name");
