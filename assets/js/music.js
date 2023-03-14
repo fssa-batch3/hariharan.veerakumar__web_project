@@ -59,7 +59,7 @@ for(let i = 0; i < create_music.length; i++){
     right_div.append(audio_tag);
 
     audio_source = document.createElement("source");
-    audio_source.setAttribute("src", "../assets/audio/Ethir-Neechal.mp3")
+    audio_source.setAttribute("src", musiccard[i]["url"])
     audio_source.setAttribute("type", "audio/mpeg")
     audio_tag.append(audio_source)
 
