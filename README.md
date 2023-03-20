@@ -48,7 +48,7 @@ CRUD For User signing page:
 => Delete user details For deactivate [completed]
 
 
-CRUD For User Features page:
+CRUD For Product Features page:
 
 
 
