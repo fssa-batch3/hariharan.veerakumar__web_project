@@ -71,3 +71,22 @@ edit.addEventListener("submit", function (event) {
     window.location.href = "../pages/outfit.html";
 
 })
+
+// For delete
+let prod_delete = document.getElementById("delete")
+prod_delete.addEventListener("click" , function(event){
+event.preventDefault();
+
+let Index = array.indexOf(prod_obj)
+
+let msg = confirm("Are you sure want to delete this product")
+if (msg !== true) {
+    return
+}
+else {
+    array.splice(Index, 1)
+    // console.log(array);
+    localStorage.setItem("top_card", JSON.stringify(array))
+    window.location.href = "../pages/outfit.html";
+}
+})
