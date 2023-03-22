@@ -35,7 +35,6 @@ let edit = document.getElementById("edit_form");
 edit.addEventListener("submit", function (event) {
     event.preventDefault();
 
-
     let prouduct_image = document.getElementById("photo").value;
     let product_alt = document.getElementById("alter").value;
     let product_name = document.getElementById("name").value;
@@ -52,25 +51,25 @@ edit.addEventListener("submit", function (event) {
         price: product_price,
         about: product_about,
     };
+  
 
-    let checked_obj = Object.assign(prod_obj, product_object)
-    console.log(checked_obj)
-
-
-    let index = array.indexOf(prod_obj)
-    console.log(index)
-
-    array[index] = checked_obj;
-
+    updateProduct(array,prod_obj,product_object)
 
     localStorage.setItem("top_card", JSON.stringify(array))
-    console.log(array);
 
     alert("Successfully changed")
 
     window.location.href = "../pages/outfit.html";
 
 })
+
+function updateProduct(ar, obj_1, obj_2) {
+    let checked_obj = Object.assign(obj_1, obj_2);
+   
+    let index = ar.indexOf(obj_1);
+
+    ar[index] = checked_obj;
+}
 
 // For delete
 let prod_delete = document.getElementById("delete")

@@ -44,7 +44,7 @@
 
 
         let array = JSON.parse(localStorage.getItem("top_card"))
-        console.log(array);
+        // console.log(array);
 
         let url = window.location.search;
         let urlParams = new URLSearchParams(url);
@@ -58,14 +58,11 @@
             }
         })
 
-        console.log(product_details);
-
 
         let photo = document.getElementById("avatar");
         let name = document.getElementById("username");
         let description = document.getElementById("description");
         let price = document.getElementById("price");
-
 
         photo.setAttribute("src", product_details["image"])
         name.innerText = product_details["name"]

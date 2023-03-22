@@ -22,16 +22,23 @@
          "about" : p_about,
      }
      let top_array = JSON.parse(localStorage.getItem("top_card"));
-     console.log(top_array);
 
-       //  checking array is null or not
-        if (localStorage.getItem("top_card") != null){
-            top_array = JSON.parse(localStorage.getItem("top_card"))
-            top_array.push(product_object); 
-       }
-       localStorage.setItem("top_card", JSON.stringify(top_array));
-       console.log(top_array);
+     createProduct(product_object,top_array,"top_card")
 
-       alert ("Successfully added")
-       window.location.href = "../pages/outfit.html";
     })
+    
+
+    function createProduct(object, arr, LS_array) {
+     
+          //  checking array is null or not
+           if (localStorage.getItem(LS_array) != null){
+               arr = JSON.parse(localStorage.getItem(LS_array))
+               arr.push(object); 
+          }
+          localStorage.setItem(LS_array, JSON.stringify(arr));
+         
+   
+          alert ("Successfully added")
+          window.location.href = "../pages/outfit.html";
+        
+    }
