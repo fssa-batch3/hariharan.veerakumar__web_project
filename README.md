@@ -30,6 +30,10 @@ SONAR CLOUD: https://sonarcloud.io/summary/overall?id=fssa-batch3_hariharan.veer
 
 
 
+
+
+
+
 CRUD For User signing page:
 
 
@@ -61,11 +65,55 @@ CRUD For User Features page:
 
 
 
-=> Update user details For card [completed]
+=> Update products details For card [completed]
 
 
 
 => Deactivate Product details For Card [completed]
+
+
+CRUD For User Music page:
+
+
+
+=> Create music card/list [completed]
+
+
+
+=> Read music Data For card [completed]
+
+
+
+
+=> Update music details For card [completed]
+
+
+
+=> Deactivate music details For Card [completed]
+
+
+
+
+CRUD For User top_outfit page:
+
+
+
+=> Create top_outfit card/list [completed]
+
+
+
+=> Read top_outfit Data For card [completed]
+
+
+
+
+=> Update top_outfit details For card [completed]
+
+
+
+=> Deactivate top_outfit details For Card [completed]
+
+
                       
                       
 
