@@ -61,11 +61,37 @@ CRUD For User Features page:
 
 
 
-=> Update user details For card [completed]
+=> Update products details For card [completed]
 
 
 
 => Deactivate Product details For Card [completed]
+
+
+CRUD For User Music page:
+
+
+
+=> Create music card/list [completed]
+
+
+
+=> Read music Data For card [completed]
+
+
+
+
+=> Update music details For card [completed]
+
+
+
+=> Deactivate music details For Card [completed]
+
+
+
+
+
+
                       
                       
 
