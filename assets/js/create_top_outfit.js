@@ -22,6 +22,7 @@
          "about" : p_about,
      }
      let top_array = JSON.parse(localStorage.getItem("top_card"));
+     
 
      createProduct(product_object,top_array,"top_card")
 
