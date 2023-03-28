@@ -115,14 +115,25 @@ CRUD For User top_outfit page:
   
 
 
-  Create an account
-Scenario 1: Successfully create an account
-Steps:
-Navigate to the registration page.
-Enter the required information such as name, email, and password.
-Click the "Create Account" button.
-Expected Result:
-The user is redirected to the login page.
+   Buyer
+
+    Create an account
+- Scenario 1: Successfully create an account
+    - Steps:
+        1. Navigate to the registration page.
+        2. Enter the required information such as name, email, and password.
+        3. Click the "Create Account" button.
+    - Expected Result:
+        - The user is redirected to the login page.
+
+   Create an account
+- Scenario 1: Successfully login in to account
+    - Steps:
+        1. Navigate to the login page.
+        2. Enter the required information such as email, and password.
+        3. Click the "login" button.
+    - Expected Result:
+        - The user is redirected to the user profile page.
 
                       
                       
