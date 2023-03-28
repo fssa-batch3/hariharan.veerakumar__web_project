@@ -135,6 +135,16 @@ CRUD For User top_outfit page:
     - Expected Result:
         - The user is redirected to the user profile page.
 
+
+    View products/items
+- Scenario 1: Successfully view music
+    - Steps:
+        1. Log in as a buyer.
+        2. Navigate to the music listing page.
+        3. View the list of available music.
+    - Expected Result:
+        - The user can view the list of available music.
+
                       
                       
 
