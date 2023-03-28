@@ -117,7 +117,7 @@ CRUD For User top_outfit page:
 
    Buyer
 
- ###Create an account
+ ### Create an account
 - Scenario 1: Successfully create an account
     - Steps:
         1. Navigate to the registration page.
@@ -127,7 +127,7 @@ CRUD For User top_outfit page:
         - The user is redirected to the login page.
        
 
-###Create an account
+### Create an account
 - Scenario 1: Successfully login in to account
     - Steps:
         1. Navigate to the login page.
@@ -137,7 +137,7 @@ CRUD For User top_outfit page:
         - The user is redirected to the user profile page.
 
 
- ###View music
+ ### View music
 - Scenario 1: Successfully view music
     - Steps:
         1. Log in as a buyer.
