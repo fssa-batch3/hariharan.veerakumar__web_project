@@ -122,7 +122,7 @@ CRUD For User top_outfit page:
     - Steps:
         1. Navigate to the registration page.
         2. Enter the required information such as name, email, and password.
-        3. Click the "Create Account" button.
+        3. Click the "Sign up" button.
     - Expected Result:
         - The user is redirected to the login page.
        
@@ -145,7 +145,38 @@ CRUD For User top_outfit page:
         3. View the list of available music.
     - Expected Result:
         - The user can view the list of available music.
+        
+### View products/items
+- Scenario 1: Successfully view products/items
+    - Steps:
+        1. Log in as a buyer.
+        2. Navigate to the product listing page.
+        3. View the list of available products/items.
+    - Expected Result:
+        - The user can view the list of available products/items.
 
+### View product/item details
+- Scenario 1: Successfully view product/item details
+    - Steps:
+        1. Log in as a buyer.
+        2. Navigate to the product listing page.
+        3. Select a product/item to view its details.
+    - Expected Result:
+        - The user can view the details of the selected product/item.
+
+### Buy a product/item
+- Scenario 1: Successfully purchase a product/item
+    - Steps:
+        1. Log in as a buyer.
+        2. Navigate to the product listing page.
+        3. Select a product/item to view its details.
+        4. Click the "Buy Now" button.
+        5. Confirm the shipping address and payment method.
+        6. Click the "Place Order" button.
+    - Expected Result:
+        - The user is redirected to the order confirmation page.
+        - An order confirmation email is sent to the user's email address.
+        - The product/item's stock is reduced by the purchased quantity.
                       
                       
 
