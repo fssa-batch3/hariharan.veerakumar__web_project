@@ -125,6 +125,7 @@ CRUD For User top_outfit page:
         3. Click the "Create Account" button.
     - Expected Result:
         - The user is redirected to the login page.
+       
 
    Create an account
 - Scenario 1: Successfully login in to account
@@ -136,7 +137,7 @@ CRUD For User top_outfit page:
         - The user is redirected to the user profile page.
 
 
-    View products/items
+     View products/items
 - Scenario 1: Successfully view music
     - Steps:
         1. Log in as a buyer.
