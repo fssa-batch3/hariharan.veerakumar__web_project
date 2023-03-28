@@ -137,7 +137,7 @@ CRUD For User top_outfit page:
         - The user is redirected to the user profile page.
 
 
-     View products/items
+     **View products/items**
 - Scenario 1: Successfully view music
     - Steps:
         1. Log in as a buyer.
