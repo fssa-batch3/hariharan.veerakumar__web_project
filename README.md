@@ -115,7 +115,7 @@ CRUD For User top_outfit page:
   
 
 
-   Buyer
+  ## Buyer
 
  ### Create an account
 - Scenario 1: Successfully create an account
