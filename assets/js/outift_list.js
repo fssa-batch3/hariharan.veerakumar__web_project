@@ -17,9 +17,8 @@ let top_outfit = [
     //   price: "          Rs.499",
 
     // },
-    // index = 2
 
-    // index = 3
+    // index = 2
     // {
     //   image: "./../assets/images/Sleeve_less.jpg",
     //   name: "Sleeve less T-shirt",
@@ -28,7 +27,7 @@ let top_outfit = [
     //   price: "          Rs.399",
 
     // },
-    // index = 4
+    // index = 3
     // {
     //   image: "./../assets/images/blue_t-shirt.jpg",
     //   name: "T-shirt",
@@ -37,7 +36,7 @@ let top_outfit = [
     //   price: "          Rs.499",
 
     // },
-    // index = 5
+    // index = 4
     // {
     //   image: "./../assets/images/blue_sleeve_less.jpg ",
     //   name: "Blue Sleeveless",

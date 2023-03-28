@@ -111,8 +111,18 @@ CRUD For User top_outfit page:
 
 
 
-=> Deactivate top_outfit details For Card [completed]
+=> Deactivate top_outfit details For Card [completed]  
+  
 
+
+  Create an account
+Scenario 1: Successfully create an account
+Steps:
+Navigate to the registration page.
+Enter the required information such as name, email, and password.
+Click the "Create Account" button.
+Expected Result:
+The user is redirected to the login page.
 
                       
                       
