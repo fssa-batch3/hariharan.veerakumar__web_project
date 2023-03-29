@@ -164,19 +164,7 @@ CRUD For User top_outfit page:
     - Expected Result:
         - The user can view the details of the selected product/item.
 
-### Buy a product/item
-- Scenario 1: Successfully purchase a product/item
-    - Steps:
-        1. Log in as a buyer.
-        2. Navigate to the product listing page.
-        3. Select a product/item to view its details.
-        4. Click the "Buy Now" button.
-        5. Confirm the shipping address and payment method.
-        6. Click the "Place Order" button.
-    - Expected Result:
-        - The user is redirected to the order confirmation page.
-        - An order confirmation email is sent to the user's email address.
-        - The product/item's stock is reduced by the purchased quantity.
+
                       
                       
 
