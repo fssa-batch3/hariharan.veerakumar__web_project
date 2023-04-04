@@ -145,7 +145,7 @@
                 <div class="form-label">
                     <label for="email">Email :</label>
                     <input type="email" class="form-control" id="email" required placeholder="Enter email" name="email"
-                        title="enter proper email">
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="enter proper email">
                 </div>
                 <!-- password -->
                 <div class=" form-label">
@@ -210,7 +210,6 @@
                     "user_ph_num": ph_num,
 
                 }
-
                 if (password != conpassword) {
                     Notify.error("Invalid credentials")
                 }
