@@ -39,35 +39,35 @@
     <hr>
 
     <!-- JAVA SCRIPT -->
+    <script src="../assets/js/details.js"></script>
     <script>
 
 
+        // For top-outfit
+        const top_outfit = JSON.parse(localStorage.getItem("top_card"))
 
-        let array = JSON.parse(localStorage.getItem("top_card"))
-        // console.log(array);
-
-        let url = window.location.search;
-        let urlParams = new URLSearchParams(url);
-        let get_id = urlParams.get("id")
-        console.log(get_id);
-
-        let product_details = array.find(function (details) {
-            let check_id = details["id"];
-            if (get_id == check_id) {
-                return true;
-            }
-        })
+        let photo_1 = document.getElementById("avatar");
+        let name_1 = document.getElementById("username");
+        let description_1 = document.getElementById("description");
+        let price_1 = document.getElementById("price");
+        // calling the function
+        urlParams(top_outfit, photo_1, name_1, description_1, price_1);
 
 
-        let photo = document.getElementById("avatar");
-        let name = document.getElementById("username");
-        let description = document.getElementById("description");
-        let price = document.getElementById("price");
+        // For bottom
+        let bottom_outfit = JSON.parse(localStorage.getItem("bottom_card"))
 
-        photo.setAttribute("src", product_details["image"])
-        name.innerText = product_details["name"]
-        description.innerText = product_details["about"]
-        price.innerText = product_details["price"]
+        let photo_2 = document.getElementById("avatar");
+        let name_2 = document.getElementById("username");
+        let description_2 = document.getElementById("description");
+        let price_2 = document.getElementById("price");
+        // calling the function
+        urlParams(bottom_outfit, photo_2, name_2, description_2, price_2);
+
+
+
+
+
 
 
 

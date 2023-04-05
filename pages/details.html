@@ -41,42 +41,7 @@
 
     <!-- JAVA SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-
-
-
-        let array = JSON.parse(localStorage.getItem("card"))
-        console.log(array);
-
-        let url = window.location.search;
-        let urlParams = new URLSearchParams(url);
-        let get_id = urlParams.get("id")
-        console.log(get_id);
-
-        let product_details = array.find(function (details) {
-            let check_id = details["id"];
-            if (get_id == check_id) {
-                return true;
-            }
-        })
-
-        console.log(product_details);
-
-
-        let photo = document.getElementById("avatar");
-        let name = document.getElementById("username");
-        let description = document.getElementById("description");
-        let price = document.getElementById("price");
-
-
-        photo.setAttribute("src", product_details["image"])
-        name.innerText = product_details["name"]
-        description.innerText = product_details["about"]
-        price.innerText = product_details["price"]
-
-
-
-    </script>
+    <script src="../assets/js/details.js"> </script>
 
 </body>
 

@@ -13,21 +13,26 @@
   <link rel="stylesheet" href="../assets/css/header.css" />
   <link rel="stylesheet" href="../assets/css/footer.css" />
   <style>
-    .sec-1 {
+    section {
+      background-color: #ffffff;
+      display: grid;
+      grid-template-columns: 50% 49%;
+      gap: 15px;
+    }
 
-      margin-top: 100px;
-      background-color: white;
+    .sec-1 {
+      background-color: #FFA500;
+      width: 100%;
       height: 100%;
-      width: 50%;
       border-radius: 10px;
       margin-bottom: 50px;
     }
 
     h1 {
-      margin-left: 35%;
-      padding-top: 2%;
+      width: 100%;
+      margin-left: 90%;
+      padding-top: 4%;
       font-family: sans-serif;
-
       font-weight: bold;
       color: #050202;
       font-size: 40px;
@@ -94,21 +99,21 @@
     }
 
     .buy-btn {
-      margin-top: 12%;
-      margin-left: 25%;
+      margin-top: 7%;
+      margin-left: 40%;
       height: 40px;
-      width: 180px;
-      font-size: 15px;
+      width: 30%;
       font-family: monospace;
       border-radius: 22px;
-      color: black;
-      background-color: white;
-      cursor: pointer;
     }
 
     .buy-btn:hover {
-      color: white;
-      background-color: black;
+      color: #FFA500;
+      background-color: #050202;
+    }
+
+    a {
+      text-decoration: none;
     }
   </style>
 </head>
@@ -148,34 +153,39 @@
   </nav>
   <!-- nav ends -->
   <!-- section 1 starts -->
-  <section class="sec-1 container-fluid">
-    <h1>My Cart</h1>
-    <!-- left -->
-    <div class="left">
-      <img src="../assets/images/dumbbells.jpg" alt="dumbbells" />
-    </div>
-    <!-- right -->
-    <div class="right">
-      <p class="para">Dumb Bells</p>
-      <p class="fir-para">
-        Long Lasting and Flexible made
-        <br />
-        up of rubber
-      </p>
-      <!-- second para -->
-      <p class="sec-para">ITEM NO: 1778547</p>
-      <!-- third para -->
-      <p class="thi-para">Quantity - 1</p>
-      <!-- fourth para -->
-      <pre class="four-para">Total Products :    &#8377; _ _</pre>
-      <!-- price -->
+  <section class="container">
 
-      <p class="price">RS. 999</p>
-      <!-- button -->
-    </div>
-    <br />
-    <a href="../pages/buy_now.html">
-      <button class="buy-btn">Buy Now</button></a>
+    <h1>My Cart</h1>
+    <br>
+
+    <!-- <div class="sec-1"> -->
+    <!-- left -->
+    <!-- <div class="left">
+      <img src="../assets/images/dumbbells.jpg" alt="dumbbells" />
+    </div> -->
+    <!-- right -->
+    <!-- <div class="right">
+        <p class="para">Dumb Bells</p>
+        <p class="fir-para">
+          Long Lasting and Flexible made up of rubber
+        </p> -->
+    <!-- second para -->
+    <!-- <p class="sec-para">ITEM NO: 1778547</p> -->
+    <!-- third para -->
+    <!-- <p class="thi-para">Quantity - 1</p> -->
+    <!-- price -->
+
+    <!-- <p class="price">RS. 999</p> -->
+    <!-- button -->
+    <!-- </div>
+
+    <a href="../pages/buy_now.html" class="buy-btn btn btn-light">
+      Buy Now</a>
+
+
+    </div> -->
+
+
   </section>
   <!-- footer-->
 
@@ -202,6 +212,7 @@
   </footer>
   <!-- Java script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/cart.js"></script>
 </body>
 
 </html>

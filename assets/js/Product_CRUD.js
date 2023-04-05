@@ -1,5 +1,3 @@
-let array = [];
-
 // card
 let card_div;
 let image;
@@ -12,14 +10,16 @@ let crud_div;
 let update_a;
 
 
-let create_card = JSON.parse(localStorage.getItem("card"));
+let array = JSON.parse(localStorage.getItem("card"));
+
+
 
 
 // new array
-for(let i = 0; i < create_card.length; i++){
-  array.push(create_card[i]);
+// for(let i = 0; i < create_card.length; i++){
+//   array.push(create_card[i]);
 
-}
+// }
 // Old array
 for (let i = 0; i < array.length; i++) {
 
@@ -55,8 +55,10 @@ for (let i = 0; i < array.length; i++) {
   card_div.append(buy_a)
 
   cart_a = document.createElement("a")
-  cart_a.setAttribute("href", "../pages/my_cart.html")
+  cart_a.setAttribute("href", "../pages/my_cart.html?id="+ array[i]["id"]);
   cart_a.setAttribute("class", "btn-2")
+  cart_a.setAttribute("id", "cart")
+  cart_a.setAttribute("type","click")
   cart_a.innerText = "Add to cart"
   card_div.append(cart_a)
 
@@ -75,6 +77,7 @@ for (let i = 0; i < array.length; i++) {
 }
 
 localStorage.setItem("card", JSON.stringify(array)); 
+
 
 
 

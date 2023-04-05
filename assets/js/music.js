@@ -1,12 +1,10 @@
-
 //   getting data from LS
 let musiccard = JSON.parse(localStorage.getItem("musicCard"))
-  // console.log(create_music);
+ 
 
 //   new array
 // for(let i = 0; i < musiccard.length; i++){
-    // musiccard.push(musiccard[i]);
-    // console.log(musiccard);
+  // musiccard.push(musiccard[i]);
   // }
 
 
@@ -69,5 +67,7 @@ let musiccard = JSON.parse(localStorage.getItem("musicCard"))
     document.querySelector(".sec-1.container").append(music_card);
   }
 
+  // set the array into LS
+  localStorage.setItem("musicCard", JSON.stringify(musiccard))
 
 

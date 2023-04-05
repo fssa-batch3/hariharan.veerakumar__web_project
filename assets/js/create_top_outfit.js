@@ -10,8 +10,6 @@
      let p_price = document.getElementById("price").value;
      let p_about = document.getElementById("about").value;
 
-     
-
      let product_object = {
          "id": id,
          "image": image,
