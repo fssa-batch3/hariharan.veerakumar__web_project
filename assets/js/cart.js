@@ -1,6 +1,40 @@
-const cart_array = JSON.parse(localStorage.getItem("cart"))
+let cart_array = JSON.parse(localStorage.getItem("cart"));
+let array = JSON.parse(localStorage.getItem("card"));
+let match = false;
+
+// getting the id in the url
+const url = window.location.search;
+const url_params = new URLSearchParams(url);
+const get_id = url_params.get("id");
+// console.log(get_id);
+
+// Getting the corresponding object through id
+let cart_obj = array.find(function (product) {
+    let check_id = product["id"]
+    if (get_id == check_id) {
+        return true;
+    }
+})
+console.log(cart_obj);
+// Checking product already existing or not
+for (let i = 0; i < cart_array.length; i++) {
+    if(cart_array[i]["id"] == cart_obj["id"]){
+      match = true;
+      break;
+    }
+}
+
+if(match){
+    alert("This product is already in your cart");
+    window.location.href = "../pages/Sales.html";
+}
+else{
+    cart_array.push(cart_obj)
+}
+
 
 let cart_sec;
+let can_btn;
 let left_div;
 let image;
 let right_div;
@@ -16,6 +50,12 @@ for(let i =0; i< cart_array.length; i++){
     cart_sec = document.createElement("div");
     cart_sec.setAttribute("class", "sec-1");
     
+    can_btn = document.createElement("i")
+    can_btn.setAttribute("id", "cancel")
+    can_btn.setAttribute("class", "fa fa-times-circle")
+    can_btn.setAttribute("type", "click")
+    cart_sec.append(can_btn)
+
     left_div = document.createElement("div");
     left_div.setAttribute("class", "left");
     cart_sec.append(left_div);
@@ -65,21 +105,20 @@ for(let i =0; i< cart_array.length; i++){
 
 
 
-let array = JSON.parse(localStorage.getItem("card"))
-
-// getting the id in the url
-const url = window.location.search;
-const url_params = new URLSearchParams(url);
-const get_id = url_params.get("id");
-// console.log(get_id);
-
-// Getting the corresponding object through id
-let cart_obj = array.find(function (product) {
-    let check_id = product["id"]
-    if (get_id == check_id) {
-        return true;
-    }
-
-})
-cart_array.push(cart_obj)
 localStorage.setItem("cart",JSON.stringify(cart_array))
+
+const cancel = document.getElementById("cancel");
+cancel.addEventListener("click", function(event){
+    event.preventDefault();
+
+    let Index = cart_array.indexOf(cart_obj)
+    let msg = confirm("Are you sure want to remove this product from your cart")
+    if (msg !== true) {
+    return
+    }
+else {
+    cart_array.splice(Index, 1)
+    localStorage.setItem("cart", JSON.stringify(cart_array))
+  
+}
+})
