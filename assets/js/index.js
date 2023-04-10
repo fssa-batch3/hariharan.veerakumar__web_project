@@ -162,6 +162,7 @@
       alt: "top outfit image",
       dis_price: "Rs.1000",
       price: "          Rs.599",
+      section: "top"
 
     },
     // index = 1
@@ -173,6 +174,7 @@
       alt: "top outfit white t-shirt image",
       dis_price: "Rs.1000",
       price: "  Rs.499",
+      section: "top"
 
     },
 
@@ -185,6 +187,7 @@
       alt: "top outfit sleeve less t-shirt image",
       dis_price: "Rs.1000",
       price: "  Rs.399",
+      section: "top"
 
     },
     // index = 3
@@ -196,6 +199,7 @@
       alt: "top outfit blue t-shirt image",
       dis_price: "Rs.1000",
       price: " Rs.499",
+      section: "top"
 
     },
     // index = 4
@@ -207,154 +211,167 @@
       alt: "top outfit blue sleeveless image",
       dis_price: "Rs.1000",
       price: "Rs.399",
+      section: "top"
     },
+
+    // For bottom
+       // index = 0
+       {
+        id:"41",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+        image: "../assets/images/bottom_outfit.jpg",
+        name: "Track Pant",
+        alt: "bottom outfit image",
+        dis_price: "Rs.1000",
+        price: "Rs.799",
+        section: "bottom"
+  
+      },
+      // index = 1
+      {
+        id:"42",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+        image: "./../assets/images/grey_pant.jpg",
+        name: "Grey Track Pant",
+        alt: "bottom outfit gray pant image",
+        dis_price: "Rs.1000",
+        price: "Rs.899",
+        section: "bottom"
+  
+      },
+      // index = 2
+      {
+        id:"43",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+        image: "./../assets/images/Grey_formal_lower.jpg",
+        name: "Gray normal Pant",
+        alt: "bottom outfit grey normal image",
+        dis_price: "Rs.1000",
+        price: "Rs.899",
+        section: "bottom"
+  
+      },
+      // index = 3
+      {
+        id:"44",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+        image: "./../assets/images/black_shorts.jpg",
+        name: "Black Boxer Shorts",
+        alt: "bottom outfit image",
+        dis_price: "Rs.1000",
+        price: "Rs.599",
+        section: "bottom"
+  
+      },
+      // index = 4
+      {
+        id:"45",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+        image: "./../assets/images/stylish_pant.jpg",
+        name: "Stylish Pant",
+        alt: "bottom outfit stylish pant image",
+        dis_price: "Rs.1500",
+        price: " Rs.1399",
+        section: "bottom"
+  
+      },
+      // index = 5
+      {
+        id:"46",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+        image: "./../assets/images/normal_black_pant.jpg",
+        name: "Normal Track Pant",
+        alt: "bottom outfit black pant image",
+        dis_price: "Rs.1200",
+        price: " Rs.999",
+        section: "bottom"
+  
+      },
+    //   shoe card
+    //   index 0 
+      {
+        id:"51",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+        image: "../assets/images/shoe_image.jpg",
+        name: "Sports Shoes",
+        alt: "shoe  image",
+        dis_price: "Rs.1000",
+        price: "  Rs.899",
+        section: "shoe"
+  
+      },
+      // index = 1
+      {
+        id:"52",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+        image: "./../assets/images/white_woakers.jpg",
+        name: "White Woakers",
+        alt: "white woakers image",
+        dis_price: "Rs.2000",
+        price: " Rs.1599",
+        section: "shoe"
+  
+      },
+      // index = 2
+      {
+        id:"53",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+        image: "./../assets/images/black_shoes.jpg",
+        name: "Black Woakers",
+        alt: " black shoe  image",
+        dis_price: "Rs.1000",
+        price: "Rs.799",
+        section: "shoe"
+  
+      },
+      // index = 3
+      {
+        id:"54",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+        image: "./../assets/images/grey_shoes.jpg",
+        name: "Grey Sports Shoes",
+        alt: "shoe  image",
+        dis_price: "Rs.1200",
+        price: "Rs.899",
+        section: "shoe"
+  
+      },
+      // index = 4
+      {
+        id:"55",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+        image: "./../assets/images/blue_running_shoes.jpg",
+        name: "Running Shoes",
+        alt: " running shoe image",
+        dis_price: "Rs.1000",
+        price: "Rs.799",
+        section: "shoe"
+  
+      },
+      // index = 5
+      {
+        id:"56",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+        image: "./../assets/images/orange_running_shoes.jpg",
+        name: "Casual Shoes",
+        alt: "casual shoe image",
+        dis_price: "Rs.1000",
+        price: "Rs.699",
+        section: "shoe"
+  
+      },
+  
 
   ];
   localStorage.setItem("top_card", JSON.stringify(top_outfit));
 
 //   For bottom-outfit
-  let bottom_outfit = [
-    // index = 0
-    {
-      id:"41",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
-      image: "../assets/images/bottom_outfit.jpg",
-      name: "Track Pant",
-      alt: "bottom outfit image",
-      dis_price: "Rs.1000",
-      price: "Rs.799",
-
-    },
-    // index = 1
-    {
-      id:"42",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
-      image: "./../assets/images/grey_pant.jpg",
-      name: "Grey Track Pant",
-      alt: "bottom outfit gray pant image",
-      dis_price: "Rs.1000",
-      price: "Rs.899",
-
-    },
-    // index = 2
-    {
-      id:"43",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
-      image: "./../assets/images/Grey_formal_lower.jpg",
-      name: "Gray normal Pant",
-      alt: "bottom outfit grey normal image",
-      dis_price: "Rs.1000",
-      price: "Rs.899",
-
-    },
-    // index = 3
-    {
-      id:"44",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
-      image: "./../assets/images/black_shorts.jpg",
-      name: "Black Boxer Shorts",
-      alt: "bottom outfit image",
-      dis_price: "Rs.1000",
-      price: "Rs.599",
-
-    },
-    // index = 4
-    {
-      id:"45",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
-      image: "./../assets/images/stylish_pant.jpg",
-      name: "Stylish Pant",
-      alt: "bottom outfit stylish pant image",
-      dis_price: "Rs.1500",
-      price: " Rs.1399",
-
-    },
-    // index = 5
-    {
-      id:"46",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
-      image: "./../assets/images/normal_black_pant.jpg",
-      name: "Normal Track Pant",
-      alt: "bottom outfit black pant image",
-      dis_price: "Rs.1200",
-      price: " Rs.999",
-
-    },
-
-  ];
-  localStorage.setItem("bottom_card", JSON.stringify(bottom_outfit));
+//   let bottom_outfit = [  ];
+//   localStorage.setItem("bottom_card", JSON.stringify(bottom_outfit));
 
 // For shoes-card
-  let shoes = [
-    // index = 0
-    {
-      id:"51",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
-      image: "../assets/images/shoe_image.jpg",
-      name: "Sports Shoes",
-      alt: "shoe  image",
-      dis_price: "Rs.1000",
-      price: "  Rs.899",
-
-    },
-    // index = 1
-    {
-      id:"52",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
-      image: "./../assets/images/white_woakers.jpg",
-      name: "White Woakers",
-      alt: "white woakers image",
-      dis_price: "Rs.2000",
-      price: " Rs.1599",
-
-    },
-    // index = 2
-    {
-      id:"53",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
-      image: "./../assets/images/black_shoes.jpg",
-      name: "Black Woakers",
-      alt: " black shoe  image",
-      dis_price: "Rs.1000",
-      price: "Rs.799",
-
-    },
-    // index = 3
-    {
-      id:"54",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
-      image: "./../assets/images/grey_shoes.jpg",
-      name: "Grey Sports Shoes",
-      alt: "shoe  image",
-      dis_price: "Rs.1200",
-      price: "Rs.899",
-
-    },
-    // index = 4
-    {
-      id:"55",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
-      image: "./../assets/images/blue_running_shoes.jpg",
-      name: "Running Shoes",
-      alt: " running shoe image",
-      dis_price: "Rs.1000",
-      price: "Rs.799",
-
-    },
-    // index = 5
-    {
-      id:"56",
-      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
-      image: "./../assets/images/orange_running_shoes.jpg",
-      name: "Casual Shoes",
-      alt: "casual shoe image",
-      dis_price: "Rs.1000",
-      price: "Rs.699",
-
-    },
-
-  ]
-  localStorage.setItem("shoe_card",JSON.stringify(shoes))
+//   let shoes = [  ];
+//   localStorage.setItem("shoe_card",JSON.stringify(shoes))
 
   let cart = [];
   localStorage.setItem("cart",JSON.stringify(cart))

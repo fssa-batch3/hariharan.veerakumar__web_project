@@ -55,12 +55,26 @@
             </div>
             <br>
             <!-- div 6 -->
-            <div>
-                <label for="text" class="form-label"> about</label>
-                <textarea class="form-control" rows="8" id="about" type="text" required></textarea>
+            <div class="row">
+                <div class="col">
+                    <label for="text" class="form-label"> about</label>
+                    <textarea class="form-control" rows="8" id="about" type="text" required></textarea>
 
+                </div>
+                <!-- section where to append -->
+                <div class="col">
+                    <label for="section" class="form-label">Section </label>
+                    <select id="section" class="form-control" required>
+                        <option value=""></option>
+                        <option value="top">top</option>
+                        <option value="bottom">bottom</option>
+                        <option value="shoe">shoe</option>
+                    </select>
+
+                </div>
             </div>
             <br>
+
             <!-- Button -->
             <div class="d-grid container">
                 <button class="btn btn-success" type="submit">Create</button>
