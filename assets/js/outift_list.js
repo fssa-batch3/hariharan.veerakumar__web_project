@@ -73,6 +73,7 @@
   }
 
   productList(top_outfit, ".whole-div-1");
+  
   localStorage.setItem("top_card", JSON.stringify(top_outfit));
 
  

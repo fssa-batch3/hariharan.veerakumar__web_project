@@ -170,34 +170,34 @@
     <h1>My Cart</h1>
     <br>
 
-    <!-- <div class="sec-1"> -->
+    <div class="sec-1">
 
-    <!-- <i id="cancel" class="fa fa-times-circle"></i> -->
-    <!-- left -->
-    <!-- <div class="left">
-        <img src="../assets/images/dumbbells.jpg" alt="dumbbells" />
-      </div> -->
-    <!-- right -->
-    <!-- <div class="right">
+      <i id="cancel" class="fa fa-times-circle"></i>
+      <!-- left -->
+      <div class="left">
+        <img class="img" src="../assets/images/dumbbells.jpg" alt="dumbbells" />
+      </div>
+      <!-- right -->
+      <div class="right">
         <p class="para">Dumb Bells</p>
         <p class="fir-para">
           Long Lasting and Flexible made up of rubber
-        </p> -->
-    <!-- second para -->
-    <!-- <p class="sec-para">ITEM NO: 1778547</p> -->
-    <!-- third para -->
-    <!-- <p class="thi-para">Quantity - 1</p> -->
-    <!-- price -->
-    <!-- 
+        </p>
+        <!-- second para -->
+        <p class="sec-para">ITEM NO: 1778547</p>
+        <!-- third para -->
+        <p class="thi-para">Quantity - 1</p>
+        <!-- price -->
+
         <p class="price">RS. 999</p>
 
-      </div> -->
-    <!-- button -->
-    <!-- <a href="../pages/buy_now.html" class="buy-btn btn btn-light">
-        Buy Now</a> -->
+      </div>
+      <!-- button -->
+      <a href="../pages/buy_now.html" class="buy-btn btn btn-light">
+        Buy Now</a>
 
 
-    <!-- </div> -->
+    </div>
 
 
   </section>
@@ -226,7 +226,85 @@
   </footer>
   <!-- Java script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/cart.js"></script>
+  <!-- <script src="../assets/js/cart.js"></script> -->
+  <script>
+    function removeItem() {
+      let product = this.parentElement;
+      let image = product.querySelector(".img").src;
+      let title = product.querySelector(".para").innerHTML;
+      let price = product.querySelector(".cart-price").innerHTML;
+
+      let items = {
+        title: title,
+        price: price,
+        image: image,
+        quantity: 1,
+      };
+      let checkQty = JSON.parse(localStorage.getItem("items"));
+      for (var i = 0; i < checkQty?.length; i++) {
+        var key = checkQty[i];
+        if (key.title == items.title) {
+          checkQty.splice(i);
+          localStorage.setItem("items", JSON.stringify(checkQty));
+          break;
+        }
+      }
+      location.reload();
+    }
+    function changeQty() {
+      if (isNaN(this.value) || this.value < 1) {
+        this.value = 1;
+      }
+    }
+
+
+
+    // add cart
+    function addCart() {
+      let product = this.parentElement;
+      let image = product.querySelector(".img").src;
+      let title = product.querySelector(".para").innerHTML;
+      let about = product.querySelector(".fir-para").innerHTML;
+      let item_no = product.querySelector(".sec-para").innerHTML;
+      let price = product.querySelector(".price").innerHTML;
+      let product_id = Date.now();
+      let items = {
+        title: title,
+        price: price,
+        image: image,
+        about: about,
+        item_no: item_no,
+        quantity: 1,
+        product_id: Date.now(),
+      };
+
+      let checkQty = JSON.parse(localStorage.getItem("items"));
+      for (var i = 0; i < checkQty?.length; i++) {
+        var key = checkQty[i];
+        var haveTitle = true;
+        if (key.title == items.title) {
+          key.quantity += items.quantity;
+          localStorage.setItem("cart", JSON.stringify(checkQty));
+          haveTitle = false;
+          break;
+        }
+      }
+      if (checkQty === null || checkQty.length === 0) {
+        window.localStorage.setItem("items", JSON.stringify([items]));
+      } else {
+        if (haveTitle) {
+          let cart = window.localStorage.getItem("items");
+          let whole_cart = JSON.parse(cart);
+          whole_cart.push(items);
+          window.localStorage.setItem("items", JSON.stringify(whole_cart));
+        } else {
+          alert("exist");
+        }
+      }
+      location.reload();
+    }
+
+  </script>
 </body>
 
 </html>

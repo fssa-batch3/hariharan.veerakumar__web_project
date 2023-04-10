@@ -61,6 +61,7 @@ for(let i =0; i< cart_array.length; i++){
     cart_sec.append(left_div);
     
     image = document.createElement("img");
+    image.setAttribute("class", "img")
     image.setAttribute("src", cart_array[i]["image"]);
     image.setAttribute("alt",cart_array[i]["alt"]);
     left_div.append(image);
