@@ -45,7 +45,6 @@ const top_outfit = JSON.parse(localStorage.getItem("top_card"));
       buy_a.innerText = "Buy now"
       top_card_div.append(buy_a)
 
-
       cart_a = document.createElement("a")
       cart_a.setAttribute("href", "../pages/my_cart.html?id=" + ar[i]["id"])
       cart_a.setAttribute("class", "btn-2")
@@ -88,31 +87,22 @@ const top_outfit = JSON.parse(localStorage.getItem("top_card"));
   let bottom_card_div;
   let bottom_name;
 
-
-
-
 const create_bottom_card = [];
-function productAppend(type) {
-  const productsection = top_outfit.filter((h) => h.section == type);
-  return productsection;
-}
 for(let i = 0; i < productAppend("bottom").length;i++){
  create_bottom_card.push(productAppend("bottom")[i]);
 }
   productList(create_bottom_card,".whole-div-2");
 
   
+
   // shoes card
   let shoe_card_div;
   let shoe_name;
 
-  const create_shoe_card = [];
-function productAppend(type) {
-  const productsection = top_outfit.filter((h) => h.section == type);
-  return productsection;
-}
-for(let i = 0; i < productAppend("shoe").length;i++){
- create_shoe_card.push(productAppend("shoe")[i]);
-}
+    const create_shoe_card = [];
+
+  for(let i = 0; i < productAppend("shoe").length;i++){
+  create_shoe_card.push(productAppend("shoe")[i]);
+  }
   
   productList(create_shoe_card,".whole-div-3");
