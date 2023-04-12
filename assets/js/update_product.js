@@ -77,6 +77,7 @@ edit.addEventListener("submit", function (event) {
 
 let check = true;
 let present_obj = array.find(function (product) {
+ 
     let check_id = product["id"]
     if (get_id == check_id) {
 
@@ -94,7 +95,7 @@ let present_obj = array.find(function (product) {
         price1.value = prod_obj["price"];
         about1.value = prod_obj["about"];
     }
-    return;
+return check;
 })
 
 
