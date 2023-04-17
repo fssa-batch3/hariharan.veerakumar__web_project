@@ -163,6 +163,24 @@ CRUD For User top_outfit page:
         3. Select a product/item to view its details.
     - Expected Result:
         - The user can view the details of the selected product/item.
+        
+### View outfits and shoes
+- Scenario 1: Successfully view outfits and shoes
+    - Steps:
+        1. Log in as a buyer.
+        2. Navigate to the outfits and shoes listing page.
+        3. View the list of available outfits and shoes.
+    - Expected Result:
+        - The user can view the list of available outfits and shoes.
+
+### View outfits and shoes details
+- Scenario 1: Successfully view outfits and shoes details
+    - Steps:
+        1. Log in as a buyer.
+        2. Navigate to the outfits and shoes listing page.
+        3. Select a outfits and shoes to view its details.
+    - Expected Result:
+        - The user can view the details of the selected outfits and shoes.
 
 
                       
