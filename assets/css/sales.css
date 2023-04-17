@@ -34,10 +34,11 @@ h1 {
   height: 700px;
   border-radius: 20px;
 }
+
 .whole-div {
   margin-top: 10%;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 33% 33% 33%  ;
   gap: 10px;
 }
 .sale-box {
