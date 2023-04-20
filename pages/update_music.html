@@ -14,14 +14,21 @@
             display: flex;
             justify-content: space-evenly;
         }
+
+        #btn {
+            width: 10%;
+            margin-left: 90%;
+            margin-top: 4%;
+        }
     </style>
 </head>
 
 
 <body>
-    <form id="form">
-        <br>
-        <div class="mb-3 form-control container">
+    <div class="mb-3 form-control container">
+        <form id="form">
+            <br>
+
             <h1>Update music</h1>
             <br>
             <!-- div 1 -->
@@ -53,8 +60,16 @@
                 <button id="edit" class=" btn btn-primary" type="submit">Change</button>
                 <button id="delete" class="btn btn-danger" type="click">Delete</button>
             </div>
+
+        </form>
+        <!-- Back button -->
+        <div class="row">
+            <div class="col">
+                <a href="./../pages/music.html" class="btn btn-light" id="btn">
+                    < Back</a>
+            </div>
         </div>
-    </form>
+    </div>
     <script src="../assets/js/upload_music.js"></script>
 </body>
 

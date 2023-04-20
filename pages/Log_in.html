@@ -126,7 +126,7 @@
       <div>
         <label for="email" class="form-label">Email address:</label>
         <input type="email" class="form-control" id="email" placeholder="Enter your E-mail" required
-          title="Enter your email properly" />
+          title="Enter your email properly" pattern=".+@globex\.com" size="30" />
       </div>
       <!-- password -->
       <div>
@@ -180,7 +180,6 @@
           ifMatch = true
           break;
         }
-
       }
       // for ifMatch
       if (ifMatch == true) {
@@ -188,7 +187,6 @@
         window.location.href = "../pages/Home_workout.html"
       }
       else {
-
         Notify.error("Invalid Credentials")
       }
     })

@@ -23,13 +23,20 @@
             width: 30%;
             margin-left: 30%;
         }
+
+        #btn {
+            width: 10%;
+            margin-left: 90%;
+            margin-top: 6%;
+        }
     </style>
 </head>
 
 
 <body>
-    <form id="edit_form">
-        <div class="form-control container">
+    <div class="form-control container">
+        <form id="edit_form">
+
             <h1>Edit product</h1>
 
             <!-- div 1 -->
@@ -89,10 +96,17 @@
                 <button id="edit" class=" btn btn-primary" type="submit">Change</button>
                 <button id="delete" class="btn btn-danger" type="click">Delete</button>
             </div>
+
+
+        </form>
+        <!-- Back button -->
+        <div class="row">
+            <div class="col">
+                <a href="./../pages/outfit.html" class="btn btn-light" id="btn">
+                    < Back</a>
+            </div>
         </div>
-
-    </form>
-
+    </div>
 
 
     <script src="../assets/js/update_top_product.js"></script>

@@ -72,7 +72,13 @@
             name: "ONCE UPON A TIME",
             url: "../assets/audio/Once-Upon-a-Time-MassTamilan.so.mp3"
         },
-
+       {
+  id:"120",
+  alt:"mahaan image",
+  image: "../assets/images/MUSIC/mahaan.jpg",
+  name: "Naan Naan",
+  url: "../assets/audio/Naan-Naan-MassTamilan.fm.mp3"
+}
 
     ];
     // set the array into LS

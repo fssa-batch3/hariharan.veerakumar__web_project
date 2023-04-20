@@ -39,7 +39,7 @@ h1 {
   margin-top: 10%;
   display: grid;
   grid-template-columns: 33% 33% 33%  ;
-  gap: 10px;
+  gap: 15px;
 }
 .sale-box {
   border: 1px solid aqua;
