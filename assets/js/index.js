@@ -1,5 +1,5 @@
     // For music card
-    musicCard = [
+  const  musicCard = [
 
         {
             id:"11",
@@ -85,7 +85,7 @@
   localStorage.setItem("musicCard", JSON.stringify(musicCard))
 
 //   For equipment
-  let array = [
+  const array = [
     
     {
         id: "21",
@@ -158,7 +158,7 @@
   localStorage.setItem("card",JSON.stringify(array));
 
 // For top-outfit
-  let top_outfit = [
+  const top_outfit = [
     // index = 0
     {
       id:"31",

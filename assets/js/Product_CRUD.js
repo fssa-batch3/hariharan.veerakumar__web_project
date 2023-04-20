@@ -12,19 +12,8 @@ let update_a;
 
 let array = JSON.parse(localStorage.getItem("card"));
 
-
-
-
-// new array
-// for(let i = 0; i < create_card.length; i++){
-//   array.push(create_card[i]);
-
-// }
 // Old array
 for (let i = 0; i < array.length; i++) {
-
-  let user = array[i];
-
   card_div = document.createElement("div")
   card_div.setAttribute("class", "sale-box")
 

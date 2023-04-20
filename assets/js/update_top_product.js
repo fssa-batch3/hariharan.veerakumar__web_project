@@ -1,11 +1,11 @@
 let array = JSON.parse(localStorage.getItem("top_card"))
-// console.log(array);
+
 
 // getting the id in the url
 const url = window.location.search;
 const url_params = new URLSearchParams(url);
 const get_id = url_params.get("id");
-// console.log(get_id);
+
 
 let prod_obj = array.find(function (product) {
     let check_id = product["id"]

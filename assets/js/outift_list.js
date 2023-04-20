@@ -74,7 +74,7 @@ const top_outfit = JSON.parse(localStorage.getItem("top_card"));
   }
   for (let i = 0; i < productAppend("top").length; i++) {
     create_top_card.push(productAppend("top")[i]);
-    // console.log(create_top_card);
+
   }
   productList(create_top_card, ".whole-div-1");
   
