@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crazy Fitness</title>
+
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
     <!-- Notify -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.css">
-
     <style>
         body {
             background-image: url(../assets/images/Profile_background.png);
@@ -61,6 +61,106 @@
             color: black;
         }
 
+        /* change btn */
+        .custom-btn {
+            width: 130px;
+            height: 40px;
+            color: #000000;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            box-shadow: inset 2px 2px 2px 0px #00FFFF;
+            outline: none;
+        }
+
+        .btn {
+            background: linear-gradient(0deg, #00FFFF 0%, #00FFFF 100%);
+            line-height: 42px;
+            padding: 0;
+            border: none;
+        }
+
+        .btn span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn:before,
+        .btn:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: -7px -7px 20px 0px #FFFFFF,
+                -4px -4px 5px 0px #FFFFFF,
+                7px 7px 20px 0px #FFFFFF,
+                4px 4px 5px 0px #FFFFFF;
+            transition: all 0.3s ease;
+        }
+
+        .btn:before {
+            height: 0%;
+            width: 2px;
+        }
+
+        .btn:after {
+            width: 0%;
+            height: 2px;
+        }
+
+        .btn:hover {
+            color: aqua;
+            background: #000000;
+        }
+
+        .btn:hover:before {
+            height: 100%;
+        }
+
+        .btn:hover:after {
+            width: 100%;
+        }
+
+        .btn span:before,
+        .btn span:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 1),
+                -4px -4px 5px 0px rgba(255, 255, 255, 1),
+                7px 7px 20px 0px rgba(255, 255, 255, 1),
+                4px 4px 5px 0px rgba(255, 255, 255, 1);
+            transition: all 0.3s ease;
+        }
+
+        .btn span:before {
+            width: 2px;
+            height: 0%;
+        }
+
+        .btn span:after {
+            height: 2px;
+            width: 0%;
+        }
+
+        .btn span:hover:before {
+            height: 100%;
+        }
+
+        .btn span:hover:after {
+            width: 100%;
+        }
 
         /* delete btn */
 
@@ -123,6 +223,110 @@
 
         .delete_btn:active {
             border: 1px solid #b20000;
+        }
+
+        /* back btn */
+        .back_btn {
+
+            margin-left: 42%;
+            padding: 20px 60px;
+            background-color: #000;
+            border: none;
+            font-size: 18px;
+            position: relative;
+            /* overflow: hidden; */
+            transition: 500ms;
+            text-decoration: none;
+        }
+
+        .back_btn span {
+            color: #00FFFF;
+            position: relative;
+            transition: 500ms;
+            transition-delay: 500ms;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .back_btn:before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            left: 50%;
+            right: 50%;
+            top: 50%;
+            bottom: 50%;
+            transition: 500ms;
+            transition-delay: 500ms;
+            background-color: #00FFFF;
+            box-shadow: 0 0 10px #00FFFF,
+                0 0 30px #00FFFF,
+                0 0 50px #00FFFF;
+        }
+
+        .back_btn div {
+            transition: 500ms;
+            position: absolute;
+            background-color: #00FFFF;
+            box-shadow: 0 0 15px #00FFFF, 0 0 30px #00FFFF, 0 0 50px #00FFFF;
+        }
+
+        .back_btn .top {
+            width: 15px;
+            height: 2px;
+            top: 0;
+            left: 0;
+        }
+
+        .back_btn .bottom {
+            width: 15px;
+            height: 2px;
+            bottom: 0;
+            right: 0;
+        }
+
+        .back_btn .left {
+            width: 2px;
+            height: 15px;
+            top: 0;
+            left: 0;
+        }
+
+        .back_btn .right {
+            width: 2px;
+            height: 15px;
+            bottom: 0;
+            right: 0;
+        }
+
+        .back_btn:hover {
+            color: #000;
+        }
+
+        .back_btn:hover span {
+            color: #000;
+        }
+
+        .back_btn:hover:before {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .back_btn:hover .top,
+        .back_btn:hover .bottom {
+            width: 100%;
+        }
+
+        .back_btn:hover .left,
+        .back_btn:hover .right {
+            height: 100%;
         }
     </style>
 </head>
@@ -190,7 +394,8 @@
             </div>
             <!-- submit -->
             <div class="row">
-                <div class="col"> <button id="button" type="submit" class="btn btn-success ">Change</button></div>
+                <div class="col-sm"> <button class="custom-btn btn" id="button"
+                        type="submit"><span>Change</span></button></div>
                 <!-- delete button -->
                 <div class="col">
                     <a class="delete_btn" type="click" id="delete">
@@ -220,11 +425,22 @@
                 </div>
             </div>
         </form>
+        <br>
+        <br>
+        <br>
+        <br>
+
         <!-- Back button -->
         <div class="row">
             <div class="col">
-                <a href="./../pages/Home_workout.html" class="btn btn-light" id="btn">
-                    Back</a>
+                <a class="back_btn" href="./../pages/Home_workout.html">
+                    <span>
+                        < GO BACK </span>
+                            <div class="top"></div>
+                            <div class="left"></div>
+                            <div class="bottom"></div>
+                            <div class="right"></div>
+                </a>
             </div>
         </div>
     </div>
