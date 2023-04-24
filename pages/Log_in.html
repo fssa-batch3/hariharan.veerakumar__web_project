@@ -164,17 +164,23 @@
       event.preventDefault();
       let array = JSON.parse(localStorage.getItem("usersdetails"));
       // getdatas
-      let email = document.getElementById("email").value;
-      let password = document.getElementById("password").value;
+      let email = document.getElementById("email").value.trim();
+      let password = document.getElementById("password").value.trim();
 
       let ifMatch = false;
 
+      if (email == "hari@gmail.com" && password == "hariharanveerakumar") {
+        localStorage.setItem("details", JSON.stringify(email));
+        alert("Welcome Admin!");
+        window.location.href = "../pages/Home_workout.html";
+        return;
+      }
 
       for (let i = 0; i < array.length; i++) {
-        localStorage.setItem("details", JSON.stringify(array[i].user_email)
-        );
+
         if (email == array[i].user_email && password == array[i].user_pass) {
-          ifMatch = true
+          localStorage.setItem("details", JSON.stringify(array[i].user_email));
+          ifMatch = true;
           break;
         }
       }

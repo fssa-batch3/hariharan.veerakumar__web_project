@@ -73,11 +73,11 @@
             url: "../assets/audio/Once-Upon-a-Time-MassTamilan.so.mp3"
         },
        {
-  id:"120",
-  alt:"mahaan image",
-  image: "../assets/images/MUSIC/mahaan.jpg",
-  name: "Naan Naan",
-  url: "../assets/audio/Naan-Naan-MassTamilan.fm.mp3"
+            id:"120",
+            alt:"mahaan image",
+            image: "../assets/images/MUSIC/mahaan.jpg",
+            name: "Naan Naan",
+            url: "../assets/audio/Naan-Naan-MassTamilan.fm.mp3"
 }
 
     ];
@@ -379,5 +379,5 @@
 //   let shoes = [  ];
 //   localStorage.setItem("shoe_card",JSON.stringify(shoes))
 
-  let cart = [];
-  localStorage.setItem("cart",JSON.stringify(cart))
+  // let cart = [];
+  // localStorage.setItem("cart",JSON.stringify(cart))
