@@ -69,24 +69,41 @@ h1{
   font-size: 20px;
   font-family: monospace;
 }
-.back_btn {
-  background-color: #050202;
-  color: aqua;
-  border: 2px solid aqua;
-  width: 120px;
-  font-weight: bold;
-  margin-left: 5%;
-  height: 40px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-top: 2.5%;
-  cursor: pointer;
-  transition: transformn 0.2s;
-  border-radius: 12px;
-}
-.back_btn:hover {
-  background-color: aqua;
-  color: #050202;
-  border: none;
-  transform: scale(1.2);
-}
+    /* back btn */
+    .ba_btn {
+      position: relative;
+      font-family: 'Heebo', sans-serif;
+      padding: 12px 40px;
+      border: 0;
+      background: aqua;
+      color: #000;
+      font-weight: 500;
+      font-size: 1em;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+    
+    .ba_btn:hover {
+      text-shadow: 0px 5px 10px #00FFFF;
+      transform: scale(1.01);
+      box-shadow: inset 0px 0px 10px #00FFFF;
+    }
+    
+    .ba_btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100px;
+      width: 50%;
+      height: 100%;
+      transform: rotate(80deg);
+      background: #FFFFFF;
+      filter: blur(10px);
+      transition: 0.6s ease-in-out;
+    }
+    
+    .ba_btn:hover::after {
+      left: 100%;
+    }
