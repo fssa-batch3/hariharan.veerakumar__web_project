@@ -75,6 +75,7 @@ for (let i = 0; i < array.length; i++) {
 
   document.querySelector(".sec-1").append(create_a);
 }
+// for user
 else{
   // card
 let card_div;
