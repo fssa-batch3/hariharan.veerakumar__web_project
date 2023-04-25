@@ -64,7 +64,7 @@ if(admin_email == "hari@gmail.com"){
 
    let create_btn = document.createElement("button");
    create_btn.setAttribute("class", "btn btn-success");
-   create_btn.innerText = "+Add music";
+   create_btn.innerText = "+ Add music";
    create_a.append(create_btn)
 
    document.querySelector(".row").append(create_a)
