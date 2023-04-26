@@ -70,7 +70,7 @@
                 width: 50%;
             }
 
-            #ph-num {
+            #ph_num {
                 width: 50%;
             }
 
@@ -304,7 +304,7 @@
                 <!-- Phone number -->
                 <div class="form-label">
                     <label for="ph_number">Phone number :</label>
-                    <input type="number" class="form-control" id="ph-num" required
+                    <input type="number" class="form-control" id="ph_num" required
                         title="Phone number should be withn in 10 numbers" placeholder="123-456-7890" name="ph_number"
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}$" size="10">
                 </div>
@@ -351,8 +351,16 @@
                 let email = document.getElementById("email").value.trim();
                 let password = document.getElementById("password").value.trim();
                 let conpassword = document.getElementById("conpwd").value.trim();
-                let ph_num = document.getElementById("ph-num").value.trim();
+                let ph_num = document.getElementById("ph_num").value.trim();
 
+                if (ph_num.length != 10) {
+                    window.alert("Please! number must be 10 digits");
+                    return;
+                }
+                if (isNaN(age) || age < 1 || age > 100) {
+                    alert("The age must be a number between 1 and 100");
+                    return;
+                }
 
                 let sign_user_data = {
                     "id": id,
