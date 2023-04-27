@@ -120,7 +120,7 @@ CRUD For User top_outfit page:
  ### Create an account
 - Scenario 1: Successfully create an account
     - Steps:
-        1. Navigate to the registration page.
+        1. Click home workout button to navigate registration page.
         2. Enter the required information such as name, email, and password.
         3. Click the "Sign up" button.
     - Expected Result:
@@ -183,7 +183,115 @@ CRUD For User top_outfit page:
         - The user can view the details of the selected outfits and shoes.
 
 
-                      
-                      
+  ## Admin
+  # email: hari@gmail.com
+  # password: hariharanveerakumar
+  
+  ### admin login
+   -Scenario 1: Successfully login in to account
+    - Steps:
+        1. Click home workout button redirect to sign up page.
+        2. Click already log in button enter correct admin email.
+        3. Click the "login" button.
+    - Expected Result:
+        - The admin is redirected to the home workout page.
+      
+  ### Create music    
+- Scenario 1: Successfully created music card
+    - Steps:
+        1. Log in as an admin.
+        2. Navigate to the music listing page.
+        3. add required information such as image, name, etc.
+        4. create new music card.
+    - Expected Result:
+        - New music card created in music list page.            
+            
+            
+  ### update music    
+- Scenario 1: Successfully updated music card
+    - Steps:
+        1. Log in as an admin.
+        2. Navigate to the music listing page.
+        3. change information what he wants.
+        4. update new music card.
+    - Expected Result:
+        - New information updated for card in music list page.              
+
+
+  ### delete music    
+- Scenario 1: Successfully deleted music card
+    - Steps:
+        1. Log in as an admin.
+        2. Navigate to the music listing page.
+        3. delete music card what he wants.
+        4. delete music card.
+    - Expected Result:
+        - Deleted music card in music list page. 
+
+  ### Create product    
+- Scenario 1: Successfully created product card
+    - Steps:
+        1. Log in as an admin.
+        2. Navigate to the product listing page.
+        3. add required information such as image, name, price,etc.
+        4. create new product card.
+    - Expected Result:
+        - New product card created in prodcut list page. 
+
+
+  ### update product    
+- Scenario 1: Successfully updated product card
+    - Steps:
+        1. Log in as an admin.
+        2. Navigate to the product listing page.
+        3. change information what he wants.
+        4. update new product card.
+    - Expected Result:
+        -  New information updated for card in product list page. 
+
+
+  ### delete product    
+- Scenario 1: Successfully deleted product card
+    - Steps:
+        1. Log in as an admin.
+        2. Navigate to the product listing page.
+        3. delete product card what he wants.
+        4. delete product card.
+    - Expected Result:
+        -  Deleted product card in product list page. 
+
+  ### Create outfit and shoes    
+- Scenario 1: Successfully created outfit and shoes card
+    - Steps:
+        1. Log in as an admin.
+        2. Navigate to the outfit and shoes listing page.
+        3. add required information such as image, name, price,etc.
+        4. create new outfit and shoes card.
+    - Expected Result:
+        -  New outfit and shoes card created in outfit and shoes list page. 
+
+  ### update outfit and shoes    
+- Scenario 1: Successfully updated outfit and shoes card
+    - Steps:
+        1. Log in as an admin.
+        2. Navigate to the outfit and shoes listing page.
+        3. change information what he wants.
+        4. update new outfit and shoes card.
+    - Expected Result:
+        -  New information updated for card in outfit and shoes list page. 
+
+
+  ### delete outfit and shoes    
+- Scenario 1: Successfully deleted outfit and shoes card
+    - Steps:
+        1. Log in as an admin.
+        2. Navigate to the outfit and shoes listing page.
+        3. delete outfit and shoes card what he wants.
+        4. delete outfit and shoes card.
+    - Expected Result:
+        -  Deleted outfit and shoes card in outfit and shoes list page. 
+
+                       
+                       
 
 
