@@ -6,7 +6,12 @@
   /* width: 100%; */
   /* max-height: 3100px; */
 }
-
+.head-img{
+  width: 100%;
+}
+.head-img img{
+  width: 100%;
+}
 .sec-1-img {
   transition: transform 0.1s;
   /* margin-left: 40px; */
