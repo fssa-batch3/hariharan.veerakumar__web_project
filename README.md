@@ -120,7 +120,7 @@ CRUD For User top_outfit page:
  ### Create an account
 - Scenario 1: Successfully create an account
     - Steps:
-        1. Navigate to the registration page.
+        1. Click home workout button to navigate registration page.
         2. Enter the required information such as name, email, and password.
         3. Click the "Sign up" button.
     - Expected Result:
@@ -183,6 +183,16 @@ CRUD For User top_outfit page:
         - The user can view the details of the selected outfits and shoes.
 
 
+  ## Admin
+  # email: hari@gmail.com
+  # password: hariharanveerakumar
+   -Scenario 1: Successfully login in to account
+    - Steps:
+        1. Click home workout button redirect to sign up page.
+        2. Click already log in button enter correct admin email.
+        3. Click the "login" button.
+    - Expected Result:
+        - The admin is redirected to the home workout page.
                       
                       
 
