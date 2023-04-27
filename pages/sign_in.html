@@ -268,13 +268,13 @@
                 <div class="form-label">
                     <label for="name">First Name :</label>
                     <input type="text" class="form-control" id="name" required placeholder="Enter First Name"
-                        name="name" pattern="[a-zA-Z0-9]{1,15}$" title="enter your name correctly">
+                        name="name" pattern="[a-zA-Z0-9]{1,15}$" title="enter your name correctly" maxlength="20">
                 </div>
                 <!-- last name -->
                 <div class="form-label">
                     <label for="name">Last Name :</label>
                     <input type="text" class="form-control" id="lname" required placeholder="Enter Last Name"
-                        name="lname" pattern="[a-zA-Z0-9]{1,15}$" title="enter your name correctly">
+                        name="lname" pattern="[a-zA-Z0-9]{1,15}$" title="enter your name correctly" maxlength="20">
                 </div>
                 <!-- age -->
                 <div class="form-label">
@@ -286,7 +286,7 @@
                 <div class="form-label">
                     <label for="email">Email :</label>
                     <input type="email" class="form-control" id="email" required placeholder="Enter email" name="email"
-                        pattern=".+@gmail\.com" title="use @ gmail.com">
+                        pattern="[^ @]*@[^ @]*" title="use @ gmail.com">
                 </div>
                 <!-- password -->
                 <div class=" form-label">
