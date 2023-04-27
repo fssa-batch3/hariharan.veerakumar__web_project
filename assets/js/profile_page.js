@@ -41,6 +41,15 @@ pro_info.addEventListener("submit", function (event) {
     let user_address = document.getElementById("comment").value;
     let per_info = document.getElementById("per_info").value;
 
+    if (user_ph_num.length != 10) {
+        alert("Please! number must be 10 digits");
+        return;
+    }
+    if (isNaN(user_age) || user_age < 1 || user_age > 100) {
+        alert("The age must be a number between 1 and 100");
+        return;
+    }
+
     let user_object = {
         user_name,
         user_lastname,
