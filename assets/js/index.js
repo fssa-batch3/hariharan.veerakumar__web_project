@@ -219,6 +219,17 @@
       price: "Rs.399",
       section: "top"
     },
+     // index = 5
+     {
+      id:"36",
+      about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sint nihil dicta ratione, repudiandae,     tempora esse facere exercitationem quae, dolorem corrupti voluptas eligendi reprehenderit quod error  quaerat aut culpa id?",
+      image: "./../assets/images/black_t-shirt.jpg",
+      name: "Black T-shirt",
+      alt: "top outfit black t-shirt image",
+      dis_price: "Rs.1000",
+      price: "Rs.799",
+      section: "top"
+    },
 
     // For bottom
        // index = 0
