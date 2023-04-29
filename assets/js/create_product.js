@@ -4,7 +4,7 @@
      event.preventDefault();
 
      let id = Date.now();
-     let image = document.getElementById("photo").value;
+     let image = document.getElementById("photo").value.trim();
      let alt = document.getElementById("alter").value;
      let p_name = document.getElementById("name").value;
      let p_offer = document.getElementById("offer").value;

@@ -65,6 +65,8 @@ h1{
   padding-left: 80px;
 }
 .right p {
+  margin-top: 3%;
+  width: 297px;
   margin-left: 150px;
   font-size: 20px;
   font-family: monospace;
@@ -106,4 +108,11 @@ h1{
     
     .ba_btn:hover::after {
       left: 100%;
+    }
+
+    .update{
+      margin-left: 100%;
+    }
+    .add{
+      margin-left: 70%;
     }

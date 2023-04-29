@@ -382,13 +382,137 @@
   ];
   localStorage.setItem("top_card", JSON.stringify(top_outfit));
 
-//   For bottom-outfit
-//   let bottom_outfit = [  ];
-//   localStorage.setItem("bottom_card", JSON.stringify(bottom_outfit));
-
-// For shoes-card
-//   let shoes = [  ];
-//   localStorage.setItem("shoe_card",JSON.stringify(shoes))
-
-  // let cart = [];
-  // localStorage.setItem("cart",JSON.stringify(cart))
+const exercise = [
+//  full body exercise
+// exercise = 1
+{
+  id:"100",
+  name:"Push up",
+  image:"../assets/images/GIF/Full_body_GIFs/pushup.gif",
+  alt:"pushup.gif",
+  time:"x 20",
+  steps:"Go to any slanting surface and ready with your position now give  full strength to your hands. benefits are it will increase your biceps,chest,shoulder.", 
+  diet_image:"../assets/images/DIET MANAGEMENT.png",
+  diet_alt:"diet image",
+  diet_desc:"Take sufficient proteins, It is good for health",
+  type:"fullbody",
+},
+// exercise = 2
+{
+  id:"101",
+  name:"Pull up",
+  image:"../assets/images/GIF/Full_body_GIFs/Pull_ups.gif",
+  alt:"pull up.gif",
+  time:"x 15",
+  steps:"Go to any high bar and ready with your position now give full strength to your hands benefits are it will increase your biceps,triceps,shoulder.", 
+  diet_image:"../assets/images/DIET MANAGEMENT.png",
+  diet_alt:"diet image",
+  diet_desc:"Take sufficient proteins, It is good for health",
+  type:"fullbody",
+},
+// exercise = 3
+{
+  id:"102",
+  name:"Jumping Jacks",
+  image:"../assets/images/GIF/Full_body_GIFs/jumping_jack.gif",
+  alt:"jumping jack.gif",
+  time:"00:20s",
+  steps:"Start with your feet together and your arms by your sides,then jump up with your feet apart and your hands overhead return to the start position then do the next rep", 
+  diet_image:"../assets/images/DIET MANAGEMENT.png",
+  diet_alt:"diet image",
+  diet_desc:"Take sufficient proteins, It is good for health",
+  type:"fullbody",
+},
+// exercise = 4
+{
+  id:"103",
+  name:"Incline Pushup",
+  image:"../assets/images/GIF/Full_body_GIFs/Incline_pushup.gif",
+  alt:"Incline push-up.gif",
+  time:"x 20",
+  steps:"Start in the regular push-up position but with your hands elevate on a chair or bench then push your body up down using your arm strength.Remember to keep your body straight.", 
+  diet_image:"../assets/images/DIET MANAGEMENT.png",
+  diet_alt:"diet image",
+  diet_desc:"Take sufficient proteins, It is good for health",
+  type:"fullbody",
+},
+// exercise = 5
+{
+  id:"104",
+  name:"Russian Twist",
+  image:"../assets/images/GIF/Full_body_GIFs/russian_twist.gif",
+  alt:"russian twist.gif",
+  time:"x 20",
+  steps:" Sit on the floor with your knees bent,feet lifted a little bit and back tilted backwards then hold your hands together and twist from side to side", 
+  diet_image:"../assets/images/DIET MANAGEMENT.png",
+  diet_alt:"diet image",
+  diet_desc:"Take sufficient proteins, It is good for health",
+  type:"fullbody",
+},
+// exercise = 6
+{
+  id:"105",
+  name:"Pile Squats",
+  image:"../assets/images/GIF/Full_body_GIFs/pile_squats_GIF.jpg",
+  alt:"pile_squats_GIF.gif",
+  time:"x 15",
+  steps:"Stand with your hands on your hips and feet a little wider than shoulder width apart.Then lower your body until your thighs are parallel to the floor. Your knees should be extended in the same direction as your tiptoes.", 
+  diet_image:"../assets/images/DIET MANAGEMENT.png",
+  diet_alt:"diet image",
+  diet_desc:"Take sufficient proteins, It is good for health",
+  type:"fullbody",
+},
+// exercise = 7
+{
+  id:"106",
+  name:"Diamond push up",
+  image:"../assets/images/GIF/Full_body_GIFs/Diamond-Push-Up-Gif.gif",
+  alt:"Diamond push up.gif",
+  time:"x 15",
+  steps:" Start in the push-up position. Make a diamond shape with your forefingers and thumbs together under your chest.Then push your body up and down. Remember to keep your body straight.", 
+  diet_image:"../assets/images/DIET MANAGEMENT.png",
+  diet_alt:"diet image",
+  diet_desc:"Take sufficient proteins, It is good for health",
+  type:"fullbody",
+},
+// exercise = 8
+{
+  id:"107",
+  name:"Mountain climber",
+  image:"../assets/images/GIF/Full_body_GIFs/mountain_climber.gif",
+  alt:"mountain_climber.gif",
+  time:"x 20",
+  steps:"Start in the push-up position. Bend your right knee towards your chest and keep your left leg straight then quickly switch from one leg to the other.", 
+  diet_image:"../assets/images/DIET MANAGEMENT.png",
+  diet_alt:"diet image",
+  diet_desc:"Take sufficient proteins, It is good for health",
+  type:"fullbody",
+},
+// exercise = 9
+{
+  id:"108",
+  name:"Plank",
+  image:"../assets/images/GIF/Full_body_GIFs/Plank.png",
+  alt:"plank image",
+  time:"00.30s",
+  steps:"Lie on the floor with your toes and forearms on the ground.Keep your body straight and hold this position as long above time mentioned. this exercise strengthens the abdomen, back and shoulders.", 
+  diet_image:"../assets/images/DIET MANAGEMENT.png",
+  diet_alt:"diet image",
+  diet_desc:"Take sufficient proteins, It is good for health",
+  type:"fullbody",
+},
+// exercise = 10
+{
+  id:"109",
+  name:"Cobra stretch",
+  image:"../assets/images/GIF/Full_body_GIFs/cobra_stretch.jpg",
+  alt:"Cobra stretch",
+  time:"00.30s",
+  steps:" Lie down on your stomach and bend your elbows with your hands beneath your shoulders.  Then push your chest up off the ground as far as possible.Hold this position for seconds.", 
+  diet_image:"../assets/images/DIET MANAGEMENT.png",
+  diet_alt:"diet image",
+  diet_desc:"Take sufficient proteins, It is good for health",
+  type:"fullbody",
+},
+];
+localStorage.setItem("exercise_card",JSON.stringify(exercise))
