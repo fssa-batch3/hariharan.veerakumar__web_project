@@ -33,10 +33,6 @@ for (let i = 0; i < array.length; i++) {
   rupees.innerText = array[i]["price"];
   card_div.append(rupees)
 
-  dis_money = document.createElement("del")
-  dis_money.setAttribute("class", "price")
-  dis_money.innerText = array[i]["dis_price"];
-  rupees.prepend(dis_money)
 
   buy_a = document.createElement("a")
   buy_a.setAttribute("href", "./../pages/details.html?id=" + array[i]["id"]);
@@ -45,10 +41,8 @@ for (let i = 0; i < array.length; i++) {
   card_div.append(buy_a)
 
   cart_a = document.createElement("a")
-  cart_a.setAttribute("href", "../pages/my_cart.html?id="+ array[i]["id"]);
-  cart_a.setAttribute("class", "btn-2")
+  cart_a.setAttribute("class", "btn-2 add-cart")
   cart_a.setAttribute("id", "cart")
-  cart_a.setAttribute("type","click")
   cart_a.innerText = "Add to cart"
   card_div.append(cart_a)
 
@@ -82,11 +76,10 @@ let card_div;
 let image;
 let eq_name;
 let rupees;
-let dis_money;
 let buy_a;
 let cart_a;
 let crud_div;
-let update_a;
+ 
 
 //  array
 for (let i = 0; i < array.length; i++) {
@@ -96,6 +89,7 @@ for (let i = 0; i < array.length; i++) {
   image = document.createElement("img")
   image.setAttribute("src", array[i]["image"])
   image.setAttribute("alt", array[i]["alt"])
+  image.setAttribute("class", "product-image")
   card_div.append(image)
 
   eq_name = document.createElement("p")
@@ -103,15 +97,10 @@ for (let i = 0; i < array.length; i++) {
   eq_name.innerText = array[i]["name"]
   card_div.append(eq_name)
 
-  rupees = document.createElement("pre")
+  rupees = document.createElement("p")
   rupees.setAttribute("class", "price")
   rupees.innerText = array[i]["price"];
   card_div.append(rupees)
-
-  dis_money = document.createElement("del")
-  dis_money.setAttribute("class", "price")
-  dis_money.innerText = array[i]["dis_price"];
-  rupees.prepend(dis_money)
 
   buy_a = document.createElement("a")
   buy_a.setAttribute("href", "./../pages/details.html?id=" + array[i]["id"]);
@@ -120,10 +109,8 @@ for (let i = 0; i < array.length; i++) {
   card_div.append(buy_a)
 
   cart_a = document.createElement("a")
-  cart_a.setAttribute("href", "../pages/my_cart.html?id="+ array[i]["id"]);
-  cart_a.setAttribute("class", "btn-2")
+  cart_a.setAttribute("class", "btn-2 add-cart")
   cart_a.setAttribute("id", "cart")
-  cart_a.setAttribute("type","click")
   cart_a.innerText = "Add to cart"
   card_div.append(cart_a)
 

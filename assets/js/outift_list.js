@@ -8,7 +8,6 @@ const admin_email = JSON.parse(localStorage.getItem("details"));
     let image;
     let top_name;
     let rupees;
-    let dis_money;
     let buy_a;
     let cart_a;
     let crud_div;
@@ -35,10 +34,6 @@ const admin_email = JSON.parse(localStorage.getItem("details"));
       rupees.innerText = ar[i]["price"];
       top_card_div.append(rupees)
 
-      dis_money = document.createElement("del")
-      dis_money.setAttribute("class", "price")
-      dis_money.innerText = ar[i]["dis_price"];
-      rupees.prepend(dis_money)
 
       buy_a = document.createElement("a")
       buy_a.setAttribute("href",  "../pages/details_outfit.html?id=" + ar[i]["id"])
@@ -47,10 +42,10 @@ const admin_email = JSON.parse(localStorage.getItem("details"));
       top_card_div.append(buy_a)
 
       cart_a = document.createElement("a")
-      cart_a.setAttribute("href", "../pages/my_cart.html?id=" + ar[i]["id"])
-      cart_a.setAttribute("class", "btn-2")
+      cart_a.setAttribute("class", "btn-2 add-cart")
+      cart_a.setAttribute("id", "cart")
       cart_a.innerText = "Add to cart"
-      top_card_div.append(cart_a)
+      card_div.append(cart_a)
 
       crud_div = document.createElement("div")
       crud_div.setAttribute("class" , "crud_features")
@@ -100,11 +95,6 @@ const admin_email = JSON.parse(localStorage.getItem("details"));
       rupees.innerText = ar[i]["price"];
       top_card_div.append(rupees)
 
-      dis_money = document.createElement("del")
-      dis_money.setAttribute("class", "price")
-      dis_money.innerText = ar[i]["dis_price"];
-      rupees.prepend(dis_money)
-
       buy_a = document.createElement("a")
       buy_a.setAttribute("href",  "../pages/details_outfit.html?id=" + ar[i]["id"])
       buy_a.setAttribute("class", "btn-1")
@@ -112,8 +102,8 @@ const admin_email = JSON.parse(localStorage.getItem("details"));
       top_card_div.append(buy_a)
 
       cart_a = document.createElement("a")
-      cart_a.setAttribute("href", "../pages/my_cart.html?id=" + ar[i]["id"])
-      cart_a.setAttribute("class", "btn-2")
+      cart_a.setAttribute("class", "btn-2 add-cart")
+      cart_a.setAttribute("id", "cart")
       cart_a.innerText = "Add to cart"
       top_card_div.append(cart_a)
 

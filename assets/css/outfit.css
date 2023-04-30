@@ -96,9 +96,9 @@ hr {
 }
 .price {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-family: sans-serif;
-  width: 65%;
+  width: 75%;
   font-size: 20px;
   margin-top: -5px;
   margin-left: 25px;
