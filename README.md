@@ -136,6 +136,14 @@ CRUD For User top_outfit page:
     - Expected Result:
         - The user is redirected to the user profile page.
 
+ ### View exercise
+- Scenario 1: Successfully view exercise
+    - Steps:
+        1. Log in as a buyer.
+        2. Navigate to the exercise listing page.
+        3. View the list of available exercise.
+    - Expected Result:
+        - The user can view the list of available exercise.
 
  ### View music
 - Scenario 1: Successfully view music
@@ -290,6 +298,37 @@ CRUD For User top_outfit page:
         4. delete outfit and shoes card.
     - Expected Result:
         -  Deleted outfit and shoes card in outfit and shoes list page. 
+
+  ### Create exercise   
+- Scenario 1: Successfully created exercise card
+    - Steps:
+        1. Log in as an admin.
+        2. Navigate to the exercise listing page.
+        3. add required information such as image, name, steps,etc.
+        4. create new exercise card.
+    - Expected Result:
+        -  New exercise card created in exercise list page. 
+
+  ### update exercise    
+- Scenario 1: Successfully updated exercise card
+    - Steps:
+        1. Log in as an admin.
+        2. Navigate to the exercise listing page.
+        3. change information what he wants.
+        4. update new exercise card.
+    - Expected Result:
+        -  New information updated for card in exercise list page. 
+
+
+  ### delete exercise    
+- Scenario 1: Successfully deleted exercise card
+    - Steps:
+        1. Log in as an admin.
+        2. Navigate to the exercise listing page.
+        3. delete exercises card what he wants.
+        4. delete exercise card.
+    - Expected Result:
+        -  Deleted exercise card in exercise list page. 
 
                        
                        
