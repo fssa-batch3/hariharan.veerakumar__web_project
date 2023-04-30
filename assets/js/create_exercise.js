@@ -35,5 +35,5 @@ form.addEventListener("submit", function(event){
 
     localStorage.setItem("exercise_card", JSON.stringify(ex_array));
     alert("Successfully added");
-    window.location.href = "./../pages/full_body.html";
+    window.location.href = "./../pages/Home_workout.html";
 })

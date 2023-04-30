@@ -68,7 +68,7 @@ let exercise_type = document.getElementById("type").value;
 
   alert("Successfully changed")
 
-  window.location.href = "./../pages/full_body.html";
+  window.location.href = "./../pages/Home_workout.html";
 
 
 
@@ -96,6 +96,6 @@ exercise_delete.addEventListener("click", function(event){
     else{
         ex_array.splice(Index, 1)
         localStorage.setItem("exercise_card", JSON.stringify(ex_array));
-        window.location.href = "./../pages/full_body.html";
+        window.location.href = "./../pages/Home_workout.html";
     }
 })
