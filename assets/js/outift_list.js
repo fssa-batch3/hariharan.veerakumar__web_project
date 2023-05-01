@@ -22,6 +22,7 @@ const admin_email = JSON.parse(localStorage.getItem("details"));
       image = document.createElement("img")
       image.setAttribute("src", ar[i]["image"])
       image.setAttribute("alt", ar[i]["alt"])
+      image.setAttribute("class", "product-image")
       top_card_div.append(image)
 
       top_name = document.createElement("p")
@@ -83,6 +84,7 @@ const admin_email = JSON.parse(localStorage.getItem("details"));
       image = document.createElement("img")
       image.setAttribute("src", ar[i]["image"])
       image.setAttribute("alt", ar[i]["alt"])
+      image.setAttribute("class", "product-image")
       top_card_div.append(image)
 
       top_name = document.createElement("p")

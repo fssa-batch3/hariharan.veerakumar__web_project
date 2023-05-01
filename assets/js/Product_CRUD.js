@@ -21,6 +21,7 @@ for (let i = 0; i < array.length; i++) {
   image = document.createElement("img")
   image.setAttribute("src", array[i]["image"])
   image.setAttribute("alt", array[i]["alt"])
+  image.setAttribute("class", "product-image")
   card_div.append(image)
 
   eq_name = document.createElement("p")

@@ -84,14 +84,13 @@ function addCartClicked(event){
 function addProductToCart(title, money, productImg){
     let cartShopBox = document.createElement("div")
     cartShopBox.classList.add("cart-box");
-    let cartItems = document.getElementsByClassName('cart-content')[0];
-    let cartItemsNames  = cartItems.getElementsByClassName('cart-product-title');
+    let cartItems = document.getElementsByClassName("cart-content")[0];
+    let cartItemsNames  = cartItems.getElementsByClassName("cart-product-title");
     for(let i = 0;i < cartItemsNames.length; i++){
         if(cartItemsNames[i].innerText == title){
             alert("You have already added this item in cart");
-            return;
+        return;
         }
-       
     }
 let cartBoxContent = `
              <img src="${productImg}" alt="dumbbells" class="cart-img">
