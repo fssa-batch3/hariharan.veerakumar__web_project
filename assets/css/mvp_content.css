@@ -1,3 +1,21 @@
+.search {
+  position: relative;
+  height: 50px;
+  margin-left: 58%;
+}
+
+ #search_input {
+  background-color: #000;
+  border: 1px solid #00ffff;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 15px;
+  height: 60px;
+  width: 450px;
+  transition: width 0.3s ease;
+  position: fixed;
+z-index: 50;
+}
 .sec-1 {
   margin-left: 11%;
   width: 100%;

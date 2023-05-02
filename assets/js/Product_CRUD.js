@@ -2,12 +2,12 @@ let array = JSON.parse(localStorage.getItem("card"));
 const admin_email = JSON.parse(localStorage.getItem("details")); 
 
 if(admin_email == "hari@gmail.com"){
+  // for admin
 // card
 let card_div;
 let image;
 let eq_name;
 let rupees;
-let dis_money;
 let buy_a;
 let cart_a;
 let crud_div;

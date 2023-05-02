@@ -88,6 +88,7 @@ function addProductToCart(title, money, productImg){
     let cartItemsNames  = cartItems.getElementsByClassName("cart-product-title");
     for(let i = 0;i < cartItemsNames.length; i++){
         if(cartItemsNames[i].innerText == title){
+            
             alert("You have already added this item in cart");
         return;
         }

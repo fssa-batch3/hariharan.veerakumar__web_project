@@ -46,7 +46,7 @@ const admin_email = JSON.parse(localStorage.getItem("details"));
       cart_a.setAttribute("class", "btn-2 add-cart")
       cart_a.setAttribute("id", "cart")
       cart_a.innerText = "Add to cart"
-      card_div.append(cart_a)
+      top_card_div.append(cart_a)
 
       crud_div = document.createElement("div")
       crud_div.setAttribute("class" , "crud_features")
@@ -178,3 +178,5 @@ for(let i = 0; i < productAppend("bottom").length;i++){
   else{
     productUserList(create_shoe_card, ".whole-div-3");
   }
+
+  
