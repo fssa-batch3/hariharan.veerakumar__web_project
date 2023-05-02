@@ -74,7 +74,7 @@ function quantityChanged(event){
 function addCartClicked(event){
     let button = event.target
     let shopProducts = button.parentElement
-    let title = shopProducts.getElementsByClassName("name")[0].innerText;
+    let title = shopProducts.getElementsByClassName("name")[0].innerText.toLowerCase();
     let money = shopProducts.getElementsByClassName("price")[0].innerText;
     let productImg = shopProducts.getElementsByClassName("product-image")[0].src;
 
@@ -87,9 +87,9 @@ function addProductToCart(title, money, productImg){
     let cartItems = document.getElementsByClassName("cart-content")[0];
     let cartItemsNames  = cartItems.getElementsByClassName("cart-product-title");
     for(let i = 0;i < cartItemsNames.length; i++){
-        if(cartItemsNames[i].innerText == title){
+        if(cartItemsNames[i].innerText.toLowerCase() === title){
             
-            alert("You have already added this item in cart");
+            window.alert("You have already added this item in cart");
         return;
         }
     }
