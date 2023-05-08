@@ -142,36 +142,37 @@
     <!-- Java script -->
     <!-- fire base -->
     <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
-        import { getDatabase, ref, onValue, } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyCTterdzTDASQ8ZcU5Ez4XJmqrp0Sy6tSA",
-            authDomain: "hariharan-d4817.firebaseapp.com",
-            projectId: "hariharan-d4817",
-            storageBucket: "hariharan-d4817.appspot.com",
-            messagingSenderId: "754024259347",
-            appId: "1:754024259347:web:648cfa9e2842c7612304e6"
-        };
+    // Import the functions you need from the SDKs you need
+    // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+    // import { getDatabase, ref, onValue, } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const database = getDatabase();
-        console.log(database);
+    // Your web app's Firebase configuration
+    // const firebaseConfig = {
+    // apiKey: "AIzaSyCTterdzTDASQ8ZcU5Ez4XJmqrp0Sy6tSA",
+    // authDomain: "hariharan-d4817.firebaseapp.com",
+    // projectId: "hariharan-d4817",
+    // storageBucket: "hariharan-d4817.appspot.com",
+    // messagingSenderId: "754024259347",
+    // appId: "1:754024259347:web:648cfa9e2842c7612304e6"
+    // };
 
-        const db_ref = ref(database, 'name/');
-        onValue(db_ref, (snapshot) => {
-            const data = snapshot.val();
-            console.log(data);
+    // Initialize Firebase
+    // const app = initializeApp(firebaseConfig);
+    // const database = getDatabase();
+    // console.log(database);
 
-        })
+    // const db_ref = ref(database, 'name/');
+    // onValue(db_ref, (snapshot) => {
+    // const data = snapshot.val();
+    // console.log(data);
+
+    // })
 
 
-    </script>
+    // </script>
     <script src="./../assets/js/index.js"></script>
-    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
     <script src="./../assets/js/language.js"> </script>
 </body>
 
