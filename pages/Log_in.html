@@ -126,13 +126,13 @@
       <div>
         <label for="email" class="form-label">Email address:</label>
         <input type="email" class="form-control" id="email" placeholder="Enter your E-mail" required
-          title="Enter your email properly" pattern="[^ @]*@[^ @]*" size="30" />
+          title="Enter your email properly" pattern="[^ @]*@[^ @]*" value="hariharan10@gmail.com" size="30" />
       </div>
       <!-- password -->
       <div>
         <label for="password" class="form-label">Password:</label>
         <input type="password" class="form-control" id="password" placeholder="Enter your Password" required
-          pattern="[a-zA-Z0-9]{4,}$" title="password must be in 8 characters" />
+          pattern="[a-zA-Z0-9]{4,}$" value="password" title="password must be in 8 characters" />
       </div>
       <!-- middle -->
       <div class=" mid">
@@ -159,10 +159,11 @@
   <script src="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.js"></script>
   <script>
 
-    let login = document.getElementById("form")
+    let login = document.getElementById("form");
+    let array = JSON.parse(localStorage.getItem("usersdetails"));
     login.addEventListener("submit", (event) => {
       event.preventDefault();
-      let array = JSON.parse(localStorage.getItem("usersdetails"));
+
       // getdatas
       let email = document.getElementById("email").value.trim();
       let password = document.getElementById("password").value.trim();

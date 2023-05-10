@@ -69,11 +69,9 @@ const admin_email = JSON.parse(localStorage.getItem("details"));
     let image;
     let top_name;
     let rupees;
-    let dis_money;
     let buy_a;
     let cart_a;
     let crud_div;
-    let update_a;
 
 
     // old array

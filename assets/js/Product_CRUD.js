@@ -111,7 +111,7 @@ for (let i = 0; i < array.length; i++) {
 
   cart_a = document.createElement("a")
   cart_a.setAttribute("class", "btn-2 add-cart")
-  cart_a.setAttribute("id", "cart")
+  cart_a.setAttribute("id", "ca`rt")
   cart_a.innerText = "Add to cart"
   card_div.append(cart_a)
 

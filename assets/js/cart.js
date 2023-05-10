@@ -34,7 +34,7 @@ for(let i = 0;i < removeCartButtons.length; i++){
 let quantityInputs = document.getElementsByClassName('cart-quantity');
 for(let i = 0;i < quantityInputs.length; i++){
      let input = quantityInputs[i];
-     input.addEventListener('change', quantityChanged)
+     input.addEventListener("change", quantityChanged)
 }
 // add to cart
 let addCart  = document.getElementsByClassName('add-cart');
@@ -48,11 +48,11 @@ document.getElementsByClassName("btn-buy")[0].addEventListener("click", buyButto
 // buy button 
 function buyButtonClicked(){
     alert("Your order is placed");
-    let cartContent = document.getElementsByClassName('cart-content')[0]
+    let cartContent = document.getElementsByClassName('cart-content')[0];
     while(cartContent.hasChildNodes()){
         cartContent.removeChild(cartContent.firstChild);
     }
-    updatetotal()
+    updatetotal();
 }
     
 // Remove Items from cart
@@ -88,13 +88,12 @@ function addProductToCart(title, money, productImg){
     let cartItemsNames  = cartItems.getElementsByClassName("cart-product-title");
     for(let i = 0;i < cartItemsNames.length; i++){
         if(cartItemsNames[i].innerText.toLowerCase() === title){
-            
             window.alert("You have already added this item in cart");
         return;
         }
     }
 let cartBoxContent = `
-             <img src="${productImg}" alt="dumbbells" class="cart-img">
+             <img src="${productImg}" alt="equipment_image" class="cart-img">
              <div class="detail-box">
              <div class="cart-product-title">${title}</div>
              <div class="cart-price">${money}</div>
