@@ -28,9 +28,9 @@ try {
     // If it a new user store the data in DB 
     else {
         array.push(sign_user_data);
-        // let arrayupdate = JSON.stringify(array);
         localStorage.setItem("usersdetails", JSON.stringify(array));
-        window.location.href = "../pages/Log_in.html"
+        localStorage.setItem("details", JSON.stringify(email));
+        window.location.href = "../pages/Home_workout.html  "
     }
     
     return true;

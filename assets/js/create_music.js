@@ -1,3 +1,6 @@
+let m_array = JSON.parse(localStorage.getItem("musicCard"));
+// console.log(m_array);
+
 const Form = document.getElementById("music_form")
 Form.addEventListener("submit", function(event){
     event.preventDefault()
@@ -15,8 +18,7 @@ Form.addEventListener("submit", function(event){
         "name" : s_name,
         "url" : s_url,
     }
-    let m_array = JSON.parse(localStorage.getItem("musicCard"));
-    // console.log(m_array);
+   
 
 
     // checking the array is empty or not
