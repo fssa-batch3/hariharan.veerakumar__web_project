@@ -77,7 +77,7 @@ edit.addEventListener("submit", function (event) {
 
 let check = true;
 let present_obj = array.find(function (product) {
- 
+
     let check_id = product["id"]
     if (get_id == check_id) {
 
@@ -95,25 +95,24 @@ let present_obj = array.find(function (product) {
         price1.value = prod_obj["price"];
         about1.value = prod_obj["about"];
     }
-return check;
+    return check;
 })
 
 
 // For delete
 let prod_delete = document.getElementById("delete")
-prod_delete.addEventListener("click" , function(event){
-event.preventDefault();
+prod_delete.addEventListener("click", function (event) {
 
-let Index = array.indexOf(prod_obj)
+    let Index = array.indexOf(prod_obj)
 
-let msg = confirm("Are you sure want to delete this product")
-if (msg !== true) {
-    return
-}
-else {
-    array.splice(Index, 1)
-    // console.log(array);
-    localStorage.setItem("card", JSON.stringify(array))
-    window.location.href = "../pages/Sales.html";
-}
+    let msg = confirm("Are you sure want to delete this product")
+    if (msg !== true) {
+        return
+    }
+    else {
+        array.splice(Index, 1)
+        // console.log(array);
+        localStorage.setItem("card", JSON.stringify(array))
+        window.location.href = "../pages/Sales.html";
+    }
 })
