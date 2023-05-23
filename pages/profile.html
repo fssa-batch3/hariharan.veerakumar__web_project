@@ -328,15 +328,21 @@
         .back_btn:hover .right {
             height: 100%;
         }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container ">
+    <div class="container profile_div">
         <br>
         <h1>Profile</h1>
         <br>
-        <form id="form">
+        <form id=" form">
             <div class="row">
                 <!-- first name -->
                 <div class="col">
@@ -395,7 +401,8 @@
             <!-- submit -->
             <div class="row">
                 <div class="col-sm"> <button class="custom-btn btn" id="button"
-                        type="submit"><span>Change</span></button></div>
+                        type="submit"><span>Change</span></button>
+                </div>
                 <!-- delete button -->
                 <div class="col">
                     <a class="delete_btn" type="click" id="delete">
@@ -423,7 +430,7 @@
                             </svg></span>
                     </a>
                 </div>
-            </div>
+
         </form>
         <br>
         <br>
@@ -444,6 +451,8 @@
             </div>
         </div>
     </div>
+    </div>
+
     <!-- Java Script -->
     <script src="https://cdn.jsdelivr.net/gh/suryaumapathy2812/notify__js/notify.js"></script>
     <script src="../assets/js/profile_page.js"></script>

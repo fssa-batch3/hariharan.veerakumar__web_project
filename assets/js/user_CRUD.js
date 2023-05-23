@@ -20,11 +20,11 @@ signUp.addEventListener("submit", function (event) {
 
 
     // generating otp for user
-    let otp = '';
+    let otp = "";
     for (let i = 0; i < 4; i++) {
-        otp += digits[Math.floor(Math.random() * 10)];
+        otp += Math.floor(Math.random() * 10);
     }
-
+    console.log(otp);
 
 
     // creating template for email
@@ -105,7 +105,7 @@ function createUser(email, ebody, otp_div, sign_user_data) {
 
     try {
         let match = false;
-        let ismatch = false;
+
         let array = [];
         if (localStorage.getItem("usersdetails") != null) {
             array = JSON.parse(localStorage.getItem("usersdetails"));
@@ -134,14 +134,12 @@ function createUser(email, ebody, otp_div, sign_user_data) {
                 Subject: "OTP Verification",
                 Body: ebody,
             })
-            ismatch = true;
-        }
-        if (ismatch) {
             alert("Your OTP sent to your email");
             otp_div.classList.add("active");
             array.push(sign_user_data);
             localStorage.setItem("usersdetails", JSON.stringify(array));
             localStorage.setItem("details", JSON.stringify(email));
+
         }
 
         return true;

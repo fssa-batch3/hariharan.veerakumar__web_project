@@ -119,4 +119,3 @@ user_delete.addEventListener("click", function (event) {
         window.location.href = "../pages/sign_in.html";
     }
 })
-
