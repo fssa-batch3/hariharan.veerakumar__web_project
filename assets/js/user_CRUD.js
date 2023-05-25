@@ -13,9 +13,6 @@ signUp.addEventListener("submit", function (event) {
     let password = document.getElementById("password").value.trim();
     let conpassword = document.getElementById("conpwd").value.trim();
     let ph_num = document.getElementById("ph_num").value.trim();
-
-
-
     let otp_btn = document.getElementById("otp_button");
 
 

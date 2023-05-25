@@ -111,9 +111,9 @@
             <img class="sec-1-gif" src="./../assets/images/GIF/intro.gif" alt="intro-gif" />
         </div>
         <br>
-        <div><a href="./../pages/user_management.html"><button class="user_manage">
-                    <span>Manage user</span><i></i>
-                </button></a></div>
+        <div id="manage_user_div">
+
+        </div>
     </section>
 
     <!-- Footer -->
@@ -172,6 +172,21 @@
 
     <!--  </script> -->
     <script src="./../assets/js/index.js"></script>
+    <script>
+        let div_user_management = document.getElementById("manage_user_div");
+        let manage_div = `
+        <a href="./../pages/user_management.html">
+                <button class="user_manage">
+                    <span>Manage user</span>
+                    <i></i>
+                </button></a>
+        `;
+        if (admin_email == "hari@gmail.com") {
+            div_user_management.innerHTML = manage_div;
+
+        }
+
+    </script>
 
 
 </body>

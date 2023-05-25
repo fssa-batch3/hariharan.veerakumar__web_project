@@ -1,3 +1,7 @@
+const admin_email = JSON.parse(localStorage.getItem("details"));
+
+
+
 // For music card
 const musicCard = [
 

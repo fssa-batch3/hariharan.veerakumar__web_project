@@ -114,7 +114,7 @@ user_delete.addEventListener("click", function (event) {
     }
     else {
         user_about.splice(Index, 1)
-        // console.log(user_about);
+
         localStorage.setItem("usersdetails", JSON.stringify(user_about))
         window.location.href = "../pages/sign_in.html";
     }
